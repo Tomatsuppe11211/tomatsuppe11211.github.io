@@ -7,8 +7,8 @@ body{
 
 
 p , a{font-size: 20px;}
-h2{font-size: 40px;}
-h1{font-size: 50px;}
+h2{font-size: 30px;}
+h1{font-size: 40px;}
 
 
 
@@ -17,7 +17,7 @@ h1{font-size: 50px;}
 
 
 
-nav{background-color:red;}
+nav{background-color:#000000;}
 
 
 
@@ -72,7 +72,7 @@ nav{background-color:red;}
     width:100%;
     display: flex;
     flex-direction: row;
-    text-align: center;
+    
 }
 
 
@@ -80,18 +80,8 @@ nav{background-color:red;}
     height:30px;
     width:30px;
     background-repeat: no-repeat;
-    background-size: cover;  
-    margin:10% 5%;
-}
-
-
-
-
-.phone-logo{
-    height:50px;
-    width:60px;
-    margin-top:-10px;
-    margin-left:0px;
+    background-size: cover; 
+    margin-top:10px;
 }
 
 
@@ -101,11 +91,89 @@ nav{background-color:red;}
 
 
 
-/*making the navigationbar disapear when screen size is set to lower than tablet*/
-@media (min-width:767px){
-    .phone-nav{display: none;}   
-}
 
+
+/*making the desktop navigationbar disapear when screen size is set to lower than tablet*/
 @media (max-width: 767px){
     .desktop-nav{display: none;}
 }
+
+
+
+@media (min-width:320px){
+    .phone-nav div , .phone-nav a{ margin-left:10%;}
+}
+
+@media (min-width:375px){
+    .phone-nav div , .phone-nav a{ margin-left:14%;}
+}
+
+@media (min-width:425px){
+    .phone-nav div , .phone-nav a{ margin-left:15%;}
+}
+
+
+
+/*making the phone navigationbar disapear when screen size is set to larger than tablet*/
+@media (min-width:767px){
+    .phone-nav{display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS to landing page*/
+#home-intro{
+    width:100%;
+    text-align: center;
+    height:400px
+}
+
+
+
+.desktop-logo{height:50%;}
+.site-title{width:30%;margin-left:35%;}
+
