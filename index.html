@@ -4,32 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamehub.com</title>
+    <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 
 
+
+
     <style>
+
+        /*adjusting the intro section to fit the screen*/
+        #intro{
+            text-align: center;
+            height:600px;
+            width: 100%;
+            background-image: url("images/home/space.png");
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        #intro h1{
+            width:30%;
+            margin-left:35%;
+            font-size: 45px;
+        }
+
+
+        #intro img{
+            height:65%;
+            width:20%;
+            margin-left:40%;
+        }
+
         
-        .user{background-image:url("images/navigation/user-icon.png");}
-        .user:hover{background-image: url("images/navigation/user-icon-hover.png");}
-        .cart{background-image: url("images/navigation/cart-icon.png");}
-        .cart:hover{background-image: url("images/navigation/cart-icon-hover.png");}
 
 
-        .menu-icon{background-image: url("images/navigation/mobile/menu-icon.png");}
-        .menu-icon:hover{background-image: url("images/navigation/mobile/menu-icon-hover.png");}
-        .home-icon{background-image: url("images/navigation/mobile/home-icon.png");}
-        .home-icon:hover{background-image: url("images/navigation/mobile/home-icon-hover.png");}
-        .user-icon{background-image: url("images/navigation/mobile/user-icon.png");}
-        .user-icon:hover{background-image: url("images/navigation/mobile/user-icon-hover.png");}
-        .cart-icon{background-image: url("images/navigation/mobile/cart-icon.png");}
-        .cart-icon:hover{background-image: url("images/navigation/mobile/cart-icon-hover.png");}
+        /*making the intro section to be responsive to different screensizes*/
+        
+        
+        @media (max-width: 1440px){
+            #intro h1{font-size: 30px; width:35%;margin-left:32.5%;}
+            #intro{height:350px;}
+        }
+
+        @media (max-width: 1024px){
+            #intro h1{font-size: 30px; width:50%;margin-left:25%;}
+            #intro img{height:50%;}
+            #intro{height:300px;}
+        }
+
+        @media (max-width: 768px){
+            #intro h1{font-size: 20px; width:40%;margin-left:30%;}
+            #intro img{height:60%;}
+            #intro{height:200px;}
+        }
+
+        @media (max-width: 425px){
+            #intro h1{font-size: 15px; width:60%;margin-left:20%;padding:5% 0%;}
+            #intro img{display:none;}
+            #intro{height:100px;}
+        }
+
+        @media (max-width: 425px){
+            #intro h1{font-size: 12px; width:60%;margin-left:20%;padding:5% 0%;}
+            #intro{height:80px;}
+        }
 
 
 
-        /*editing he intro section*/
-        #home-intro{background-image:url("images/home/space.png");}
 
 
+
+        /*making it more suitable for 1920 screens*/
+        @media (min-width:1920px){
+            #intro h1{font-size: 30px; width:25%;margin-left:37.5%;}
+            #intro{height:400px;}
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Styling the promotion section*/
     </style>
 
 </head>
@@ -46,29 +116,65 @@
 
 
 <body>
-    
-<nav>
-    <div class="desktop-nav">
-            <a href="index.html" style="margin-left:2%;" class="active">Home</a>
+
+
+    <header>
+
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
+        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
+        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
             <a href="">Market</a>
             <a href="">About</a>
             <a href="">Contact</a>
-            <a href=""><div class="user"></div></a>
-            <a href=""><div class="cart"></div></a>
-    </div>
+            <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
 
-    <div class="phone-nav">
-        <a href="" class="menu-icon" style="margin-left:0;"><div></div></a>
-        <a href="" class="home-icon"><div></div></a>
-        <a href="" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
-        <a href="" class="user-icon" style="margin-left:15%;"><div ></div></a>
-        <a href="" class="cart-icon"><div></div></a>
-    </div>
-</nav>
+    </header>
 
-<section id="home-intro">
-    <img src="images/logo/gamehub-logo-desktop.png" class="desktop-logo" alt="logo">
-    <h2 class="site-title">Go back in time within the gaming universe with old classic games</h2>
-</section>
+
+
+
+
+
+    <main>
+        
+        <!--Making the intro to the website-->
+        <section id="intro">
+            <img src="images/logo/gamehub-logo-desktop.png" alt="Gamehub logo">
+            <h1>Go back in time within the gaming universe with old classic games</h1>
+        </section>
+
+
+
+
+
+        <!--bringing in promotion games-->
+        <section id="">
+            <h2>Top searched games this week</h2>
+            <div class="not-selected">
+                <div class="swap-arrow"><i class="fa-solid fa-circle-arrow-left"></i></div>
+                <img src="images/home/black-promo.png" alt="Space-war">
+                <p>Black</p>
+            </div>
+            <div id="selected">
+                <img src="images/home/space-war-promo.png" alt="Space-War">
+                <p>Space War</p>
+            </div>
+            <div class="not-selected">
+                <div class="swap-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
+                <img src="images/home/assassin-promo.png" alt="Assassin">
+                <p>Assassin </p>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>

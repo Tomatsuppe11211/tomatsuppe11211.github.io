@@ -7,8 +7,8 @@ body{
 
 
 p , a{font-size: 20px;}
-h2{font-size: 30px;}
-h1{font-size: 40px;}
+h2{font-size: 25px;}
+h1{font-size: 30px;}
 
 
 
@@ -17,163 +17,105 @@ h1{font-size: 40px;}
 
 
 
-nav{background-color:#000000;}
 
 
 
-/*desktop navigationbar*/
 
-.desktop-nav{
-    height:60px;
-    width:100%;
-    display: flex;
-    flex-direction: row;
+
+
+/*CSS for the navigationbar*/
+
+header , nav{background:#ff0000;}
+
+
+header , header i{
+    position: relative;
+    padding:10px;
+    font-size: 35px;
+    color:#fff;
 }
 
-.desktop-nav a{
+header i{display:flex;flex-direction: row;}
+
+
+
+
+nav{position: absolute; left:0;}
+
+
+Nav a{
+    display: block;
+    padding: 20px 50px;
     text-decoration: none;
-    color:white;
-    margin-left:5%;
-    line-height: 60px;
-}
-
-.active , .desktop-nav a:hover{color:#654FFF;}
-
-
-
-.user , .cart{
-    height:30px;
-    width:30px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top:15px;
-    position: absolute;
-}
-
-
-
-
-.user{margin-left:40%;}
-.cart{margin-left:41%;}
-
-
-
-
-
-
-
-
-
-
-
-/*phone navigationbar*/
-.phone-nav{
-    height:50px;
-    width:100%;
-    display: flex;
+    color:#fff;
+    display:flex;
     flex-direction: row;
-    
-}
-
-
-.phone-nav div , .phone-nav a{
-    height:30px;
-    width:30px;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    margin-top:10px;
+    font-size: 35px;
 }
 
 
 
 
+nav a:hover, header i:hover, .active{color:#645FFF;}
+
+
+
+/*making the checkboxes and navigation not to show unless the burger-button is checked*/
+nav , #menu-check, #home-check{display:none;}
+#menu-check:checked ~ nav{display: block;}
+
+
+
+.desktop-user-icon{margin-left:50%;}
 
 
 
 
-
-
-/*making the desktop navigationbar disapear when screen size is set to lower than tablet*/
-@media (max-width: 767px){
-    .desktop-nav{display: none;}
-}
-
-
-
-@media (min-width:320px){
-    .phone-nav div , .phone-nav a{ margin-left:10%;}
-}
-
-@media (min-width:375px){
-    .phone-nav div , .phone-nav a{ margin-left:14%;}
-}
-
-@media (min-width:425px){
-    .phone-nav div , .phone-nav a{ margin-left:15%;}
-}
-
-
-
-/*making the phone navigationbar disapear when screen size is set to larger than tablet*/
-@media (min-width:767px){
-    .phone-nav{display: none;}
+/*making the navgation change when reaching 768px.*/
+@media (min-width: 768px){
+    nav{display:block;position: static;}
+    .menu-icon, .home-icon, .user-icon, .cart-icon, .phone-logo, nav i{display: none;}
+    nav a{display: inline-block;}
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CSS to landing page*/
-#home-intro{
-    width:100%;
-    text-align: center;
-    height:400px
+/*adjusting font-sizes for different screen sizes*/
+@media (max-width:1440px){
+    nav a, header i{font-size:20px;}
+    nav a{padding:10px 20px;}
 }
 
 
+@media (max-width:425px){header i{margin:0 4.5%;}}
+@media (max-width:375px){header i{margin:0 3.5%;}}
+@media (max-width:320px){header i{margin:0 2%;}}
 
-.desktop-logo{height:50%;}
-.site-title{width:30%;margin-left:35%;}
+
+
+
+
+
+
+/*moving user and cart icon with based on screen size*/
+
+@media (max-width: 1440px){.desktop-user-icon{margin-left:50%;}}
+@media (max-width: 1024px){.desktop-user-icon{margin-left:30%;}}
+@media (max-width: 768px){.desktop-user-icon{margin-left:20%;}}
+
+
+
+
+
+
+
+/*making it more fit for screensize 1920*/
+@media(min-width: 1920px){
+    nav a, header i{font-size:25px;}
+    nav a{padding:10px 35px;}
+    .desktop-user-icon{margin-left:50%;}
+}
+
+
 
