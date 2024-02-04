@@ -23,15 +23,22 @@ h1{font-size: 30px;}
 
 
 
+
+
+
+
+
+
+
 /*CSS for the navigationbar*/
 
-header , nav{background:#ff0000;}
+header , nav{background:#000000;}
 
 
 header , header i{
     position: relative;
     padding:10px;
-    font-size: 35px;
+    font-size: 30px;
     color:#fff;
 }
 
@@ -40,18 +47,24 @@ header i{display:flex;flex-direction: row;}
 
 
 
-nav{position: absolute; left:0;}
+nav{
+    position: absolute;
+    left:0;
+    width:100%;
+}
 
 
 Nav a{
-    display: block;
-    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 0% 3%;
     text-decoration: none;
     color:#fff;
-    display:flex;
-    flex-direction: row;
-    font-size: 35px;
+    font-size: 25px;
 }
+
+.desktop-user-icon{margin-left:40%;}
+.desktop-cart-icon{margin-left:-2%;}
 
 
 
@@ -61,61 +74,135 @@ nav a:hover, header i:hover, .active{color:#645FFF;}
 
 
 /*making the checkboxes and navigation not to show unless the burger-button is checked*/
-nav , #menu-check, #home-check{display:none;}
+nav , #menu-check{display:none;}
 #menu-check:checked ~ nav{display: block;}
 
 
 
-.desktop-user-icon{margin-left:50%;}
 
 
 
 
-/*making the navgation change when reaching 768px.*/
-@media (min-width: 768px){
+
+
+
+@media(max-width:1690px){.desktop-user-icon{margin-left:35%;}}
+
+
+@media(max-width: 1440px){
+    nav a{padding: 0 3%;font-size: 20px;}
+    nav i{font-size: 25px;}
+}
+
+@media(max-width:1180px){.desktop-user-icon{margin-left:30%;}}
+
+
+@media(max-width:1080px){nav a{padding: 0 2%;}}
+@media(max-width:770px){.desktop-user-icon{margin-left:25%;}}
+
+@media(max-width:700px){
+    nav a{padding:0 1%;font-size: 15px;}
+    nav i{font-size: 20px;}
+    .desktop-user-icon{margin-left:30%;}
+}
+
+@media(max-width:510px){.desktop-user-icon{margin-left:15%;}}
+
+
+/*hiding icons when screen reaches 425px width*/
+@media (min-width:426px){
     nav{display:block;position: static;}
-    .menu-icon, .home-icon, .user-icon, .cart-icon, .phone-logo, nav i{display: none;}
+    .menu-icon, header a{display:none;}
     nav a{display: inline-block;}
 }
 
 
 
 
-/*adjusting font-sizes for different screen sizes*/
-@media (max-width:1440px){
-    nav a, header i{font-size:20px;}
-    nav a{padding:10px 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*styling the common order button*/
+.order-button{
+    font-size:25px;
+    width:15%;
+    border-radius: 20px;
+    margin-top:2%;
+    background-color:#645FFF;
+    color:#fff;
+    font-weight: bold;
 }
 
-
-@media (max-width:425px){header i{margin:0 4.5%;}}
-@media (max-width:375px){header i{margin:0 3.5%;}}
-@media (max-width:320px){header i{margin:0 2%;}}
-
-
-
-
-
-
-
-/*moving user and cart icon with based on screen size*/
-
-@media (max-width: 1440px){.desktop-user-icon{margin-left:50%;}}
-@media (max-width: 1024px){.desktop-user-icon{margin-left:30%;}}
-@media (max-width: 768px){.desktop-user-icon{margin-left:20%;}}
-
-
-
-
-
-
-
-/*making it more fit for screensize 1920*/
-@media(min-width: 1920px){
-    nav a, header i{font-size:25px;}
-    nav a{padding:10px 35px;}
-    .desktop-user-icon{margin-left:50%;}
+.order-button:hover{
+    background-color: #000000;
+    color:#645FFF;
 }
 
 
 
+
+
+
+
+
+/*editing the footer*/
+
+footer{
+    width:100%;
+    background-color:#000000;
+    height:300px;
+    margin-top:5%;
+}
+
+
+table, tr, td, th{border-collapse:collapse;}
+
+table{
+    width:50%;
+    margin-left:10%;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+}
+
+table a{text-decoration: none;color:#FFF;}
+table a:hover{color:#645FFF;}
+
+th{font-size:25px;}
+td, th{padding:2% 0%;}
+
+
+.social-media-icons{
+    font-size:30px;
+    display: flex;
+    flex-direction: row;
+    margin-left:35%;
+}
+
+.footer-logo{height:50%;width:30%;}
+.social-media-icons div{padding:0 5%;}
+.social-media-icons i:hover{color:#645FFF}
+
+
+
+
+.logo-and-links{
+    width:30%;
+    text-align: center;
+    margin-left:60%;
+    margin-top:5%; 
+    position: static;
+    padding:2%;
+}

@@ -12,10 +12,14 @@
 
     <style>
 
+
+        h2{font-size:35px;text-align: center;}
+
+
         /*adjusting the intro section to fit the screen*/
         #intro{
             text-align: center;
-            height:600px;
+            height:500px;
             width: 100%;
             background-image: url("images/home/space.png");
             display: flex;
@@ -24,82 +28,228 @@
 
 
         #intro h1{
-            width:30%;
-            margin-left:35%;
-            font-size: 45px;
+            width:35%;
+            margin-left:32.5%;
+            font-size: 40px;
         }
 
 
         #intro img{
-            height:65%;
+            height:50%;
+            width:18%;
+            margin-left:41%;
+        }
+
+        
+
+
+
+
+        /*adjusting the promo section*/
+        #promo-games{
+            width:80%;
+            margin-left:10%;
+            display: flex;
+            flex-direction: row;
+            margin-top:5%;
+            height:650px;
+        }
+
+        #promo-games div{
+            font-size:30px;
+            margin-top:10%;
+        }
+       
+
+        #promo-games h2{
+            width:80%;
+            position: absolute;
+        }
+
+
+        #promo-games div, #promo-games h2{text-align: center;}
+
+        #selected {
             width:20%;
-            margin-left:40%;
+            height:450px;
+            margin-left:12%;
         }
 
-        
-
-
-        /*making the intro section to be responsive to different screensizes*/
-        
-        
-        @media (max-width: 1440px){
-            #intro h1{font-size: 30px; width:35%;margin-left:32.5%;}
-            #intro{height:350px;}
+        .not-selected{
+            width:15%;
+            height:350px;
+            margin-left:12.5%;
         }
 
-        @media (max-width: 1024px){
-            #intro h1{font-size: 30px; width:50%;margin-left:25%;}
+        #selected img, .not-selected img{
+            height:75%;
+            width:80%;
+        }
+
+
+
+
+
+
+
+
+        /*styling the image*/
+        #gaming{
+            width:80%;
+            margin-left:10%;
+            margin-top:5%;
+        }
+
+
+
+
+
+
+        /*styling the october bundle*/
+        #october-bundle{
+            width:60%;
+            margin-left:20%;
+            border-radius: 20px;
+            background-color:#2b2b2b;
+            height:450px;
+            text-align: center;
+            margin-top:5%;
+        }
+
+        #october-bundle img{
+            height:30%;
+            width:10%;
+            padding:0 4%;
+        }
+
+        #october-bundle p{width:45%;margin-left:27.5%;}
+        #october-bundle a{color:#959595;margin-left:2%;text-decoration: none;}
+        #october-bundle a:hover{color:#645FFF;}
+
+        
+
+
+
+
+        /*making the media queries*/
+        @media(max-width:1690px){
+            #intro h1{font-size:35px;}
+            #intro img{height:55%;}
+            #intro{height:400px}
+
+            #promo-games{height:500px;}
+            #promo-games h2{font-size:30px;}
+            #promo-games h3{font-size:25px;}
+            #selected{height:400px;}
+            .not-selected{height:300px}
+        }
+
+
+
+
+
+        @media(max-width:1480px){
+            #intro h1{width:40%; margin-left:30%;}
             #intro img{height:50%;}
-            #intro{height:300px;}
+
+            #promo-games{height:450px;}
+            #selected{height:350px;}
+            .not-selected{height:250px}
         }
 
-        @media (max-width: 768px){
-            #intro h1{font-size: 20px; width:40%;margin-left:30%;}
-            #intro img{height:60%;}
+
+
+
+
+        @media(max-width:1300px){
+            #intro h1{font-size:25px;width:35%;margin-left:32.5%;}
+            #intro img{height:60%;margin-left:41%;}
+            #intro{height:300px}
+            
+            #promo-games{height:400px;}
+            #promo-games h2{font-size:22px;}
+            #promo-games h3{font-size:20px;}
+            #selected{height:300px;}
+            .not-selected{height:225px}
+        }
+
+
+
+
+
+        @media(max-width:1060px){
+            #intro{height:300px}
+            #intro h1{width:40%; margin-left:30%;}
+            #intro img{width:20%;margin-left:40%;}
+
+            #promo-games{height:350px;}
+            #selected{height:250px;}
+            .not-selected{height:175px}
+        }
+
+
+
+
+
+        @media(max-width:930px){
+            #intro h1{font-size: 18px;}
+            #intro img{height:55%; width:20%;margin-left:40%;}
             #intro{height:200px;}
-        }
 
-        @media (max-width: 425px){
-            #intro h1{font-size: 15px; width:60%;margin-left:20%;padding:5% 0%;}
-            #intro img{display:none;}
-            #intro{height:100px;}
-        }
-
-        @media (max-width: 425px){
-            #intro h1{font-size: 12px; width:60%;margin-left:20%;padding:5% 0%;}
-            #intro{height:80px;}
+            #promo-games{height:300px;}
+            #promo-games h2{font-size:17px;}
+            #promo-games h3{font-size: 12px;}
+            #selected{height:200px;}
+            .not-selected{height:150px}
         }
 
 
 
 
 
+        @media(max-width:740px){
+            #intro h1{font-size: 15px; width:35%;margin-left:32.5%;}
 
-        /*making it more suitable for 1920 screens*/
-        @media (min-width:1920px){
-            #intro h1{font-size: 30px; width:25%;margin-left:37.5%;}
-            #intro{height:400px;}
+            #promo-games {height:225px;}
+            #promo-games h2{font-size:14px;}
+            #selected{height:150px;}
+            .not-selected{height:125px;}
+        }
+
+
+
+
+        @media(max-width:640px){
+            #intro h1{width:40%;margin-left:30%;}
+
+            #promo-games{height:200px;}
+            #selected{height:125px;}
+            .not-selected{height:100px;}
         }
 
 
 
 
 
+        @media(max-width:560px){
+            #intro h1{width:50%;margin-left:25%;}
+            #intro{height:150px;}
+            #intro img{height:40%;}
+
+            
+        }
 
 
 
 
 
+        @media(max-width:450px){
+            #intro h1{ width:60%;margin-left:20%;}
 
-
-
-
-
-
-
-
-
-        /*Styling the promotion section*/
+            #promo-games{height:150px;} 
+            #selected{height:100px;}
+            .not-selected{height:75px;}
+        }
     </style>
 
 </head>
@@ -156,25 +306,91 @@
 
 
 
+
+
+
+
+
         <!--bringing in promotion games-->
-        <section id="">
-            <h2>Top searched games this week</h2>
+        <section id="promo-games">
+            <h2>Top searched games this week </h2>
+
             <div class="not-selected">
-                <div class="swap-arrow"><i class="fa-solid fa-circle-arrow-left"></i></div>
-                <img src="images/home/black-promo.png" alt="Space-war">
-                <p>Black</p>
-            </div>
-            <div id="selected">
-                <img src="images/home/space-war-promo.png" alt="Space-War">
-                <p>Space War</p>
-            </div>
-            <div class="not-selected">
-                <div class="swap-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
                 <img src="images/home/assassin-promo.png" alt="Assassin">
-                <p>Assassin </p>
+                <h3>Assassin</h3>
             </div>
 
+            <div id="selected">
+                <img src="images/home/space-war-promo.png" alt="Space war">
+                <h3>Space war</h3>
+            </div>
+
+            <div class="not-selected">
+                <img src="images/home/black-promo.png" alt="Black">
+                <h3>Black</h3>
+            </div>
+        </section>
+
+
+
+
+
+
+        <img src="images/home/gaming.png" alt="Gaming" id="gaming">
+
+
+
+
+
+
+        <section id="october-bundle">
+            <h2 style="padding:2%;">October games bundle</h2>
+            <img src="images/home/space-war-ob.png">
+            <img src="images/home/black-ob.png">
+            <img src="images/home/boxer-ob.png">
+            <img src="images/home/forge-legends-ob.png">
+            <img src="images/home/furious-ob.png">
+            <p>Get a boundle containg the five most popular games from Septemberfor only 50$</p>
+            <button class="order-button">Order now</button>
+            <a href="">Read more</a>
         </section>
     </main>
+
+
+    <footer>
+        <table>
+            <tr>
+                <th>Get help</th>
+                <th>Legal and Privacy</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td><a href="">Frequently questions</a></td>
+                <td><a href="">Privacy Policy</a></td>
+                <td><a href="">About us</a></td>
+            </tr>
+            <tr>
+                <td><a href="">My orders</a></td>
+                <td><a href="">Terms of Service</a></td>
+                <td><a href="">Career</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Feedback</a></td>
+                <td><a href="">Store refund policy</a></td>
+                <td><a href="">Investors</a></td>
+            </tr>
+        </table>
+
+        <section class="logo-and-links">
+            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div class="social-media-icons">
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+        </section>
+        
+
+    </footer>
 </body>
 </html>
