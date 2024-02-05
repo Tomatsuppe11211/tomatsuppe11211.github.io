@@ -126,7 +126,22 @@
         #october-bundle a{color:#959595;margin-left:2%;text-decoration: none;}
         #october-bundle a:hover{color:#645FFF;}
 
-        
+        #phone-ob-price{display: none;}
+
+        #extra-item{
+            font-size:12px;
+            font-weight: bold;
+            border-radius: 100px;
+            height:20px;
+            width:20px;
+            background-color:#d9d9d9;
+            color:#000;
+            position: absolute;
+            justify-content: center;
+            display:none;
+        }
+
+        #add-to-cart{display:none;}
 
 
 
@@ -138,10 +153,14 @@
             #intro{height:400px}
 
             #promo-games{height:500px;}
-            #promo-games h2{font-size:30px;}
+            #promo-games h2, #october-bundle h2{font-size:30px;}
             #promo-games h3{font-size:25px;}
             #selected{height:400px;}
             .not-selected{height:300px}
+
+
+
+            .order-button{font-size:22px;}
         }
 
 
@@ -155,6 +174,9 @@
             #promo-games{height:450px;}
             #selected{height:350px;}
             .not-selected{height:250px}
+
+
+            #october-bundle{height:400px;}
         }
 
 
@@ -167,10 +189,15 @@
             #intro{height:300px}
             
             #promo-games{height:400px;}
-            #promo-games h2{font-size:22px;}
+            #promo-games h2, #october-bundle h2{font-size:22px;}
             #promo-games h3{font-size:20px;}
             #selected{height:300px;}
             .not-selected{height:225px}
+
+            #october-bundle{height:375px;}
+            #october-bundle p{font-size:18px; width:52%;margin-left:26%;}
+            .order-button{font-size:20px;}
+            #october-bundle a{font-size:18px}
         }
 
 
@@ -185,6 +212,10 @@
             #promo-games{height:350px;}
             #selected{height:250px;}
             .not-selected{height:175px}
+
+            #october-bundle{height: 300px;}
+            #october-bundle p{font-size:16px;}
+            .order-button{font-size:16px}
         }
 
 
@@ -197,10 +228,17 @@
             #intro{height:200px;}
 
             #promo-games{height:300px;}
-            #promo-games h2{font-size:17px;}
+            #promo-games h2, #october-bundle h2{font-size:17px;}
             #promo-games h3{font-size: 12px;}
             #selected{height:200px;}
             .not-selected{height:150px}
+
+            #october-bundle{height:200px;}
+            #october-bundle a{font-size:16px;}
+            #october-bundle img{height:35%; width:12%;padding:0 2%;}
+            #desktop-text{display:none;}
+            .order-button{font-size: 10px;}
+
         }
 
 
@@ -211,7 +249,7 @@
             #intro h1{font-size: 15px; width:35%;margin-left:32.5%;}
 
             #promo-games {height:225px;}
-            #promo-games h2{font-size:14px;}
+            #promo-games h2, #october-bundle h2{font-size:14px;}
             #selected{height:150px;}
             .not-selected{height:125px;}
         }
@@ -225,6 +263,11 @@
             #promo-games{height:200px;}
             #selected{height:125px;}
             .not-selected{height:100px;}
+
+            #october-bundle{height:175px;}
+            #october-bundle a{font-size:12px;}
+            .order-button{font-size:10px;}
+
         }
 
 
@@ -236,7 +279,8 @@
             #intro{height:150px;}
             #intro img{height:40%;}
 
-            
+            #october-bundle{height:150px;}
+            .order-button{width:30%;}
         }
 
 
@@ -247,8 +291,91 @@
             #intro h1{ width:60%;margin-left:20%;}
 
             #promo-games{height:150px;} 
-            #selected{height:100px;}
-            .not-selected{height:75px;}
+            #selected{height:80px;}
+            .not-selected{height:60px;}
+
+            .order-button{height:20px; width:35%;}
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /*adjust the site for phone-users*/
+        @media(max-width: 425px){
+            /*removing desktop logo*/
+            #intro img{display:none;}
+            #intro{height:80px;}
+            #promo-games{height:175px;}
+            #promo-games div{margin-top:50px;}
+            
+            /*removing pictures from the october games*/
+            #furious-ob, #forge-legends-ob,
+            #boxer-ob, #black-ob{display:none;}
+
+            #october-bundle{height:100px;text-align: left;}
+            #october-bundle img{
+                width:40px;
+                height:50px;
+                position: absolute;
+            }
+
+
+
+            .order-button{display: none;}  
+            
+            
+            #extra-item{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                margin-top:25px;
+                margin-left:35px;
+            }
+
+            #october-bundle p, #october-bundle a{font-size:12px;}
+            #phone-ob-price{
+                display:block;
+                margin-top:-3%;
+                text-align: center;
+            }
+
+            #october-bundle a{
+                border:solid 1px #645FFF;
+                position: absolute;
+                width:70px;
+                text-align: center;
+                background-color:#090909;
+                margin-left:35%;
+            }
+
+            #add-to-cart{
+                display: block;
+                position: absolute;
+                margin-left:20%;
+                margin-top:5%;
+            }
+
+            #add-to-cart:hover{color:#645FFF;}
+
+
+        }
+
+
+        @media (max-width:375px){
+            
+            #intro h1{font-size:12px;}
+            #promo-games h3{font-size:10px;}
+            #add-to-cart{margin-top:6%;}
+
+
         }
     </style>
 
@@ -281,7 +408,7 @@
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="">Market</a>
-            <a href="">About</a>
+            <a href="about-us.html">About</a>
             <a href="">Contact</a>
             <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
             <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -345,12 +472,15 @@
 
         <section id="october-bundle">
             <h2 style="padding:2%;">October games bundle</h2>
-            <img src="images/home/space-war-ob.png">
-            <img src="images/home/black-ob.png">
-            <img src="images/home/boxer-ob.png">
-            <img src="images/home/forge-legends-ob.png">
-            <img src="images/home/furious-ob.png">
-            <p>Get a boundle containg the five most popular games from Septemberfor only 50$</p>
+            <img id="space-war-ob" src="images/home/space-war-ob.png" alt="Space war">
+            <img id="black-ob" src="images/home/black-ob.png" alt="Black">
+            <img id="boxer-ob" src="images/home/boxer-ob.png" alt="Boxer">
+            <img id="forge-legends-ob" src="images/home/forge-legends-ob.png" alt="Forge of Legends">
+            <img id="furious-ob" src="images/home/furious-ob.png" alt="Furious">
+            <div id="extra-item">+4</div>
+            <div id="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <p id="desktop-text">Get a boundle containg the five most popular games from Septemberfor only 50$</p>
+            <p id="phone-ob-price">Price: 50 $</p>
             <button class="order-button">Order now</button>
             <a href="">Read more</a>
         </section>
