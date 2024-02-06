@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+    <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <style>
+        #logo{width:20%;margin-left:10%;}
+
+        #images{
+            border:solid white;
+            width:40%;
+            margin-left:10%;
+            margin-top:5%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #images img{width:40%;}
+
+        #chat-buble{
+            width:30%;
+            height:40%;
+        }
+        
+
+        #buble-message{
+            position: absolute;
+            width:10%;
+            margin-left:21%;
+            text-align: center;
+            font-size: 25px;
+        }
+
+
+
+
+
+        #contact-info{
+            border:solid white;
+            width:45%;
+            margin-left:-35%;
+            margin-top:35%;
+            height:10%;
+        }
+
+
+
+
+        #chat-bot{
+            position: absolute;
+            border:solid white;
+            width:15%;
+            text-align: center;
+            align-items: center;
+            margin-left:70%;
+            margin-top:-17%;
+        }
+
+        #chat-bot i{
+            font-size:100px;
+            border-radius: 100px;
+            padding:5%;
+            color:#645FFF;
+            background-color:#000000;
+        }
+
+        #chat-bot h3{font-size:30px;}
+
+
+
+        #send-mail{
+            display: flex;
+            flex-direction: column;
+            width:40%;
+            margin-left:30%;
+            align-items: center;
+            margin-top:5%;
+            background-color:#000;
+            border-radius: 20px; 
+            height:550px; 
+        }
+
+        #send-mail h3{font-size: 30px;}
+
+        #username-or-email, #category, #description, #send-button {
+            font-size:20px;
+            margin-top:5%;
+            background-color:#131313;
+            color:#fff;
+            border:solid 1px #645FFF;
+        }
+
+        
+        #username-or-email, #category, #description{width:40%;}
+        #description{height:150px;}
+        #send-button{width:15%;}
+        
+
+
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <header>
+
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
+        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
+        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="">Market</a>
+            <a href="about-us.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+
+    </header>
+    
+
+
+    <main>
+
+
+
+        <img src="images/logo/gamehub-logo-desktop.png" alt="logo" id="logo">
+
+
+
+
+
+        <section id="contact">
+            
+            <div id="images">
+                <img src="images/contact/costumer-service.png" alt="Costumer Service" id="employee-image">
+                <img src="images/contact/chat-buble.png" alt="chat-buble" id="chat-buble">
+                
+                <div id="buble-message">
+                    <h3>Need help?</h3>
+                    <p>Let us know in the chat or send us a mail</p>
+                </div>
+
+                <div id="contact-info">
+                    <p style="font-weight: bold;">Mail: CostumService@Gamehub.com</p>
+                    <p>Phone: +47 28 36 19 24</p>
+                </div>
+            </div>
+
+            
+
+
+            <div id="chat-bot">
+                <div id="chat-bot-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Chat with a bot</h3>
+            </div>
+
+        </section>
+
+
+
+        <section id="send-mail">
+            <h3>Send a message to Gamehub</h3>
+            
+                <input type="text" placeholder="Username or email" id="username-or-email">
+
+
+                <select id="category">
+                    <option>Choose a category</option>
+                    <option>Sale or purchase</option>
+                    <option>Report issues</option>
+                    <option>profile</option>
+                    <option>Other</option>
+                </select>
+
+                <textarea id="description">Describe your issue.</textarea>
+
+                <input type="submit" value="Send" id="send-button">
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        <table>
+            <tr>
+                <th>Get help</th>
+                <th>Legal and Privacy</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td><a href="">Frequently questions</a></td>
+                <td><a href="">Privacy Policy</a></td>
+                <td><a href="">About us</a></td>
+            </tr>
+            <tr>
+                <td><a href="">My orders</a></td>
+                <td><a href="">Terms of Service</a></td>
+                <td><a href="">Career</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Feedback</a></td>
+                <td><a href="">Store refund policy</a></td>
+                <td><a href="">Investors</a></td>
+            </tr>
+        </table>
+
+        <section class="logo-and-links">
+            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div class="social-media-icons">
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+        </section>
+        
+
+    </footer>
+
+</body>
+</html>

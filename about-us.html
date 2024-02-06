@@ -18,11 +18,11 @@
             margin-top:5%;
         }
 
-        h2{
+        #info-text{
             width:65%;
             margin-left:17.5%;
             margin-top:5%;
-            font-size: 30px;
+            font-size: 20px;
             line-height: 60px;
         }
 
@@ -37,12 +37,94 @@
 
 
         .short-info{
-            text-align: center;
+            margin-left:6.25%;
             width:25%;
-            margin:0 5%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
         }
 
-        .short-info p{font-size: 25px;}
+
+        .short-info img{
+            height:70%;
+            width:90%;
+        }
+
+
+        .short-info p{font-size: 25px; width:100%;}
+
+
+
+
+
+
+        /*making the site more respnosive to different screensizes */
+        @media (max-width:1750px){
+            #intro-image{height:400px;}
+            h1{font-size:40px;}
+            #info-text{font-size:26px; line-height: 50px;}
+            .short-info p{font-size:22px;}
+        }
+
+        @media (max-width:1540px){
+            #intro-image{height:300px;}
+            h1{font-size:35px;}
+            #info-text{font-size:24px; line-height: 45px;}
+
+            .short-info{width:30%; margin-left:2.5%;}
+            .short-info p{font-size:20px;}
+        }
+
+
+        @media (max-width:1070px){
+            #intro-image{height:250px;}
+            h1{font-size: 30px;}
+            #info-text{font-size: 22px; line-height: 30px;}
+
+            .short-info p{font-size: 18px;}
+        }
+
+
+        @media (max-width:960px){
+            #intro-image{height:200px;}
+            h1{font-size:25px;}
+            #info-text{font-size: 20px; line-height:25px;}
+
+            #information{
+                flex-direction:column;
+                align-items: center;
+                width:60%;
+                margin-left:20%;
+            }
+
+            .short-info{
+                width:70%;
+                margin-top:5%;
+                text-align: center;
+            }
+
+            .short-info img{width:100%;}
+        }
+
+
+
+        @media (max-width:550px){
+            #info-text{font-size:18px;}
+            .short-info p{font-size: 16px;}
+        }
+
+
+        @media (max-width:490px){
+            #info-text{font-size:16px;}
+            .short-info p{font-size: 15px;}
+        }
+
+        @media (max-width:475px){
+            #info-text{width:80%;margin-left:10%;}
+            .short-info{width: 100%;}
+        }
+
+
 
     </style>
 </head>
@@ -71,7 +153,7 @@
             <a href="index.html">Home</a>
             <a href="">Market</a>
             <a href="about-us.html" class="active">About</a>
-            <a href="">Contact</a>
+            <a href="contact.html">Contact</a>
             <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
             <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
@@ -82,16 +164,16 @@
 
 
     <main>
-        <img src="images/about/keyboard.png" id="intro-image">
+        <img src="images/about/keyboard.png" id="intro-image" alt="keyboard">
     
         <h1>What is Gamehub?</h1>
 
 
-        <h2>
+        <p id="info-text">
             Gamehub is an online platform where you can purchase or sell games you no longer play. 
             Give the joy to other gamers all over the world, by help them aquire their favorite games, 
             or find your favorite games here. The platform is free to use.
-        </h2>
+        </p>
 
 
 
