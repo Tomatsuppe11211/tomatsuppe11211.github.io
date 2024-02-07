@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+
+    <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        #intro-image{width:100%;height:600px;display: flex;align-items: center;margin-top:0;}
+        #intro-image img{width:100%; height:100%;}
+        #intro-image h1{width:100%; position: absolute;text-align: center;}
+
+
+
+
+
+        #logo-and-search{
+            display: flex;
+            flex-direction: row;
+            height:300px;
+        }
+
+        #logo-and-search img{width:20%;}
+        #logo-and-search input , #logo-and-search select{
+            height:40px;
+            width:15%;
+            font-size:25px;
+            margin:10% 0;
+        }
+
+        #logo-and-search img ,
+        #logo-and-search input ,
+        #logo-and-search select{
+            margin-left: 10%;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+    
+    <header>
+
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
+        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
+        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="market.html" class="active">Market</a>
+            <a href="about-us.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="intro-image">
+            <img src="images/market/troopers.png" alt="troopers">
+            <h1>Gamehub Market</h1>
+        </section>
+
+
+
+
+        <section id="logo-and-search">
+            <img src="images/logo/gamehub-logo-desktop.png">
+            <input type="text" placeholder="Search">
+            <select>
+                <option>Any consonsole</option>
+                <option>Playstation</option>
+                <option>Nintendo</option>
+                <option>PC</option>
+                <option>X-box</option>
+                <option>Gameboy</option>
+            </select>
+        </section>
+    </main>
+
+
+
+</body>
+</html>
