@@ -1,0 +1,137 @@
+
+
+#intro-image{
+    width:100%;
+    height:600px;
+    display: flex;
+    align-items: center;
+    margin-top:0;
+}
+        
+
+#intro-image img{width:100%; height:100%;}
+
+#intro-image h1{
+    width:100%;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+
+
+#logo-and-search{
+    display: flex;
+    flex-direction: row;
+    height:300px;
+}
+
+#logo-and-search img{width:375px;}
+#logo-and-search input , #logo-and-search select{
+    height:40px;
+    width:15%;
+    font-size:25px;
+    margin:10% 0;
+    color: grey;
+    background-color:#2d2d2d;
+}
+
+#logo-and-search img ,
+#logo-and-search input ,
+#logo-and-search select{
+    margin-left: 10%;
+            
+}
+
+
+#logo-and-search input{border-radius: 100px;text-align: center;}
+#searchglass i{
+    font-size:25px;
+    margin-top:200px;
+    margin-left:-280px; 
+    color:grey;
+    position: absolute;
+}
+
+
+
+
+
+
+#sort{
+    width:10%;
+    margin-left:15%;
+    font-size:20px;
+    position: absolute;
+}
+
+#sort h2, #sort h3{text-align: center;}
+
+#sort h3{margin-top:100px;}
+
+
+
+
+
+
+
+
+#first-game-column,
+#second-game-column,
+#third-game-column{
+    width:200px;
+}
+
+#first-game-column, #second-game-column{position: absolute;}
+
+#first-game-column{margin-left:600px;}
+#second-game-column{margin-left:900px;}
+#third-game-column{margin-left:1200px;}
+
+
+
+
+.games{
+    width:200px;
+    height:400px;
+    text-align: center;
+    border: solid grey;
+    margin:30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.games p{text-align: left;}
+.game-title{font-weight:bolder;font-size: 25px;}
+
+.action-icons{
+    display: flex;
+    flex-direction: row;
+    margin:0 50px;
+}
+
+.action-icons i{
+    font-size:30px;
+    margin:0 10px;
+}
+
+.action-icons a{color:#FFF;}
+.action-icons i:hover{color:#645FFF;}
+
+
+#load-button{
+    font-size:25px;
+    border:solid grey;
+    color:grey;
+    background-color: #131313;
+    margin-top:5%;
+    width:150px; 
+    margin-left:885px;
+}
+
+#load-button:hover{
+    color:#645FFF;
+    border: solid #645FFF;
+    background-color: #000;
+}

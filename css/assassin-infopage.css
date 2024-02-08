@@ -1,0 +1,118 @@
+
+
+#back-link{
+    width:120px;
+    display: flex;
+    flex-direction: row;
+    height:50px;
+    margin-left:10%;
+    margin-top: 50px;
+    color:grey;
+}
+
+
+#back-link:hover{color:#645FFF;}
+
+
+#back-link div{
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    height:50px;
+}
+
+#back-link div p{height: auto;margin-left:40px;margin-top:0;}
+#back-link i{font-size:30px;}
+
+
+
+
+
+#game-info{
+    display:flex;
+    flex-direction: row;
+    margin-top:100px;
+    margin-left:10%;
+}
+
+#info{
+    width:40%;
+    background-color:#000;
+    text-align: center;
+    width:900px;
+}
+
+#game-info img{width:300px;}
+#info p{text-align: left;margin-left:50px;}
+
+
+
+#seller-info{
+    width:300px;
+    text-align: center;
+    background-color: #000;
+    margin-left:10%;
+    height:300px;
+    
+    position: absolute;
+}
+
+
+#seller-info p{text-align: left;font-size: 18px;}
+
+
+
+#stars{
+    display:flex;
+    flex-direction: row;
+}
+
+#stars i{font-size:25px;}
+.fullstar{color:yellow;}
+#half-start{color:yellow;}
+
+
+
+
+
+
+#action-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left:20%;
+    margin-top:20px;
+}
+
+#add-game, #make-favorite{
+    height:200px;
+    width:200px;
+    margin-left:200px;
+    text-align: center;
+    
+}
+
+#action-buttons div i{font-size:30px;color:#fff;}
+#action-buttons div i:hover{color:#645FFF;}
+
+
+
+
+#specs{
+    margin-top:200px;
+    height:700px;
+    width:1500px;
+    margin-left: 200px;
+    text-align: center;
+    align-items: center;
+    background-color:#000;
+}
+
+#specs table{ 
+    width:800px;
+    margin-left:-100px;
+}
+
+#specs th, #specs td{
+    padding:20px 350px;
+    width:350px;
+}

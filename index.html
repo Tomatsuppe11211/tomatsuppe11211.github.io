@@ -6,386 +6,11 @@
     <title>Gamehub.com</title>
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 
 
-
-
-    <style>
-
-
-        h2{font-size:35px;text-align: center;}
-
-
-        /*adjusting the intro section to fit the screen*/
-        #intro{
-            text-align: center;
-            height:500px;
-            width: 100%;
-            background-image: url("images/home/space.png");
-            display: flex;
-            flex-direction: column;
-        }
-
-
-        #intro h1{
-            width:35%;
-            margin-left:32.5%;
-            font-size: 40px;
-        }
-
-
-        #intro img{
-            height:50%;
-            width:18%;
-            margin-left:41%;
-        }
-
-        
-
-
-
-
-        /*adjusting the promo section*/
-        #promo-games{
-            width:80%;
-            margin-left:10%;
-            display: flex;
-            flex-direction: row;
-            margin-top:5%;
-            height:650px;
-        }
-
-        #promo-games div{
-            font-size:30px;
-            margin-top:10%;
-        }
-       
-
-        #promo-games h2{
-            width:80%;
-            position: absolute;
-        }
-
-
-        #promo-games div, #promo-games h2{text-align: center;}
-
-        #selected {
-            width:20%;
-            height:450px;
-            margin-left:12%;
-        }
-
-        .not-selected{
-            width:15%;
-            height:350px;
-            margin-left:12.5%;
-        }
-
-        #selected img, .not-selected img{
-            height:75%;
-            width:80%;
-        }
-
-
-
-
-
-
-
-
-        /*styling the image*/
-        #gaming{
-            width:80%;
-            margin-left:10%;
-            margin-top:5%;
-        }
-
-
-
-
-
-
-        /*styling the october bundle*/
-        #october-bundle{
-            width:60%;
-            margin-left:20%;
-            border-radius: 20px;
-            background-color:#2b2b2b;
-            height:450px;
-            text-align: center;
-            margin-top:5%;
-        }
-
-        #october-bundle img{
-            height:30%;
-            width:10%;
-            padding:0 4%;
-        }
-
-        #october-bundle p{width:45%;margin-left:27.5%;}
-        #october-bundle a{color:#959595;margin-left:2%;text-decoration: none;}
-        #october-bundle a:hover{color:#645FFF;}
-
-        #phone-ob-price{display: none;}
-
-        #extra-item{
-            font-size:12px;
-            font-weight: bold;
-            border-radius: 100px;
-            height:20px;
-            width:20px;
-            background-color:#d9d9d9;
-            color:#000;
-            position: absolute;
-            justify-content: center;
-            display:none;
-        }
-
-        #add-to-cart{display:none;}
-
-
-
-
-        /*making the media queries*/
-        @media(max-width:1690px){
-            #intro h1{font-size:35px;}
-            #intro img{height:55%;}
-            #intro{height:400px}
-
-            #promo-games{height:500px;}
-            #promo-games h2, #october-bundle h2{font-size:30px;}
-            #promo-games h3{font-size:25px;}
-            #selected{height:400px;}
-            .not-selected{height:300px}
-
-
-
-            .order-button{font-size:22px;}
-        }
-
-
-
-
-
-        @media(max-width:1480px){
-            #intro h1{width:40%; margin-left:30%;}
-            #intro img{height:50%;}
-
-            #promo-games{height:450px;}
-            #selected{height:350px;}
-            .not-selected{height:250px}
-
-
-            #october-bundle{height:400px;}
-        }
-
-
-
-
-
-        @media(max-width:1300px){
-            #intro h1{font-size:25px;width:35%;margin-left:32.5%;}
-            #intro img{height:60%;margin-left:41%;}
-            #intro{height:300px}
-            
-            #promo-games{height:400px;}
-            #promo-games h2, #october-bundle h2{font-size:22px;}
-            #promo-games h3{font-size:20px;}
-            #selected{height:300px;}
-            .not-selected{height:225px}
-
-            #october-bundle{height:375px;}
-            #october-bundle p{font-size:18px; width:52%;margin-left:26%;}
-            .order-button{font-size:20px;}
-            #october-bundle a{font-size:18px}
-        }
-
-
-
-
-
-        @media(max-width:1060px){
-            #intro{height:300px}
-            #intro h1{width:40%; margin-left:30%;}
-            #intro img{width:20%;margin-left:40%;}
-
-            #promo-games{height:350px;}
-            #selected{height:250px;}
-            .not-selected{height:175px}
-
-            #october-bundle{height: 300px;}
-            #october-bundle p{font-size:16px;}
-            .order-button{font-size:16px}
-        }
-
-
-
-
-
-        @media(max-width:930px){
-            #intro h1{font-size: 18px;}
-            #intro img{height:55%; width:20%;margin-left:40%;}
-            #intro{height:200px;}
-
-            #promo-games{height:300px;}
-            #promo-games h2, #october-bundle h2{font-size:17px;}
-            #promo-games h3{font-size: 12px;}
-            #selected{height:200px;}
-            .not-selected{height:150px}
-
-            #october-bundle{height:200px;}
-            #october-bundle a{font-size:16px;}
-            #october-bundle img{height:35%; width:12%;padding:0 2%;}
-            #desktop-text{display:none;}
-            .order-button{font-size: 10px;}
-
-        }
-
-
-
-
-
-        @media(max-width:740px){
-            #intro h1{font-size: 15px; width:35%;margin-left:32.5%;}
-
-            #promo-games {height:225px;}
-            #promo-games h2, #october-bundle h2{font-size:14px;}
-            #selected{height:150px;}
-            .not-selected{height:125px;}
-        }
-
-
-
-
-        @media(max-width:640px){
-            #intro h1{width:40%;margin-left:30%;}
-
-            #promo-games{height:200px;}
-            #selected{height:125px;}
-            .not-selected{height:100px;}
-
-            #october-bundle{height:175px;}
-            #october-bundle a{font-size:12px;}
-            .order-button{font-size:10px;}
-
-        }
-
-
-
-
-
-        @media(max-width:560px){
-            #intro h1{width:50%;margin-left:25%;}
-            #intro{height:150px;}
-            #intro img{height:40%;}
-
-            #october-bundle{height:150px;}
-            .order-button{width:30%;}
-        }
-
-
-
-
-
-        @media(max-width:450px){
-            #intro h1{ width:60%;margin-left:20%;}
-
-            #promo-games{height:150px;} 
-            #selected{height:80px;}
-            .not-selected{height:60px;}
-
-            .order-button{height:20px; width:35%;}
-        }
-
-
-
-
-
-
-
-
-
-
-
-        /*adjust the site for phone-users*/
-        @media(max-width: 425px){
-            /*removing desktop logo*/
-            #intro img{display:none;}
-            #intro{height:80px;}
-            #promo-games{height:175px;}
-            #promo-games div{margin-top:50px;}
-            
-            /*removing pictures from the october games*/
-            #furious-ob, #forge-legends-ob,
-            #boxer-ob, #black-ob{display:none;}
-
-            #october-bundle{height:100px;text-align: left;}
-            #october-bundle img{
-                width:40px;
-                height:50px;
-                position: absolute;
-            }
-
-
-
-            .order-button{display: none;}  
-            
-            
-            #extra-item{
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                margin-top:25px;
-                margin-left:35px;
-            }
-
-            #october-bundle p, #october-bundle a{font-size:12px;}
-            #phone-ob-price{
-                display:block;
-                margin-top:-3%;
-                text-align: center;
-            }
-
-            #october-bundle a{
-                border:solid 1px #645FFF;
-                position: absolute;
-                width:70px;
-                text-align: center;
-                background-color:#090909;
-                margin-left:35%;
-            }
-
-            #add-to-cart{
-                display: block;
-                position: absolute;
-                margin-left:20%;
-                margin-top:5%;
-            }
-
-            #add-to-cart:hover{color:#645FFF;}
-
-
-        }
-
-
-        @media (max-width:375px){
-            
-            #intro h1{font-size:12px;}
-            #promo-games h3{font-size:10px;}
-            #add-to-cart{margin-top:6%;}
-
-
-        }
-    </style>
 
 </head>
-
-
-
-
-
-
 
 
 
@@ -406,17 +31,20 @@
         <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
 
         <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="market.html">Market</a>
-            <a href="about-us.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-            <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="navigation-text">
+                <a href="index.html" class="active">Home</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="desktop-menu-icons">
+                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
         </nav>
 
     </header>
-
-
 
 
 
@@ -425,36 +53,43 @@
         
         <!--Making the intro to the website-->
         <section id="intro">
-            <img src="images/logo/gamehub-logo-desktop.png" alt="Gamehub logo">
+            <div id="logo">
+                <img src="images/logo/gamehub-logo-desktop.png" alt="Gamehub logo">
+            </div>
             <h1>Go back in time within the gaming universe with old classic games</h1>
         </section>
 
 
 
 
+        
+        
+        <h2>Top searched games this week </h2>
 
-
-
-
-
-
+        
         <!--bringing in promotion games-->
         <section id="promo-games">
-            <h2>Top searched games this week </h2>
+            <div id="display">
+                <div id="assassin-promo">
+                    <div class="not-selected">
+                    <img src="images/home/assassin-promo.png" alt="Assassin"> 
+                    </div>
+                    <h3>Assassin</h3>
+                </div>
 
-            <div class="not-selected">
-                <img src="images/home/assassin-promo.png" alt="Assassin">
-                <h3>Assassin</h3>
-            </div>
+                <div id="space-war-promo">
+                    <div id="selected">
+                        <img src="images/home/space-war-promo.png" alt="Space war">
+                    </div>
+                    <h3>Space war</h3>
+                </div>
 
-            <div id="selected">
-                <img src="images/home/space-war-promo.png" alt="Space war">
-                <h3>Space war</h3>
-            </div>
-
-            <div class="not-selected">
-                <img src="images/home/black-promo.png" alt="Black">
-                <h3>Black</h3>
+                <div id="black-promo">
+                    <div class="not-selected">
+                    <img src="images/home/black-promo.png" alt="Black">
+                    </div>
+                    <h3>Black</h3>
+                </div>
             </div>
         </section>
 
@@ -472,17 +107,19 @@
 
         <section id="october-bundle">
             <h2 style="padding:2%;">October games bundle</h2>
-            <img id="space-war-ob" src="images/home/space-war-ob.png" alt="Space war">
-            <img id="black-ob" src="images/home/black-ob.png" alt="Black">
-            <img id="boxer-ob" src="images/home/boxer-ob.png" alt="Boxer">
-            <img id="forge-legends-ob" src="images/home/forge-legends-ob.png" alt="Forge of Legends">
-            <img id="furious-ob" src="images/home/furious-ob.png" alt="Furious">
+            <div class="october-game">
+                <img src="images/home/space-war-ob.png" alt="Space war" id="first-game">
+                <img src="images/home/black-ob.png" alt="Black">
+                <img src="images/home/boxer-ob.png" alt="Boxer">
+                <img src="images/home/forge-legends-ob.png" alt="Forge of Legends">
+                <img src="images/home/furious-ob.png" alt="Furious">
+            </div>
             <div id="extra-item">+4</div>
             <div id="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></div>
             <p id="desktop-text">Get a boundle containg the five most popular games from Septemberfor only 50$</p>
             <p id="phone-ob-price">Price: 50 $</p>
             <button class="order-button">Order now</button>
-            <a href="">Read more</a>
+            <a>Read more</a>
         </section>
     </main>
 
@@ -512,7 +149,7 @@
         </table>
 
         <section class="logo-and-links">
-            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div class="footer-logo"><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
