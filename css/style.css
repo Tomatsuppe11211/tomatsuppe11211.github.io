@@ -92,7 +92,19 @@ nav , #menu-check{display:none;}
 #menu-check:checked ~ nav{display: block;}
 
 
-
+.cart-item-count{
+    border-radius:360px;
+    height:20px;
+    width:20px;
+    font-size:15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left:150px;
+    margin-top:5px;
+    background-color:#645FFF;
+}
 
 
 
