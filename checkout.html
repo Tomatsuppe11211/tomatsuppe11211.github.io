@@ -44,12 +44,15 @@
         <section id="register-purchase">
             <h1>Checkout</h1>
             <h3>Personal information</h3>
-            <p>user information *</p>
+            
+            <div class="user-info">
             <input type="text" class="info" placeholder="First name" required>
             <input type="text" class="info" placeholder="Last name" required>
             <input type="mail" class="info" placeholder="e-mail" required><br><br>
-
+            </div>
+            
             <p>Location *</p>
+            <div class="user-info">
             <input type="text" class="info" placeholder="City" required>
             <input type="text" class="info" placeholder="Country" required><br><br>
             <input type="text" class="info" placeholder="Adress" required>
@@ -58,17 +61,26 @@
 
             <p>Your phone number (optional)</p>
             <input type="number" class="info" max="99999999" placeholder="Phone number">
-            
+            </div>
+
+
             <h3>Payment method</h3>
-            <input type="radio" name="payment" checked>Card <i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-visa"></i><br><br>
-            <input type="radio" name="payment">paypal <i class="fa-brands fa-cc-paypal"></i><br><br>
-            <input type="radio" name="payment">Card <i class="fa-brands fa-google-pay"></i>
+            <div id="payment-chosen">
+                <input type="radio" name="payment" checked>Card <i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-visa"></i><br><br>
+                <input type="radio" name="payment">paypal <i class="fa-brands fa-cc-paypal"></i><br><br>
+                <input type="radio" name="payment">Card <i class="fa-brands fa-google-pay"></i>
+            </div>
         
             <h3>Card information</h3>
-            <input type="text" class="info" placeholder="Cardholder name"> <br><br>
-            <input type="number" class="info" placeholder="Card number"><br><br>
-            Expire month: <input type="month" id="expire"><br><br>
-            <input type="text" placeholder="CVC" size="4" class="info" maxlength="4"><br>
+            <div id="card-info">
+                <label for="info">Cardholder name</label><br>
+                <input type="text" class="info" placeholder="Cardholder name"> <br><br>
+                <label for="info">Card number</label><br>
+                <input type="number" class="info" placeholder="Card number"><br><br>
+                <label for="expire">Expire date:</label><br>
+                <input type="month" id="expire"><br><br>
+                <input type="text" placeholder="CVC" size="4" class="info" maxlength="4"><br>
+            </div>
             <a href="order-complete.html"><button id="place-order">Place order</button></a>
         </section>
     </main>

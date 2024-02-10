@@ -1,16 +1,16 @@
 #register-purchase{
     width:600px;
-    border: solid yellow;
-    margin-left:660px;
+    margin:auto;
     font-size: 20px;
     padding:50px;
+    border-radius: 20px;
+    background-color:#000;
+    margin-top:100px;
 }
-
-#register-purchase h1{text-align: center;}
 
 
 #register-purchase h3{margin-top:100px;}
-
+#register-purchase input{font-size:20px;text-align: center;}
 
 
 
@@ -19,8 +19,13 @@
     margin-left:15px;
 }
 
-input{width:100px;}
+#payment-chosen{
+    text-align: left;
+    width:200px;
+    margin:auto;
+}
 
+.user-info input{margin:auto;}
 
 .info{
     height:30px;
@@ -28,7 +33,6 @@ input{width:100px;}
     border: solid #645fff;
     border-radius: 20px;
     background-color: #131313;
-    text-align: center;
     color:#fff;
     width:150px;
 }
@@ -37,7 +41,6 @@ input{width:100px;}
     margin-top:50px;
     height:40px;
     width:150px;
-    margin-left:225px;
     font-size: 16px;
     background-color: #131313;
     border: solid grey;
@@ -47,14 +50,51 @@ input{width:100px;}
 #place-order:hover{
     border: solid #645fff;
     color:#645fff;
+    background-color: #000;
 }
 
 
-#expire{
+#card-info input{
     height:30px;
     width:200px;
     font-size: 20px; 
     color:#fff;
     background-color: #131313;
-    border: solid grey;
+    border: solid#645FFF;
+}
+
+footer{margin-top:100px;}
+
+
+
+/*Scaling the page*/
+@media (max-width:1000px){
+    #register-purchase{width:400px;}
+    .user-info input{font-size: 16px; width:120px;}
+    #payment-chosen{width:280px;}
+}
+
+
+@media (max-width:700px){
+    #register-purchase{width:300px;}
+    #register-purchase input{font-size: 15px;width:80px;}
+    .user-info input{margin-top:10px;}
+    #payment-chosen{width:200px;border: solid red;}
+    #payment-chosen input{width:20px;}
+    #payment-chosen i{font-size:22px;}
+}
+
+
+
+@media (max-width:425px){
+    #register-purchase{width:150px;}
+    h1{font-size: 20px;}
+    #register-purchase h3{font-size: 16px; margin-top:50px;}
+    p, label{font-size: 14px;}
+    #register-purchase input{font-size: 12px; width:60px; height:15px;}
+    #card-info input{width:120px;}
+    #payment-chosen{width:150px;}
+    #payment-chosen input{width:10px;}
+    #payment-chosen i{font-size:16px;}
+    #place-order{font-size:12px;height:25px;width:100px;}
 }
