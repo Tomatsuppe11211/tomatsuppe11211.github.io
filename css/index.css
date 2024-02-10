@@ -78,30 +78,23 @@ h2, #gaming,
 
 
 /*adjusting the promo section*/
-#promo-games{height:300px; border: solid yellow;}
-#display{width:50%;border: yellow;}
+#promo-games{height:300px;}
+#display{width:50%;}
 
 
 #space-war-promo , #black-promo{margin-left:50px;}
+#assassin-promo{margin-left:620px;}
 
 #selected {
     width:225px;
     height:275px;
-    border: solid red;
 }
 
 .not-selected{
     width:175px;
     height:225px;
-    border: solid red;
 }
 
-
-
-#display div{
-    border: solid pink;
-    margin:auto;
-}
 
 
 
@@ -127,7 +120,6 @@ h2, #gaming,
 
 .october-game{
     height:150px;
-    border: solid yellow;
 }
 
 

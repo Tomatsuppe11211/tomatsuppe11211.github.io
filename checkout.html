@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My cart</title>
+    <title>Checkout</title>
+
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cart.css">
-
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 
 
-
-
 <body>
-
+    
     <header>
 
         <input type="checkbox" id="menu-check">
@@ -23,11 +21,11 @@
         <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
         <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
         <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="empty-cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
 
         <nav>
             <div class="navigation-text">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="market.html">Market</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html">Contact</a>
@@ -35,8 +33,7 @@
 
             <div class="desktop-menu-icons">
                 <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
-                <div class="cart-item-count">+1</div>
+                <a href="empty-cart.html" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
 
@@ -44,26 +41,35 @@
 
 
     <main>
-        <section id="item-cart">
-            <h1>My cart</h1>
-            <img src="images/item-cart/assassin-logo.png" alt="Assassin game cover" id="game-cover">
-            <div class="line"></div>
-            <div id="purchase-info">
-                <p class="game-title">Assassin</p>
-                <p>Bying from Kellerman29</p>
-                <p>Price: 12$</p>
-            </div>
-            <a href="empty-cart.html"><div id="trash"><i class="fa-solid fa-trash"></i></div></a>
-            <div class="line"></div>
+        <section id="register-purchase">
+            <h1>Checkout</h1>
+            <h3>Personal information</h3>
+            <p>user information *</p>
+            <input type="text" class="info" placeholder="First name" required>
+            <input type="text" class="info" placeholder="Last name" required>
+            <input type="mail" class="info" placeholder="e-mail" required><br><br>
 
-            <a href="checkout.html" ><button class="action-button">Order now</button></a>
+            <p>Location *</p>
+            <input type="text" class="info" placeholder="City" required>
+            <input type="text" class="info" placeholder="Country" required><br><br>
+            <input type="text" class="info" placeholder="Adress" required>
+            <input type="number" class="info" placeholder="Postal code" required><br><br>
 
-            <div id="pay-methods">
-                <div id="mastercard"><i class="fa-brands fa-cc-mastercard"></i></div>
-                <div id="visa"><i class="fa-brands fa-cc-visa"></i></div>
-                <div id="paypal"><i class="fa-brands fa-cc-paypal"></i></div>
-                <div id="google-pay"><i class="fa-brands fa-google-pay"></i></div>
-            </div>
+
+            <p>Your phone number (optional)</p>
+            <input type="number" class="info" max="99999999" placeholder="Phone number">
+            
+            <h3>Payment method</h3>
+            <input type="radio" name="payment" checked>Card <i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-visa"></i><br><br>
+            <input type="radio" name="payment">paypal <i class="fa-brands fa-cc-paypal"></i><br><br>
+            <input type="radio" name="payment">Card <i class="fa-brands fa-google-pay"></i>
+        
+            <h3>Card information</h3>
+            <input type="text" class="info" placeholder="Cardholder name"> <br><br>
+            <input type="number" class="info" placeholder="Card number"><br><br>
+            Expire month: <input type="month" id="expire"><br><br>
+            <input type="text" placeholder="CVC" size="4" class="info" maxlength="4"><br>
+            <a href="order-complete.html"><button id="place-order">Place order</button></a>
         </section>
     </main>
 
@@ -100,8 +106,6 @@
                 <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
             </div>
         </section>
-        
-
     </footer>
 </body>
 </html>
