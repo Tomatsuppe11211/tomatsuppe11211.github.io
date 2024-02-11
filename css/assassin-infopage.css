@@ -88,7 +88,7 @@
 
 #specs{
     margin-top:200px;
-    height:700px;
+    height:500px;
     width:1500px; 
     margin:auto;
     margin-top:100px;
@@ -97,18 +97,13 @@
 
 #specs h2{padding:25px;}
 
-#specs table{ 
-    width:1300px;
-    margin-left:100px;
-    text-align: center;
-    
-}
 
-#specs th, #specs td{
-    width:350px;border: solid white;
-}
 
-#specs table, #specs th, #specs td{border-collapse: collapse;}
+#minimum-specs, #recommended-specs{width:400px;position:absolute;border: solid red;}
+#minimum-specs li, #recommended-specs li{text-align: left;margin-top:20px;font-size: 22px;}
+#specs li{list-style-type: none;}
+#recommended-specs{margin-left:950px;}
+#minimum-specs{margin-left:150px;}
 
 
 
@@ -121,15 +116,33 @@
     #action-section{width:1000px;}
     #add-game, #make-favorite{margin-left:100px;}
     #specs{width:1000px; height:550px;}
-    #specs table{width:900px;margin-left:50px;}
+    #minimum-specs{margin-left:50px;}
+    #recommended-specs{margin-left:500px; width:450px;}
 }
 
 
 @media (max-width:1000px){
-    #game-info{width:800px;}
-    #game-info img{height:250px;width:200px;}
+    #game-info{width:700px;}
+    #game-info img{height:350px;width:220px;}
     #info{width:600px;}
     #info h1{font-size:25px;}
     #info p{font-size:20px;}
     #description{width:400px;}
+    #action-section{width:700px;}
+    #seller-info{width:220px;}
+    #seller-info h2{font-size:22px;}
+    #seller-info p{font-size:18px;}
+    #action-buttons{margin-left:220px; border:solid yellow;}
+    #add-game, #make-favorite{margin-left:0; border: solid red;}
+    #specs{width:700px;}
+    
+}
+
+
+
+@media (max-width:700px){
+    #game-info{display:flex;flex-direction: column;width:425px;}
+    #game-info img{height:250px; width:200px;margin:auto;}
+    #info{width:100%}
+    #description{width:350px;}
 }
