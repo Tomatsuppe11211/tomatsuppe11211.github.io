@@ -1,21 +1,15 @@
 
-
 #intro-image{
     width:100%;
-    height:600px;
+    height:500px;
     display: flex;
     align-items: center;
-    margin-top:0;
 }
         
 
 #intro-image img{width:100%; height:100%;}
 
-#intro-image h1{
-    width:100%;
-    position: absolute;
-    text-align: center;
-}
+#intro-image h1{width:100%; position: absolute;}
 
 
 
@@ -25,31 +19,31 @@
     display: flex;
     flex-direction: row;
     height:300px;
+    width:1500px;
+    margin:auto;
 }
 
 #logo-and-search img{width:375px;}
 #logo-and-search input , #logo-and-search select{
     height:40px;
-    width:15%;
+    width:300px;
     font-size:25px;
-    margin:10% 0;
+    margin:auto;
     color: grey;
     background-color:#2d2d2d;
 }
 
-#logo-and-search img ,
-#logo-and-search input ,
-#logo-and-search select{
-    margin-left: 10%;
-            
-}
+
+#logo-and-search input{text-align:center;border-radius: 100px;}
+#searchbar-and-option{display:flex; flex-direction: row;width:900px;margin:auto;}
+#select-console, #searchbar-and-option input{ margin:auto;}
+#select-filter{display: none;}
 
 
-#logo-and-search input{border-radius: 100px;text-align: center;}
 #searchglass i{
     font-size:25px;
-    margin-top:200px;
-    margin-left:-280px; 
+    margin-top:10px;
+    margin-left:-350px; 
     color:grey;
     position: absolute;
 }
@@ -59,16 +53,19 @@
 
 
 
-#sort{
-    width:10%;
-    margin-left:15%;
+#filter{
+    width:200px;
+    text-align: left;
+    margin-left:0;
     font-size:20px;
-    position: absolute;
+    display:flex;
+    flex-direction: column;
 }
 
-#sort h2, #sort h3{text-align: center;}
 
-#sort h3{margin-top:100px;}
+#filter h2, #filter h3{text-align: center;}
+
+#filter h3{margin-top:100px;}
 
 
 
@@ -79,23 +76,20 @@
 
 #first-game-column,
 #second-game-column,
-#third-game-column{
-    width:200px;
+#third-game-column{width:200px;margin:auto;}
+
+#game-rows{
+    width:1500px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
 }
-
-#first-game-column, #second-game-column{position: absolute;}
-
-#first-game-column{margin-left:600px;}
-#second-game-column{margin-left:900px;}
-#third-game-column{margin-left:1200px;}
-
 
 
 
 .games{
     width:200px;
     height:400px;
-    text-align: center;
     border: solid grey;
     margin:30px 0;
     display: flex;
@@ -125,13 +119,139 @@
     border:solid grey;
     color:grey;
     background-color: #131313;
-    margin-top:5%;
-    width:150px; 
-    margin-left:885px;
+    width:150px;
+    position: absolute;
+    margin:35px;
+    
 }
 
 #load-button:hover{
     color:#645FFF;
     border: solid #645FFF;
     background-color: #000;
+}
+
+footer{margin-top:100px;}
+
+
+
+
+
+
+@media(max-width:1700px){
+    #intro-image{height:350px;}
+    
+    #logo-and-search{width:1000px; height:200px;}
+    #logo-and-search img{width:250px; height:200px;}
+    #logo-and-search input,
+    #logo-and-search select{width:250px;}
+
+    #searchglass{margin-top:-75px;}
+    #searchglass i{margin-top:85px;margin-left:-300px;}
+
+    #game-rows{width:1000px;}
+}
+
+
+
+@media (max-width:1200px){
+    #intro-image{height:300px;}
+    
+    #logo-and-search{width:800px; height:150px;}
+    #logo-and-search img{width:200px; height:150px;}
+
+    #logo-and-search input,
+    #logo-and-search select{width:200px;font-size:20px;}
+
+    #searchglass{margin-top:-55px;}
+    #searchglass i{margin-top:65px;margin-left:-240px;}
+
+    #game-rows{width:800px;}
+
+    #filter{height:1200px;}
+    #filter h3{margin-top:50px;}
+
+    .games{height:300px; width:150px; margin-top:100px;}
+    .games p{margin-top:0;font-size:17px;}
+
+    .action-icons{margin:auto;}
+    .action-icons i{font-size: 25px;}
+}
+
+
+
+@media (max-width:900px){
+    #intro-image{height:250px;}
+
+    #logo-and-search{width:600px; height:150px;}
+
+    #logo-and-search input,
+    #logo-and-search select{width:150px;font-size:16px;}
+
+    #searchglass{margin-top:-50px;}
+    #searchglass i{margin-top:65px;margin-left:-170px; font-size:20px;}
+
+    /*removing the third game row*/
+    #third-game-column{display: none;}
+
+    #game-rows{width:600px;}
+    #filter{width:150px; font-size:15px;}
+    #first-game-column,#second-game-column{margin-left:40px;}
+
+    #load-button{margin:auto;}
+}
+
+
+
+@media (max-width:700px){
+    #intro-image{height:200px;}
+    #intro-image h1{font-size: 30px;}
+
+    #logo-and-search{flex-direction: column;height:200px; width:400px;}
+    #logo-and-search img{margin:auto;}
+
+    /*removing filter and adding select-options*/
+    #filter{display: none;}
+    #select-filter{display:block;}
+
+    #logo-and-search{height:300px;}
+    #searchbar-and-option{width:100%;}
+    #select-filter{width:100%;margin:auto;}
+    #select-filter select{margin:auto;}
+
+    #searchglass i{margin-left:-170px;}
+
+    .games{height:275px;}
+    .games p{font-size:16px;}
+    .action-icons{border:solid yellow;height:100px;}
+    .action-icons i{font-size:18px;}
+
+    #game-rows{width:400px;}
+    #first-game-column, #second-game-column{margin-left:25px;}
+    #load-button{font-size:16px; width:100px;margin-left:-50px;}
+}
+
+
+
+@media(max-width:425px){
+    #intro-image{height:150px;}
+    #intro-image h1{font-size:25px;}
+
+    #logo-and-search{flex-direction: column;height:100px; width:280px;}
+    #logo-and-search img{display: none;}
+    #logo-and-search input,
+    #logo-and-search select{font-size:11px; width:100px;text-align: right; height:20px;}
+
+    #searchglass i{margin-left:-120px;margin-top:55px; font-size: 15px;}
+
+    #game-rows{width:280px;}
+
+    .text, .action-icons{display: none;}
+    
+    #game-rows{margin-top:-50px;}
+    .games img{height:100%;width:100%;}
+    .games{height:125px;width:100px; margin-left:-10px;border:none;}
+    .game-title{margin: auto;}
+    
+    #load-button{margin-top:10px;}
 }

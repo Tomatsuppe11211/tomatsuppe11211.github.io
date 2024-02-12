@@ -239,9 +239,7 @@ td, th{padding:2% 0%;}
 
 
 
-@media (max-width:960px){
-    .desktop-menu-icons{margin-left:70%;}
-}
+@media (max-width:960px){.desktop-menu-icons{margin-left:70%;}}
 
 
 
@@ -252,6 +250,7 @@ td, th{padding:2% 0%;}
     nav a{font-size:20px;}
     .desktop-menu-icons{margin-top:-30px;}
     .desktop-menu-icons i{font-size:20px;margin:0;}
+    .cart-item-count{height:15px;width:15px;font-size:10px;margin-left:70px;}
 }
 
 

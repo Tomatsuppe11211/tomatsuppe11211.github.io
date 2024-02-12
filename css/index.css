@@ -2,40 +2,26 @@
 
 
 /*All images on this site will fill the div-elements they are placed in*/
-img{
-    height:100%;
-    width:100%;
-}
+img{height:100%;width:100%;}
 
 #display,
-.october-game{
-    display:flex;
-    flex-direction: row;
-}
-
+.october-game{display:flex; flex-direction: row;}
 
 
 
 #intro, h2,
 #promo-games,
-#october-bundle{
-    text-align: center;
-    align-items: center;
-}
-
+#october-bundle{text-align: center; align-items: center;}
 
 
 h2, #gaming,
 #promo-games,
-#october-bundle{
-    margin-top:5%;
-}
+#october-bundle{margin-top:5%;}
+
 
 #phone-ob-price,
 #extra-item,
-#add-to-cart{
-    display:none;
-}
+#add-to-cart{display:none;}
 
 
 
@@ -60,17 +46,12 @@ h2, #gaming,
 }
 
 
-#intro h1{
-    width:600px;
-}
+#intro h1{width:600px;}
 
 
 /*making the border of the image*/
 
-#logo{
-    width:275px;
-    height:200px;
-}
+#logo{width:275px; height:200px;}
 
 
 
@@ -78,58 +59,50 @@ h2, #gaming,
 
 
 /*adjusting the promo section*/
-#promo-games{height:300px;}
-#display{width:50%;}
+#promo-games{height:350px; width:1000px;margin:auto;}
+#display{width:1000px;}
 
 
-#space-war-promo , #black-promo{margin-left:50px;}
-#assassin-promo{margin-left:620px;}
+.not-selected i{font-size:70px;position: absolute;margin-left:50px;margin-top:50px;}
+.not-selected i:hover{color:#645FFF;}
 
-#selected {
-    width:225px;
-    height:275px;
-}
 
-.not-selected{
-    width:175px;
-    height:225px;
-}
+
+#assassin-promo, #black-promo{margin:auto;width:175px; height:275px;}
+#space-war-promo{margin:auto;width:225px; height:325px;}
+
+#selected {width:100%;height:275px;}
+
+.not-selected{width:100%;height:200px;}
 
 
 
 
 
 /*styling the image*/
-#gaming{
-    width:80%;
-    margin-left:10%;
-}
+#gaming{width:1000px;}
 
 
 
 
 /*styling the october bundle*/
 #october-bundle{
-    width:60%;
-    margin-left:20%;
+    width:1000px;
+    margin:auto;
+    margin-top:100px;
     border-radius: 20px;
     background-color:#2b2b2b;
     height:450px;
 }
+#october-bundle h2{padding:10px;}
+
+.october-game{height:150px;}
 
 
-.october-game{
-    height:150px;
-}
+.october-game img{height:150px; width:125px; margin:auto;}
 
 
-#october-bundle img{
-    max-width:150px;
-    margin:0 4%;
-}
-
-
-#october-bundle p{width:360px;margin-left:33%}
+#october-bundle p{width:360px;margin:auto;}
 #october-bundle a{color:#959595;margin-left:2%;text-decoration: none;}
 #october-bundle a:hover{color:#645FFF;}
 
@@ -152,6 +125,79 @@ h2, #gaming,
 
 
 
+/*Scaling to certain sizes*/
+
+@media(max-width:1300px){
+    #promo-games, #display{width:800px;height:325px;}
+
+    #assassin-promo, #black-promo{width:150px;height:250px;}
+    .not-selected{height:175px;}
+    .not-selected i{font-size:50px;}
+    #space-war-promo{width:175px; height:300px;}
+    #selected{height:225px;}
+
+    #gaming{width:800px;}
+
+    #october-bundle{width:800px; height:400px;}
+    .october-game img{width:100px; height:125px;}
+}
+
+
+
+
+
+
+
+@media (max-width:1000px){
+    #intro h1{font-size:30px; width:500px;}
+    
+    h2{font-size:25px;}
+    
+    #promo-games, #display{width:600px;height:250px;}
+
+    #assassin-promo, #black-promo{width:100px;height:150px;}
+    .not-selected{height:115px;}
+    .not-selected i{margin-left:25px;margin-top:25px;}
+    #space-war-promo{width:125px; height:175px;}
+    #selected{height:150px;}
+
+    #assassin-promo h3, 
+    #black-promo h3,
+    #space-war-promo h3{font-size:20px;}
+
+    #gaming{width:600px;}
+
+    #october-bundle{width:600px; height:350px;}
+    .october-game img{width:75px; height:100px;}
+    .order-button{font-size:18px;}
+}
+
+
+
+
+
+
+
+@media (max-width:700px){
+    #intro h1{width:400px; font-size:25px;}
+    
+    #promo-games, #display{width:400px;height:200px;}
+
+    #assassin-promo, #black-promo{width:75px;height:125px;}
+    .not-selected{height:90px;}
+    .not-selected i{font-size:40px;margin-left:15px;}
+    #space-war-promo{width:100px; height:150px;}
+    #selected{height:120px;}
+
+    #gaming{width:400px;}
+
+    #october-bundle{width:400px;}
+    .october-game img{width:60px; height:75px;}
+    #october-bundle p{font-size:17px; width:300px;}
+    #october-bundle a{font-size:15px;}
+    .order-button{font-size:15px;width:100px;height:30px;}
+}
+
 
 
 
@@ -162,43 +208,54 @@ h2, #gaming,
 
 /*adjust the site for phone-users*/
 @media(max-width: 425px){
-    /*removing desktop logo*/
+    /*hiding items that are not in mobile version*/
     #intro img{display:none;}
-    #intro{height:80px;}
-    #promo-games{height:175px;}
-    #promo-games div{margin-top:50px;}
-            
-    /*removing pictures from the october games*/
     #furious-ob, #forge-legends-ob,
     #boxer-ob, #black-ob{display:none;}
+    .order-button{display: none;} 
+    #desktop-text{display: none;}
+    
+    
+    
 
-    #october-bundle{height:100px;text-align: left;}
-    #october-bundle img{
-        width:40px;
-        height:50px;
-        position: absolute;
-    }
+    /*working with the scaling*/
+    #intro{height:80px;}
+    #intro h1{font-size:16px; width:280px;}
+    h2{font-size:16px;margin-top:50px;}
+
+    #promo-games, #display{width:280px;height:100px;}
+    #promo-games h3{font-size:12px;}
+
+    #assassin-promo, #black-promo{width:40px;height:75px;}
+    .not-selected{height:50px;}
+    .not-selected i{font-size:22px; margin-top:15px;margin-left:10px;}
+    #space-war-promo{width:60px; height:100px;}
+    #selected{height:75px;}
 
 
+    #gaming{width:280px;height:100px;margin-top:50px;}
 
-    .order-button{display: none;}  
-            
-            
+
+    #october-bundle{width:280px; height:150px; margin-top:75px;}
+    .october-game{height:60px; width:200px;margin-left:40px;position: absolute;}
+    .october-game img{width:50px;height:60px;margin-left:0;}
+
+
+    
+
+        
     #extra-item{
         display:flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin-top:25px;
-        margin-left:35px;
+        margin-top:40px;
+        margin-left:80px;
     }
 
     #october-bundle p, #october-bundle a{font-size:12px;}
-    #phone-ob-price{
-        display:block;
-        margin-top:-3%;
-        text-align: center;
-    }
+
+    #phone-ob-price{display:block; width:10px;}
 
     #october-bundle a{
         border:solid 1px #645FFF;
@@ -206,27 +263,19 @@ h2, #gaming,
         width:70px;
         text-align: center;
         background-color:#090909;
-        margin-left:35%;
+        margin-left:30px;
+        margin-top:20px;
     }
 
     #add-to-cart{
         display: block;
         position: absolute;
-        margin-left:20%;
-        margin-top:5%;
+        margin:auto;
+        margin-top:40px;
+        margin-left:120px;
         }
 
     #add-to-cart:hover{color:#645FFF;}
 
-
-}
-
-
-@media (max-width:375px){
-            
-    #intro h1{font-size:12px;}
-    #promo-games h3{font-size:10px;}
-    #add-to-cart{margin-top:6%;}
-
-
+    footer{margin-top:100px;}
 }
