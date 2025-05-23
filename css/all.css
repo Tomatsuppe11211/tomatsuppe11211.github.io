@@ -141,7 +141,7 @@ main{
     align-items: center;
 }
 
-.display i{font-size: 80px; position: absolute; opacity: 0.7; margin-bottom: 80px;}
+.display i{font-size: 80px; position: absolute; opacity: 0.5; margin-bottom: 80px;}
 .display i:hover{opacity: 1; color: #645FFF}
 
 
@@ -204,7 +204,6 @@ main{
 
 
 .offer-navigation{display: flex; flex-direction: row; width: 500px; justify-content: space-evenly; align-items: center;}
-
 
 /*for mobile*/
 .extra-items{
@@ -271,7 +270,25 @@ main{
 
 
 
+@media(max-width: 1400px){
+    .promo-games, .gaming-image{width: 800px;}
 
+    .chosen img{width: 220px;}
+
+    .not-chosen img{height: 200px; width: 170px;}
+
+    .chosen img, .gaming-image{height: 250px;}
+
+    .october-bundle{width: 600px;}
+
+    .october-bundle p{width: 400px;}
+
+    .october-bundle img{height: 100px; width: 80px; margin: 10px;}
+
+    .offer-navigation{width: 300px;}
+
+    .order-button{width: 120px; height: 40px; padding: 2px}
+}
 
 
 
@@ -311,6 +328,61 @@ main{
 
     footer img{height: 75px;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+@media(max-width: 950px){
+    .intro img{height: 150px; width: 200px;}
+    .intro h1{font-size: 25px; width: 400px;}
+
+    .promo-games{margin-top: 50px;}
+    .display{margin-top: 20px}
+
+    .chosen img{height: 200px; width: 170px;}
+    .not-chosen img{height: 150px; width: 120px;}
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
