@@ -1,13 +1,15 @@
-header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
-.promo-games, .display, .display div, .october-bundle, .offer-navigation{display: flex;}
+html, body{margin: 0; padding: 0; height: 100%;}
 
-header, nav, footer, .social-media-icons, .display, .offer-navigation{flex-direction: row;}
+body, header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
+.promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info{display: flex;}
 
-.mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle{flex-direction: column;}
+header, nav, footer, .social-media-icons, .display, .offer-navigation, .information{flex-direction: row;}
+
+body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info{flex-direction: column;}
 
 a:hover, i:hover, .active{color: #645FFF;}
 
-a, header i,.social-media-icons, .intro h1, .promo-games, .october-bundle, .order-button{color: #fff;}
+body, a, i, .order-button{color: #fff;}
 
 header, .mobile-menu, footer, .order-button:hover{background-color: #000;}
 
@@ -15,14 +17,14 @@ nav, .mobile-menu, .mobile-menu a, footer a, .order-button{padding: 10px;}
 
 .desktop-menu-icons, .mobile-menu, .display i{position: absolute;}
 
-nav, footer, .intro{width: 100%;}
+nav, footer, .intro, .intro-image{width: 100%;}
 
 .mobile-nav, header input, .mobile-menu, .extra-items, .add-to-cart{display: none;}
 
 header a, .mobile-nav i, h3{font-size: 25px;}
 
 header, footer, footer div, .intro, main, .display, .display div, .october-bundle, .offer-navigation, 
-.extra-items{align-items: center;}
+.extra-items, .information, .short-info{align-items: center;}
 
 footer, footer div, .intro, main, .display div, .october-bundle, .extra-game{justify-content: center;}
 
@@ -30,9 +32,9 @@ p, a, button{font-size: 20px;}
 
 h1, h2{text-align: center;}
 
-.promo-games, .gaming-image, .october-bundle, footer{margin-top: 100px;}
+.promo-games, .gaming-image, .october-bundle, footer, .information{margin-top: 100px;}
 
-.display, .offer-navigation{justify-content: space-evenly;}
+.display, .offer-navigation, .information{justify-content: space-evenly;}
 
 .promo-games, .gaming-image{width: 1200px;}
 
@@ -44,7 +46,15 @@ h1, h2{text-align: center;}
 
 footer div, .chosen img{width: 250px;}
 
-.october-bundle, footer{flex-wrap: wrap;}
+.october-bundle, footer, .information, .short-info{flex-wrap: wrap;}
+
+.october-bundle p, .info-text{width: 800px;}
+
+header i, footer i{font-size: 30px;}
+
+.october-bundle, .information{width: 1000px;}
+
+.extra-items, .short-info{width: fit-content;}
 
 
 
@@ -56,13 +66,31 @@ footer div, .chosen img{width: 250px;}
 
 
 
-body{margin: 0; padding: 0; background-color: #090909; height: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{background-color: #090909; min-height: 100vh;}
 
 header{line-height: 50px;  justify-content: start;}
 
 nav{justify-content: space-between;  word-spacing: 150px;}
-
-header i, footer i{font-size: 30px;}
 
 a{text-decoration: none;}
 
@@ -74,7 +102,7 @@ header nav div{margin-left: 150px;}
 
 .mobile-nav nav{word-spacing: 10px;}
 
-footer{bottom: 0;}
+
 
 footer a{font-size: 20px;}
 
@@ -100,11 +128,9 @@ h2{font-size: 30px;}
 
 .not-chosen img{height: 250px;}
 
-.october-bundle{background-color: #2b2b2b; padding: 20px; width: 1000px;}
+.october-bundle{background-color: #2b2b2b; padding: 20px;}
 
 .october-bundle img{height: 150px; width: 120px; margin: 30px;}
-
-.october-bundle p{width: 800px;}
 
 .order-button{height: 50px; border: 0.5px solid #000; box-shadow: 0 5px 4px #000;}
 
@@ -112,13 +138,53 @@ h2{font-size: 30px;}
 
 .offer-navigation{width: 500px;}
 
-.extra-items{width: fit-content; border-radius: 100px; padding: 5px;}
+.extra-items{border-radius: 100px; padding: 5px;}
+
+.intro-image{height: 500px;}
+
+.short-info img{height: 200px; width: 300px;}
+
+.short-info p{width: 275px;}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    border: solid red;
+    margin-top: 100px;
+    background-color: #000;
+}
+
+.action-button{
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 10px;
+    box-shadow: #000 0 5px 4px;
+    margin-top: 20px;
+}
+
+.action-button:hover{border: solid #645FFF; color: #645FFF; background-color: #000;}
 
 
 
@@ -163,6 +229,8 @@ h2{font-size: 30px;}
     header nav{word-spacing: 100px;}
 
     .desktop-menu-icons{right: 200px;}
+
+    .intro-image{height: 400px;}
 }
 
 
@@ -205,6 +273,16 @@ h2{font-size: 30px;}
     footer a{font-size: 14px;}
 
     footer h3{font-size: 18px;}
+
+    .intro-image{height: 300px;}
+
+    .information{width: 800px;}
+
+    .short-info{height: 275px;}
+
+    .short-info img{height: 150px; width: 250px;}
+
+    .short-info p{width: 200px;}
 }
 
 
@@ -260,7 +338,7 @@ h2{font-size: 30px;}
 
     .intro h1{width: 400px;}
 
-    .promo-games{margin-top: 50px;}
+    .promo-games, .information{margin-top: 50px;}
 
     h1{font-size: 25px;}
 
@@ -268,25 +346,33 @@ h2{font-size: 30px;}
 
     .chosen img{width: 120px;}
 
-    .not-chosen img{height: 120px; width: 100px;}
+    .not-chosen img, .short-info img{height: 120px;}
+
+    .not-chosen img{width: 100px;}
 
     .not-chosen i{font-size: 50px;}
 
     .display h3, .order-button{font-size: 16px;}
 
-    .gaming-image{height: 200px;}
+    .gaming-image, .intro-image, .short-info{height: 200px;}
 
     .promo-games, .gaming-image{width: 600px;}
 
-    .october-bundle{width: 500px;}
+    .october-bundle, .info-text{width: 500px;}
 
     .october-bundle img{margin: 5px; height: 85px; width: 70px;}
 
     .october-bundle h2{font-size: 20px;}
 
-    .october-bundle p, .october-bundle a{font-size: 14px;}
+    p, a{font-size: 14px;}
 
     .order-button{width: 90px;}
+
+    .information{width: 550px;}
+
+    .short-info img{width: 160px;}
+
+    .short-info p{width: 150px;}
 }
 
 
@@ -354,7 +440,7 @@ h2{font-size: 30px;}
 
     h1, .october-bundle p{font-size: 20px;}
 
-    .promo-games, .gaming-image, .october-bundle{width: 400px;}
+    .promo-games, .gaming-image, .october-bundle, .information{width: 400px;}
 
     .chosen img{height: 120px; width: 100px;}
 
@@ -381,6 +467,12 @@ h2{font-size: 30px;}
     .add-to-cart{margin-left: 150px; font-size: 30px; margin-top: -40px;}
 
     .october-bundle p{margin-left: 130px; margin-top: -80px; width: fit-content;}
+
+    .info-text{width: 350px;}
+
+    .short-info img{height: 80px;}
+
+    .short-info img, .short-info p{width: 120px;}
 }
 
 
@@ -402,17 +494,17 @@ h2{font-size: 30px;}
 
     header nav{width: 80%; justify-content: space-between;}
 
-    footer{flex-direction: column;}
+    footer, .information{flex-direction: column;}
 
     .footer-link{margin-top: 20px;}
 
-    .intro h1{width: 200px;}
+    .intro h1, .short-info p{width: 200px;}
 
     h1{font-size: 18px;}
 
     .social-media-icons{margin-bottom: 10px;}
 
-    .promo-games, .gaming-image, .october-bundle{width: 250px;}
+    .promo-games, .gaming-image, .october-bundle, .info-text, .information, .short-info img{width: 250px;}
 
     .chosen img{height: 100px; width: 80px;}
 
@@ -422,7 +514,11 @@ h2{font-size: 30px;}
 
     .october-bundle{padding: 5px;}
 
-    .gaming-image{height: 120px;}
+    .gaming-image, .short-info img{height: 120px;}
+
+    .intro-image{height: 150px;}
+
+    .short-info{height: 200px;}
 }
 
 
