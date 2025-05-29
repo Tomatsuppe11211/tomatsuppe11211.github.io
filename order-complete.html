@@ -7,8 +7,7 @@
     <title>Your order</title>
 
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/order-complete.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_io (1)/android-chrome-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_io (1)/favicon-32x32.png">
@@ -18,68 +17,75 @@
 
 
 <body>
-    
     <header>
+        <nav class="mobile-nav">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check"><i class="fas fa-bars"></i></label>  
+            
+            <div class="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
 
-        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
-        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
-        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="empty-cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        
 
-        <nav>
-            <div class="navigation-text">
-                <a href="index.html" class="active">Home</a>
+
+        <nav class="desktop-nav">
+            <div>
+                <a href="index.html" >Home</a>
                 <a href="market.html">Market</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
 
             <div class="desktop-menu-icons">
-                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="empty-cart.html" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
-
     </header>
 
 
     <main>
-        <section id="message">
+        <section class="complete-message">
             <h1>Payment completed</h1>
             <p>Your order have been completed successfully. Your package will arrive shortly. Thank you for the purchase.</p>
-            <a href="market.html"><button id="back-to-market">Back to market</button></a>
+            <a href="market.html"><button class="action-button">Back to market</button></a>
         </section>
     </main>
 
     <footer>
-        <table>
-            <tr>
-                <th>Get help</th>
-                <th>Legal and Privacy</th>
-                <th>Information</th>
-            </tr>
-            <tr>
-                <td><a href="">Frequently questions</a></td>
-                <td><a href="">Privacy Policy</a></td>
-                <td><a href="">About us</a></td>
-            </tr>
-            <tr>
-                <td><a href="">My orders</a></td>
-                <td><a href="">Terms of Service</a></td>
-                <td><a href="">Career</a></td>
-            </tr>
-            <tr>
-                <td><a href="">Feedback</a></td>
-                <td><a href="">Store refund policy</a></td>
-                <td><a href="">Investors</a></td>
-            </tr>
-        </table>
+        <div class="footer-link">
+            <h3>Get help</h3>
+            <a href="#">Frequently questions</a>
+            <a href="#">My orders</a>
+            <a href="#">Feedback</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Legal and Privacy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Stor refund policy</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">Investors</a>
+        </div>
 
         <section class="logo-and-links">
-            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>

@@ -1,21 +1,24 @@
 html, body{margin: 0; padding: 0; height: 100%;}
 
 body, header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
-.promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info{display: flex;}
+.promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info, .item-cart, 
+.buy-products, .pay-methods, .desktop-menu-icons div, .complete-message{display: flex;}
 
-header, nav, footer, .social-media-icons, .display, .offer-navigation, .information{flex-direction: row;}
+header, nav, footer, .social-media-icons, .display, .offer-navigation, .information, .buy-products, 
+.pay-methods{flex-direction: row;}
 
-body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info{flex-direction: column;}
+body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info, 
+.item-cart, .complete-message{flex-direction: column;}
 
-a:hover, i:hover, .active{color: #645FFF;}
+a:hover, i:hover, .active, .action-button:hover{color: #645FFF;}
 
-body, a, i, .order-button{color: #fff;}
+body, a, i, .order-button, .action-button{color: #fff;}
 
-header, .mobile-menu, footer, .order-button:hover{background-color: #000;}
+header, .mobile-menu, footer, .order-button:hover, .action-button:hover, .item-cart, .complete-message{background-color: #000;}
 
-nav, .mobile-menu, .mobile-menu a, footer a, .order-button{padding: 10px;}
+nav, .mobile-menu, .mobile-menu a, footer a, button{padding: 10px;}
 
-.desktop-menu-icons, .mobile-menu, .display i{position: absolute;}
+.desktop-menu-icons, .mobile-menu, .display i, .desktop-menu-icons div{position: absolute;}
 
 nav, footer, .intro, .intro-image{width: 100%;}
 
@@ -24,9 +27,11 @@ nav, footer, .intro, .intro-image{width: 100%;}
 header a, .mobile-nav i, h3{font-size: 25px;}
 
 header, footer, footer div, .intro, main, .display, .display div, .october-bundle, .offer-navigation, 
-.extra-items, .information, .short-info{align-items: center;}
+.extra-items, .information, .short-info, .item-cart, .buy-products, .pay-methods, .desktop-menu-icons div, 
+.complete-message{align-items: center;}
 
-footer, footer div, .intro, main, .display div, .october-bundle, .extra-game{justify-content: center;}
+footer, footer div, .intro, main, .display div, .october-bundle, .extra-game, .item-cart, 
+.desktop-menu-icons div, .complete-message{justify-content: center;}
 
 p, a, button{font-size: 20px;}
 
@@ -34,7 +39,7 @@ h1, h2{text-align: center;}
 
 .promo-games, .gaming-image, .october-bundle, footer, .information{margin-top: 100px;}
 
-.display, .offer-navigation, .information{justify-content: space-evenly;}
+.display, .offer-navigation, .information, .pay-methods{justify-content: space-evenly;}
 
 .promo-games, .gaming-image{width: 1200px;}
 
@@ -42,41 +47,41 @@ h1, h2{text-align: center;}
 
 .october-bundle, .order-button{border-radius: 10px;}
 
-.order-button, .extra-items{background-color: #645FFF;}
+.order-button, .extra-items, .desktop-menu-icons div{background-color: #645FFF;}
 
 footer div, .chosen img{width: 250px;}
 
 .october-bundle, footer, .information, .short-info{flex-wrap: wrap;}
 
-.october-bundle p, .info-text{width: 800px;}
+.october-bundle p, .info-text, .complete-message p{width: 800px;}
 
-header i, footer i{font-size: 30px;}
+h2, header i, footer i, .item-cart i{font-size: 30px;}
 
-.october-bundle, .information{width: 1000px;}
+.october-bundle, .information, .item-cart, .complete-message{width: 1000px;}
 
 .extra-items, .short-info{width: fit-content;}
 
+.display, .action-button, .item-cart, .pay-methods, .complete-message{margin-top: 50px;}
 
+.mobile-menu, .item-cart, .buy-products{height: fit-content;}
 
+.active i, .pay-methods i:hover{color:inherit;}
 
+.october-bundle, .action-button{background-color: #2b2b2b;}
 
+.october-bundle img, .item-cart img{height: 150px; width: 120px;}
 
+nav, .buy-products{justify-content: space-between;}
 
+.extra-items, .desktop-menu-icons div{border-radius: 100px;}
 
+.order-button, .desktop-menu-icons div{border: 0.5px solid #000;}
 
+.order-button, .action-button{box-shadow:  0 5px 4px #000;}
 
+.october-bundle, .complete-message{padding: 20px;}
 
-
-
-
-
-
-
-
-
-
-
-
+.item-cart, .complete-message{border-radius: 20px;}
 
 
 
@@ -90,7 +95,7 @@ body{background-color: #090909; min-height: 100vh;}
 
 header{line-height: 50px;  justify-content: start;}
 
-nav{justify-content: space-between;  word-spacing: 150px;}
+nav{word-spacing: 150px;}
 
 a{text-decoration: none;}
 
@@ -98,11 +103,9 @@ a{text-decoration: none;}
 
 header nav div{margin-left: 150px;}
 
-.mobile-menu{top: 60px; left: -20px; height: fit-content; width: 100px;}
+.mobile-menu{top: 60px; left: -20px;  width: 100px;}
 
 .mobile-nav nav{word-spacing: 10px;}
-
-
 
 footer a{font-size: 20px;}
 
@@ -110,13 +113,9 @@ main{flex: 1;}
 
 h1{font-size: 35px;}
 
-h2{font-size: 30px;}
-
 .intro{background-image: url("../images/home/space.png");}
 
 .intro h1{width: 600px;}
-
-.display{margin-top: 50px;}
 
 .display i{font-size: 80px; opacity: 0.5; margin-bottom: 80px;}
 
@@ -128,17 +127,15 @@ h2{font-size: 30px;}
 
 .not-chosen img{height: 250px;}
 
-.october-bundle{background-color: #2b2b2b; padding: 20px;}
+.october-bundle img{margin: 30px;}
 
-.october-bundle img{height: 150px; width: 120px; margin: 30px;}
-
-.order-button{height: 50px; border: 0.5px solid #000; box-shadow: 0 5px 4px #000;}
+.order-button{height: 50px;}
 
 .october-bundle a{margin-top: 20px;}
 
-.offer-navigation{width: 500px;}
+.offer-navigation, .buy-products, .pay-methods{width: 500px;}
 
-.extra-items{border-radius: 100px; padding: 5px;}
+.extra-items{padding: 5px;}
 
 .intro-image{height: 500px;}
 
@@ -146,58 +143,17 @@ h2{font-size: 30px;}
 
 .short-info p{width: 275px;}
 
+.action-button:hover{border:  0.5px solid #645FFF; }
 
+.item-cart{padding: 30px;}
 
+.buy-products{border-top: 0.5px solid #fff; border-bottom: 0.5px solid #fff;}
 
+.pay-methods i{font-size: 40px;}
 
+.desktop-menu-icons div{height: 25px; width: 25px; top: 0; margin-left: 210px; font-size: 16px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-.empty-cart{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    height: 400px;
-    border-radius: 10px;
-    border: solid red;
-    margin-top: 100px;
-    background-color: #000;
-}
-
-.action-button{
-    background-color: #2b2b2b;
-    color: #fff;
-    padding: 10px;
-    box-shadow: #000 0 5px 4px;
-    margin-top: 20px;
-}
-
-.action-button:hover{border: solid #645FFF; color: #645FFF; background-color: #000;}
-
-
-
-
-
-
-
-
-
-
-
-
-
+.complete-message{padding-bottom: 50px;}
 
 
 
@@ -229,6 +185,8 @@ h2{font-size: 30px;}
     header nav{word-spacing: 100px;}
 
     .desktop-menu-icons{right: 200px;}
+
+    .desktop-menu-icons div{margin-left: 165px;}
 
     .intro-image{height: 400px;}
 }
@@ -283,6 +241,12 @@ h2{font-size: 30px;}
     .short-info img{height: 150px; width: 250px;}
 
     .short-info p{width: 200px;}
+
+    .desktop-menu-icons div{margin-left: 120px; font-size: 10px; height: 20px; width: 20px;}
+
+    .item-cart, .complete-message{width: 600px;}
+
+    .complete-message p{width: 500px;}
 }
 
 
@@ -336,23 +300,23 @@ h2{font-size: 30px;}
 
     .intro img, .chosen img{height: 150px;}
 
-    .intro h1{width: 400px;}
+    .intro h1, .buy-products{width: 400px;}
 
     .promo-games, .information{margin-top: 50px;}
 
-    h1{font-size: 25px;}
+    h1, .buy-products i{font-size: 25px;}
 
     .display{margin-top: 20px;}
 
     .chosen img{width: 120px;}
 
-    .not-chosen img, .short-info img{height: 120px;}
+    .not-chosen img, .short-info img, .buy-products img{height: 120px;}
 
-    .not-chosen img{width: 100px;}
+    .not-chosen img, .buy-products img{width: 100px;}
 
     .not-chosen i{font-size: 50px;}
 
-    .display h3, .order-button{font-size: 16px;}
+    .display h3, .order-button, .action-button{font-size: 16px;}
 
     .gaming-image, .intro-image, .short-info{height: 200px;}
 
@@ -373,6 +337,8 @@ h2{font-size: 30px;}
     .short-info img{width: 160px;}
 
     .short-info p{width: 150px;}
+
+    .pay-methods i{font-size: 30px;}
 }
 
 
@@ -415,6 +381,14 @@ h2{font-size: 30px;}
     header nav a{font-size: 16px;}
 
     header nav i{font-size: 18px;}
+
+    .item-cart, .complete-message{width: 400px;}
+
+    .pay-methods{width: 250px; margin-top: 30px;}
+
+    .buy-products, .complete-message p{width: 350px;}
+
+    .desktop-menu-icons div{font-size: 9px; height: 15px; width: 15px; margin-left: 68px;}
 }
 
 
@@ -436,9 +410,9 @@ h2{font-size: 30px;}
 
     .intro img, .october-bundle img{height: 100px;}
 
-    .intro h1{width: 300px;}
+    .intro h1, .item-cart, .complete-message{width: 300px;}
 
-    h1, .october-bundle p{font-size: 20px;}
+    h1, .october-bundle p, .buy-products i{font-size: 20px;}
 
     .promo-games, .gaming-image, .october-bundle, .information{width: 400px;}
 
@@ -446,7 +420,9 @@ h2{font-size: 30px;}
 
     .not-chosen img{height: 90px; width: 70px;}
 
-    .display i{font-size: 40px; margin-top: 30px;}
+    .display i{font-size: 40px;}
+
+    .display i, .action-button{margin-top: 30px;}
 
     .display h3{font-size: 14px;}
 
@@ -473,6 +449,16 @@ h2{font-size: 30px;}
     .short-info img{height: 80px;}
 
     .short-info img, .short-info p{width: 120px;}
+
+    .buy-products, .complete-message p{width: 250px;}
+
+    .buy-products h3{font-size: 16px;}
+
+    .buy-products img{height: 70px; width: 55px;}
+
+    .buy-products p, .action-button{font-size: 12px;}
+
+    .pay-methods i{font-size: 25px;}
 }
 
 
@@ -496,15 +482,16 @@ h2{font-size: 30px;}
 
     footer, .information{flex-direction: column;}
 
-    .footer-link{margin-top: 20px;}
+    .footer-link, .logo-and-links{margin-top: 20px;}
 
-    .intro h1, .short-info p{width: 200px;}
+    .intro h1, .short-info p, .pay-methods, .complete-message p{width: 200px;}
 
-    h1{font-size: 18px;}
+    h1, .buy-products i{font-size: 18px;}
 
     .social-media-icons{margin-bottom: 10px;}
 
-    .promo-games, .gaming-image, .october-bundle, .info-text, .information, .short-info img{width: 250px;}
+    .promo-games, .gaming-image, .october-bundle, .info-text, .information, .short-info img, 
+    .item-cart{width: 250px;}
 
     .chosen img{height: 100px; width: 80px;}
 
@@ -519,6 +506,10 @@ h2{font-size: 30px;}
     .intro-image{height: 150px;}
 
     .short-info{height: 200px;}
+
+    .item-cart, .complete-message{padding: 10px;}
+
+    .buy-products, .complete-message{width: 230px;}
 }
 
 
