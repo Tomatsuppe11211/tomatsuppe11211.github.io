@@ -7,8 +7,7 @@
     <title>Game: Assassin</title>
 
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/assassin-infopage.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_io (1)/android-chrome-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_io (1)/favicon-32x32.png">
@@ -19,122 +18,127 @@
 
 
 <body>
-    
     <header>
-
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
-
-        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
-        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
-        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="empty-cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
-
-        <nav>
-            <div class="navigation-text">
+        <nav class="mobile-nav">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check"><i class="fas fa-bars"></i></label>  
+            
+            <div class="mobile-menu">
                 <a href="index.html">Home</a>
-                <a href="market.html" class="active">Market</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+
+        
+
+
+        <nav class="desktop-nav">
+            <div>
+                <a href="index.html" >Home</a>
+                <a href="market.html">Market</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
 
             <div class="desktop-menu-icons">
-                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="empty-cart.html" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
-
     </header>
 
 
 
     <main>
-        <a href="market.html">
-            <div id="back-link">
-                <div><i class="fa-solid fa-arrow-left"></i></div>
-                <div><p>Go back</p></div>
+        <a href="market.html" >
+            <div class="back-button">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p>Go back</p>
             </div>
         </a>
 
 
 
-
-        <section id="game-info">
-            <img src="/images/assassin-info-page/assassin-cover.png" alt="Assassin-image">
-            <div id="info">
-                <h1>Assassin</h1>
-                <p id="description">
-                    The order of assassins is an order who were feared in the middle east from 1090 - 1275. 
-                    Follow the founder of the order Hassan-i-Sabbah and learn how to become one of the best assassins in the world. 
-                    Enjoy the open world, and become powerful with upgradable weapons and gear. Costumize your own character and 
-                    create your own assassin story within the order.
-                </p>
-                <br><br>
-                <p id="features">Features: Single player, Co-op , Multiplayer</p>
+        <section class="show-game-info">
+            <div class="main-info">
+                <img src="/images/assassin-info-page/assassin-cover.png" alt="Assassin-image">
+                <div>
+                    <h1>Assassin</h1>
+                    <p>
+                        The order of assassins is an order who were feared in the middle east from 1090 - 1275. 
+                        Follow the founder of the order Hassan-i-Sabbah and learn how to become one of the best assassins in the world. 
+                        Enjoy the open world, and become powerful with upgradable weapons and gear. Costumize your own character and 
+                        create your own assassin story within the order.
+                    </p>
+                    <p class="game-features">Features: Single player, Co-op , Multiplayer</p>
+                </div>
             </div>
-        </section>
 
 
 
 
 
-        <section id="action-section">
-            <div id="seller-info">
-                <h2>Info about the seller</h2>
+            <div class="action-section">
+                <div class="seller-info">
+                    <h2>Info about the seller</h2>
         
-                <p>Username: Kellerman29</p>
-                <p>HPreviously sold products: 15</p>
-                <br>
-                <p>Ratings on product quality:</p>
-                <div id="stars">
-                    <div class="fullstar"><i class="fa-solid fa-star"></i></div>
-                    <div class="fullstar"><i class="fa-solid fa-star"></i></div>
-                    <div class="fullstar"><i class="fa-solid fa-star"></i></div>
-                    <div id="half-start"><i class="fa-solid fa-star-half-stroke"></i></div>
-                    <div id="empty-star"><i class="fa-regular fa-star"></i></div>
+                    <p>Username: Kellerman29</p>
+                    <p>Previously sold products: 15</p>
+                    <p>Ratings on product quality:</p>
+
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
                 </div>
-            </div>
 
 
-            <div id="action-buttons">
-                <div id="add-game">
-                    <h3>Price: 15 $</h3>
-                    <a href="assassin-infopage-added.html"><div id="add-cart"><i class="fa-solid fa-cart-shopping"></i></div></a>
-                    <p>Add to cart</p>
-                </div>
-                <div id="make-favorite">
-                    <h3>Console: PC</h3>
-                    <div id="favorite-icon"><i class="fa-solid fa-heart"></i></div>
-                    <p>Add to wishlist</p>
+                <div class="game-actions">
+                    <div class="add-game">
+                        <h3>Price: 15 $</h3>
+                        <a href="assassin-infopage-added.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <p>Add to cart</p>
+                    </div>
+                    <div class="make-favorite">
+                        <h3>Console: PC</h3>
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Add to wishlist</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-
-
-        <section id="specs">
+        <section class="specs">
             <h2>Requirements</h2>
             
-            <div id="minimum-specs">
-                <h3>Minimum</h3>
-                <ul >
-                    <li>OS: Windows 10/11</li>
-                    <li>CPU: Intel Core i5 / Ryzen 5</li>
-                    <li>GPU: Nvidia Geforce GTX 1060</li>
-                    <li>Memory: 8 GB RAM</li>
-                    <li>Storage: 60 GB</li>
-                </ul>
-            </div>
-            <div  id="recommended-specs">
-                <h3>Reccomended</h3>
-                <ul>
-                    <li>OS: Windows 10/11</li>
-                    <li>CPU: Intel Core i7 / Ryzen 7 or better</li>
-                    <li>GPU: Nvidia Geforce GTX 1660 or better</li>
-                    <li>Memory: 16 GB RAM</li>
-                    <li>Storage: 60 GB</li>
-                </ul>
+            <div class="specs-description">
+                <div>
+                    <h3>Minimum</h3>
+                    <p>OS: Windows 10/11</p>
+                    <p>CPU: Intel Core i5 / Ryzen 5</p>
+                    <p>GPU: Nvidia Geforce GTX 1060</p>
+                    <p>Memory: 8 GB RAM</p>
+                    <p>Storage: 60 GB</p>
+                </div>
+
+                <div class="reccomended-specs">
+                    <h3>Reccomended</h3>
+                    <p>OS: Windows 10/11</p>
+                    <p>CPU: Intel Core i7 / Ryzen 7 or better</p>
+                    <p>GPU: Nvidia Geforce GTX 1660 or better</p>
+                    <p>Memory: 16 GB RAM</p>
+                    <p>Storage: 60 GB</p>
+                </div>
             </div>
         </section>
     </main>
@@ -143,39 +147,35 @@
 
 
     <footer>
-        <table>
-            <tr>
-                <th>Get help</th>
-                <th>Legal and Privacy</th>
-                <th>Information</th>
-            </tr>
-            <tr>
-                <td><a href="">Frequently questions</a></td>
-                <td><a href="">Privacy Policy</a></td>
-                <td><a href="">About us</a></td>
-            </tr>
-            <tr>
-                <td><a href="">My orders</a></td>
-                <td><a href="">Terms of Service</a></td>
-                <td><a href="">Career</a></td>
-            </tr>
-            <tr>
-                <td><a href="">Feedback</a></td>
-                <td><a href="">Store refund policy</a></td>
-                <td><a href="">Investors</a></td>
-            </tr>
-        </table>
+        <div class="footer-link">
+            <h3>Get help</h3>
+            <a href="#">Frequently questions</a>
+            <a href="#">My orders</a>
+            <a href="#">Feedback</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Legal and Privacy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Stor refund policy</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">Investors</a>
+        </div>
 
         <section class="logo-and-links">
-            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
                 <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
             </div>
         </section>
-        
-
     </footer>
 </body>
 </html>

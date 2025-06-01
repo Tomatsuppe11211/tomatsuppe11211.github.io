@@ -3,26 +3,29 @@ html, body{margin: 0; padding: 0; height: 100%;}
 body, header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
 .promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info, .item-cart, 
 .buy-products, .pay-methods, .desktop-menu-icons div, .complete-message, .checkout-form, .checkout-info, 
-.choose-pay-method{display: flex;}
+.choose-pay-method, .back-button, .main-info, .main-info div, .action-section, .seller-info, .seller-info div, 
+.game-actions, .game-actions div, .specs, .specs-description{display: flex;}
 
 header, nav, footer, .social-media-icons, .display, .offer-navigation, .information, .buy-products, 
-.pay-methods, .choose-pay-method{flex-direction: row;}
+.pay-methods, .choose-pay-method, .back-button, .main-info, .action-section, .seller-info div, .game-actions, 
+.specs-description{flex-direction: row;}
 
 body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info, 
-.item-cart, .complete-message, .checkout-form, .checkout-info{flex-direction: column;}
+.item-cart, .complete-message, .checkout-form, .checkout-info, .main-info div, .seller-info, .game-actions div, 
+.specs{flex-direction: column;}
 
-a:hover, i:hover, .active, .action-button:hover{color: #645FFF;}
+a:hover, i:hover, .active, .action-button:hover, .back-button:hover i, .seller-info div i:hover{color: #645FFF;}
 
 body, a, i, .order-button, .action-button, .checkout-info input{color: #fff;}
 
 header, .mobile-menu, footer, .order-button:hover, .action-button:hover, .item-cart, .complete-message, .checkout-form, 
-.checkout-info input{background-color: #000;}
+.checkout-info input, .show-game-info, .specs{background-color: #000;}
 
-nav, .mobile-menu, .mobile-menu a, footer a, button, .checkout-info input{padding: 10px;}
+nav, .mobile-menu, .mobile-menu a, footer a, button, .checkout-info input, .main-info div{padding: 10px;}
 
 .desktop-menu-icons, .mobile-menu, .display i, .desktop-menu-icons div{position: absolute;}
 
-nav, footer, .intro, .intro-image, .checkout-info, #payment-method{width: 100%;}
+nav, footer, .intro, .intro-image, .checkout-info, #payment-method, .seller-info div, .game-actions{width: 100%;}
 
 .mobile-nav, header input, .mobile-menu, .extra-items, .add-to-cart{display: none;}
 
@@ -30,22 +33,23 @@ header a, .mobile-nav i, h3{font-size: 25px;}
 
 header, footer, footer div, .intro, main, .display, .display div, .october-bundle, .offer-navigation, 
 .extra-items, .information, .short-info, .item-cart, .buy-products, .pay-methods, .desktop-menu-icons div, 
-.complete-message, .checkout-form, .choose-pay-method{align-items: center;}
+.complete-message, .checkout-form, .choose-pay-method, .back-button, .main-info, .main-info div, .action-section, 
+.game-actions, .game-actions div, .specs{align-items: center;}
 
 footer, footer div, .intro, main, .display div, .october-bundle, .extra-game, .item-cart, 
-.desktop-menu-icons div, .complete-message{justify-content: center;}
+.desktop-menu-icons div, .complete-message, .main-info div{justify-content: center;}
 
 p, a, button{font-size: 20px;}
 
-h1, h2{text-align: center;}
+h1, h2, .game-actions div{text-align: center;}
 
-.promo-games, .gaming-image, .october-bundle, footer, .information, .checkout-form{margin-top: 100px;}
+.promo-games, .gaming-image, .october-bundle, footer, .information, .checkout-form, .specs{margin-top: 100px;}
 
-.display, .offer-navigation, .information, .pay-methods{justify-content: space-evenly;}
+.display, .offer-navigation, .information, .pay-methods, .seller-info div, .game-actions{justify-content: space-evenly;}
 
 .promo-games, .gaming-image{width: 1200px;}
 
-.not-chosen img, .order-button{width: 200px;}
+.not-chosen img, .order-button, .main-info img, .game-actions div{width: 200px;}
 
 .october-bundle, .order-button{border-radius: 10px;}
 
@@ -55,15 +59,16 @@ footer div, .chosen img{width: 250px;}
 
 .october-bundle, footer, .information, .short-info{flex-wrap: wrap;}
 
-.october-bundle p, .info-text, .complete-message p{width: 800px;}
+.october-bundle p, .info-text, .complete-message p, .specs-description{width: 800px;}
 
-h2, header i, footer i, .item-cart i, .choose-pay-method i{font-size: 30px;}
+h2, header i, footer i, .item-cart i, .choose-pay-method i, .seller-info i{font-size: 30px;}
 
-.october-bundle, .information, .item-cart, .complete-message{width: 1000px;}
+.october-bundle, .information, .item-cart, .complete-message, .show-game-info, .specs{width: 1000px;}
 
 .extra-items, .short-info, .choose-pay-method{width: fit-content;}
 
-.display, .action-button, .item-cart, .pay-methods, .complete-message, .checkout-info{margin-top: 50px;}
+.display, .action-button, .item-cart, .pay-methods, .complete-message, .checkout-info, .action-section, 
+.show-game-info{margin-top: 50px;}
 
 .mobile-menu, .item-cart, .buy-products{height: fit-content;}
 
@@ -73,7 +78,7 @@ h2, header i, footer i, .item-cart i, .choose-pay-method i{font-size: 30px;}
 
 .october-bundle img, .item-cart img{height: 150px; width: 120px;}
 
-nav, .buy-products{justify-content: space-between;}
+nav, .buy-products, .back-button, .main-info, .seller-info, .specs-description{justify-content: space-between;}
 
 .extra-items, .desktop-menu-icons div{border-radius: 100px;}
 
@@ -81,7 +86,7 @@ nav, .buy-products{justify-content: space-between;}
 
 .order-button, .action-button{box-shadow:  0 5px 4px #000;}
 
-.october-bundle, .complete-message{padding: 20px;}
+.october-bundle, .complete-message, .seller-info, .specs{padding: 20px;}
 
 .item-cart, .complete-message, .checkout-form, .checkout-info input{border-radius: 20px;}
 
@@ -90,6 +95,18 @@ nav, .buy-products{justify-content: space-between;}
 header, .choose-pay-method{justify-content: start;}
 
 .order-button, .choose-pay-method{height: 50px;}
+
+.mobile-menu, .back-button{width: 100px;}
+
+.complete-message, .show-game-info{padding-bottom: 50px;}
+
+.not-chosen img, .main-info img{height: 250px;}
+
+.pay-methods i, .game-actions i{font-size: 40px;}
+
+
+
+
 
 
 
@@ -111,7 +128,7 @@ a{text-decoration: none;}
 
 header nav div{margin-left: 150px;}
 
-.mobile-menu{top: 60px; left: -20px;  width: 100px;}
+.mobile-menu{top: 60px; left: -20px;}
 
 .mobile-nav nav{word-spacing: 10px;}
 
@@ -133,8 +150,6 @@ h1{font-size: 35px;}
 
 .chosen img{height: 300px;}
 
-.not-chosen img{height: 250px;}
-
 .october-bundle img{margin: 30px;}
 
 .october-bundle a{margin-top: 20px;}
@@ -155,11 +170,7 @@ h1{font-size: 35px;}
 
 .buy-products{border-top: 0.5px solid #fff; border-bottom: 0.5px solid #fff;}
 
-.pay-methods i{font-size: 40px;}
-
 .desktop-menu-icons div{height: 25px; width: 25px; top: 0; margin-left: 210px; font-size: 16px;}
-
-.complete-message{padding-bottom: 50px;}
 
 .checkout-form{padding: 50px;}
 
@@ -177,7 +188,47 @@ h1{font-size: 35px;}
 
 .choose-pay-method input{height: 20px; width: 20px;}
 
-.checkout-form h1, .checkout-form h3, .choose-pay-method label, .choose-pay-method input{margin-top: 0;}
+.checkout-form h1, .checkout-form h3, .choose-pay-method label, .choose-pay-method input, .main-info div p, 
+.main-info div h1{margin-top: 0;}
+
+.back-button{margin-top: 40px; height: 40px; margin-right: 950px; }
+
+.show-game-info{padding-right: 50px;}
+
+.main-info div p{width: 750px;}
+
+.seller-info{width: 400px; height: 400px;}
+
+.seller-info i{color: #fff500;}
+
+.reccomended-specs{text-align: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -241,9 +292,9 @@ h1{font-size: 35px;}
 
     header nav{word-spacing: 70px;}
 
-    header nav a{font-size: 20px;}
+    header nav a, .show-game-info h3{font-size: 20px;}
 
-    header nav i, footer i{font-size: 25px;}
+    header nav i, footer i, .show-game-info i, .show-game-info h1{font-size: 25px;}
 
     footer a{font-size: 14px;}
 
@@ -257,13 +308,37 @@ h1{font-size: 35px;}
 
     .short-info img{height: 150px; width: 250px;}
 
-    .short-info p{width: 200px;}
+    .short-info p, .show-game-info, .seller-info{width: 200px;}
 
     .desktop-menu-icons div{margin-left: 120px; font-size: 10px; height: 20px; width: 20px;}
 
-    .item-cart, .complete-message{width: 600px;}
+    .item-cart, .complete-message, .show-game-info, .specs{width: 600px;}
 
     .complete-message p{width: 500px;}
+
+    .back-button{margin-right: 550px;}
+
+    .show-game-info div p{width: 350px;}
+
+    .game-actions div{width: 150px; height: 200px;}
+
+    .game-actions i{font-size: 30px;}
+
+    .specs-description{flex-direction: column; width: 300px;}
+
+    .specs-description h3{text-align: center;}
+
+    .reccomended-specs{text-align: left; margin-top: 50px;}
+
+    .show-game-info img{height: 250px;}
+
+    .show-game-info h2, .specs h2{font-size: 22px;}
+
+    .show-game-info p, .specs p{font-size: 16px;}
+
+    .main-info div p{width: 420px;}
+
+    .main-info div{width: 650px;}
 }
 
 
@@ -333,15 +408,17 @@ h1{font-size: 35px;}
 
     .not-chosen i{font-size: 50px;}
 
-    .display h3, .order-button, .action-button{font-size: 16px;}
+    .display h3, .order-button, .action-button, .show-game-info h3, .specs h3{font-size: 16px;}
 
-    .gaming-image, .intro-image, .short-info{height: 200px;}
+    .gaming-image, .intro-image, .short-info, .show-game-info img{height: 200px;}
 
     .promo-games, .gaming-image{width: 600px;}
 
-    .october-bundle, .info-text{width: 500px;}
+    .october-bundle, .info-text, .show-game-info, .specs{width: 500px;}
 
-    .october-bundle img{margin: 5px; height: 85px; width: 70px;}
+    .october-bundle img, .back-button{width: 70px;}
+
+    .october-bundle img{margin: 5px; height: 85px;}
 
     .october-bundle h2{font-size: 20px;}
 
@@ -357,15 +434,35 @@ h1{font-size: 35px;}
 
     .pay-methods i{font-size: 30px;}
 
-    .checkout-form h3, .checkout-form i{font-size: 22px;}
+    .checkout-form h3, .checkout-form i, .show-game-info h1{font-size: 22px;}
 
-    .checkout-form label, .checkout-form input{font-size: 18px;}
+    .checkout-form label, .checkout-form input, .show-game-info h2, .specs h2{font-size: 18px;}
 
     .checkout-form input{padding: 8px; width: 300px;}
 
     .choose-pay-method input{width: 15px; height: 15px;}
 
-    .checkout-info{margin-top: 30px;}
+    .checkout-info, .back-button, .specs{margin-top: 30px;}
+
+    .show-game-info img, .seller-info{width: 175px;}
+
+    .back-button{margin-right: 470px;}
+
+    .show-game-info div p{width: 300px;}
+
+    .show-game-info div p, .specs p{font-size: 12px;}
+
+    .show-game-info{margin-top: 10px;}
+
+    .show-game-info img{margin-top: -10px;}
+
+    .show-game-info h2, .specs h2{margin-top: 0;}
+
+    .seller-info{height: 220px;}
+
+    .seller-info p, .game-actions div p{width: fit-content !important;}
+
+    .show-game-info i{font-size: 20px;}
 }
 
 
@@ -427,7 +524,6 @@ h1{font-size: 35px;}
 
 
 
-
 @media(max-width: 600px){
     header nav div{margin-left: 20px;}
 
@@ -449,7 +545,7 @@ h1{font-size: 35px;}
 
     .display i{font-size: 40px;}
 
-    .display i, .action-button{margin-top: 30px;}
+    .display i, .action-button, .game-actions{margin-top: 30px;}
 
     .display h3, .checkout-form label, .checkout-form input{font-size: 14px;}
 
@@ -469,9 +565,11 @@ h1{font-size: 35px;}
 
     .add-to-cart{margin-left: 150px; font-size: 30px; margin-top: -40px;}
 
-    .october-bundle p{margin-left: 130px; margin-top: -80px; width: fit-content;}
+    .october-bundle p{margin-left: 130px; margin-top: -80px;}
 
-    .info-text{width: 350px;}
+    .october-bundle p, .game-actions, .game-actions div{height: fit-content;}
+
+    .info-text, .show-game-info, .show-game-info div, .specs{width: 350px;}
 
     .short-info img{height: 80px;}
 
@@ -494,10 +592,19 @@ h1{font-size: 35px;}
     .checkout-form input{padding: 5px; width: 200px;}
 
     .choose-pay-method input{height: 12px; width: 12px;}
+
+    .back-button{margin-right:  300px;}
+
+    .main-info, .action-section{flex-direction: column;}
+
+    .show-game-info img{margin-top: 0; height: 175px; width: 150px;}
+
+    .show-game-info, .specs{padding: 10px;}
+
+    .game-actions, .action-section{width: 200px;}
+
+    .specs p, .show-game-info p{width: fit-content;}
 }
-
-
-
 
 
 
@@ -518,7 +625,8 @@ h1{font-size: 35px;}
 
     .footer-link, .logo-and-links{margin-top: 20px;}
 
-    .intro h1, .short-info p, .pay-methods, .complete-message p, .checkout-form{width: 200px;}
+    .intro h1, .short-info p, .pay-methods, .complete-message p, .checkout-form, .show-game-info div p, 
+    .game-actions p, .specs div{width: 200px;}
 
     h1, .buy-products i{font-size: 18px;}
 
@@ -550,8 +658,14 @@ h1{font-size: 35px;}
     .checkout-form input{width: 170px;}
 
     .choose-pay-method input{width: 10px; height: 10px;}
-}
 
+
+
+
+    .back-button{margin-right: 180px;}
+
+    .show-game-info, .show-game-info div, .specs{width: 250px; padding: 0;}
+}
 
 
 
