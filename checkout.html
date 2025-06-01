@@ -7,8 +7,7 @@
     <title>Checkout</title>
 
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_io (1)/android-chrome-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_io (1)/favicon-32x32.png">
@@ -18,106 +17,147 @@
 
 
 <body>
-    
     <header>
+        <nav class="mobile-nav">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check"><i class="fas fa-bars"></i></label>  
+            
+            <div class="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
 
-        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
-        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
-        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="empty-cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        
 
-        <nav>
-            <div class="navigation-text">
-                <a href="index.html" class="active">Home</a>
+
+        <nav class="desktop-nav">
+            <div>
+                <a href="index.html" >Home</a>
                 <a href="market.html">Market</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
 
             <div class="desktop-menu-icons">
-                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="empty-cart.html" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
-
     </header>
 
 
     <main>
-        <section id="register-purchase">
+        <section class="checkout-form">
             <h1>Checkout</h1>
-            <h3>Personal information</h3>
             
-            <div class="user-info">
-            <input type="text" class="info" placeholder="First name" required>
-            <input type="text" class="info" placeholder="Last name" required>
-            <input type="mail" class="info" placeholder="e-mail" required><br><br>
-            </div>
+            <section class="checkout-info">
+            <h3>Personal information *</h3>
             
-            <p>Location *</p>
-            <div class="user-info">
-            <input type="text" class="info" placeholder="City" required>
-            <input type="text" class="info" placeholder="Country" required><br><br>
-            <input type="text" class="info" placeholder="Adress" required>
-            <input type="number" class="info" placeholder="Postal code" required><br><br>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" placeholder="First name" required>
 
+            <label for="second-name">Second name</label>
+            <input type="text" id="second-name" placeholder="Last name" required>
 
-            <p>Your phone number (optional)</p>
-            <input type="number" class="info" max="99999999" placeholder="Phone number">
-            </div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="E-mail" required>
+            </section>
+            
+            <section class="checkout-info">
+            <h3>Location *</h3>
+            <label for="city">City</label>    
+            <input type="text" id="city" placeholder="City" required>
 
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Country" required>
 
-            <h3>Payment method</h3>
-            <div id="payment-chosen">
-                <input type="radio" name="payment" checked>Card <i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-visa"></i><br><br>
-                <input type="radio" name="payment">paypal <i class="fa-brands fa-cc-paypal"></i><br><br>
-                <input type="radio" name="payment">Card <i class="fa-brands fa-google-pay"></i>
-            </div>
+            <label for="adress">Adress</label>
+            <input type="text" id="adress" placeholder="Adress" required>
+
+            <label for="post-code">Postal code</label>
+            <input type="text" id="post-code" placeholder="Postal code" pattern="\d*{4}" maxlength="4" inputmode="numeric" required>
+            </section>
+
+            <section class="checkout-info">
+                <h3>Your phone number (optional)</h3>
+                <input type="text" maxlength="8" pattern="\d*{8}" inputmode="numeric" placeholder="Phone number">   
+            </section>
+          
+            <section class="checkout-info" id="payment-method">
+                <h3>Payment method*</h3>
+                <div class="choose-pay-method">
+                    <input type="radio" name="payment" id="card-method" checked>
+                    <label for="card-method">Card</label>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-visa"></i>   
+                </div>
+                <div class="choose-pay-method">
+                    <input type="radio" name="payment" id="paypal-method">
+                    <label for="paypal-method">Paypal</label>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+            
+                <div class="choose-pay-method">
+                    <input type="radio" name="payment" id="gPay-method">
+                    <label for="gPay-method">Google pay</label> 
+                    <i class="fa-brands fa-google-pay"></i>
+                </div>  
+            </section>
         
-            <h3>Card information</h3>
-            <div id="card-info">
-                <label for="info">Cardholder name</label><br>
-                <input type="text" class="info" placeholder="Cardholder name"> <br><br>
-                <label for="info">Card number</label><br>
-                <input type="number" class="info" placeholder="Card number"><br><br>
-                <label for="expire">Expire date:</label><br>
-                <input type="month" id="expire"><br><br>
-                <input type="text" placeholder="CVC" size="4" class="info" maxlength="4"><br>
-            </div>
-            <a href="order-complete.html"><button id="place-order">Place order</button></a>
+            
+            <section class="checkout-info">
+                <h3>Card information</h3>
+                <label for="cardholder-name">Cardholder name</label>
+                <input type="text" id="cardholder-name" placeholder="Cardholder name">
+
+                <label for="card-number">Card number</label>
+                <input type="number" id="card-number" placeholder="Card number">
+
+
+                <label for="expire">Expire date:</label>
+                <input type="month" id="expire">
+
+                <label for="cvc">CVC</label>
+                <input type="text" placeholder="CVC" size="4" maxlength="4" id="cvc"><br>
+            </section>
+
+            <a href="order-complete.html"><button class="action-button">Place order</button></a>
         </section>
     </main>
 
 
     <footer>
-        <table>
-            <tr>
-                <th>Get help</th>
-                <th>Legal and Privacy</th>
-                <th>Information</th>
-            </tr>
-            <tr>
-                <td><a href="">Frequently questions</a></td>
-                <td><a href="">Privacy Policy</a></td>
-                <td><a href="">About us</a></td>
-            </tr>
-            <tr>
-                <td><a href="">My orders</a></td>
-                <td><a href="">Terms of Service</a></td>
-                <td><a href="">Career</a></td>
-            </tr>
-            <tr>
-                <td><a href="">Feedback</a></td>
-                <td><a href="">Store refund policy</a></td>
-                <td><a href="">Investors</a></td>
-            </tr>
-        </table>
+        <div class="footer-link">
+            <h3>Get help</h3>
+            <a href="#">Frequently questions</a>
+            <a href="#">My orders</a>
+            <a href="#">Feedback</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Legal and Privacy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Stor refund policy</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">Investors</a>
+        </div>
 
         <section class="logo-and-links">
-            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>

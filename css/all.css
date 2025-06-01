@@ -2,25 +2,27 @@ html, body{margin: 0; padding: 0; height: 100%;}
 
 body, header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
 .promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info, .item-cart, 
-.buy-products, .pay-methods, .desktop-menu-icons div, .complete-message{display: flex;}
+.buy-products, .pay-methods, .desktop-menu-icons div, .complete-message, .checkout-form, .checkout-info, 
+.choose-pay-method{display: flex;}
 
 header, nav, footer, .social-media-icons, .display, .offer-navigation, .information, .buy-products, 
-.pay-methods{flex-direction: row;}
+.pay-methods, .choose-pay-method{flex-direction: row;}
 
 body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info, 
-.item-cart, .complete-message{flex-direction: column;}
+.item-cart, .complete-message, .checkout-form, .checkout-info{flex-direction: column;}
 
 a:hover, i:hover, .active, .action-button:hover{color: #645FFF;}
 
-body, a, i, .order-button, .action-button{color: #fff;}
+body, a, i, .order-button, .action-button, .checkout-info input{color: #fff;}
 
-header, .mobile-menu, footer, .order-button:hover, .action-button:hover, .item-cart, .complete-message{background-color: #000;}
+header, .mobile-menu, footer, .order-button:hover, .action-button:hover, .item-cart, .complete-message, .checkout-form, 
+.checkout-info input{background-color: #000;}
 
-nav, .mobile-menu, .mobile-menu a, footer a, button{padding: 10px;}
+nav, .mobile-menu, .mobile-menu a, footer a, button, .checkout-info input{padding: 10px;}
 
 .desktop-menu-icons, .mobile-menu, .display i, .desktop-menu-icons div{position: absolute;}
 
-nav, footer, .intro, .intro-image{width: 100%;}
+nav, footer, .intro, .intro-image, .checkout-info, #payment-method{width: 100%;}
 
 .mobile-nav, header input, .mobile-menu, .extra-items, .add-to-cart{display: none;}
 
@@ -28,7 +30,7 @@ header a, .mobile-nav i, h3{font-size: 25px;}
 
 header, footer, footer div, .intro, main, .display, .display div, .october-bundle, .offer-navigation, 
 .extra-items, .information, .short-info, .item-cart, .buy-products, .pay-methods, .desktop-menu-icons div, 
-.complete-message{align-items: center;}
+.complete-message, .checkout-form, .choose-pay-method{align-items: center;}
 
 footer, footer div, .intro, main, .display div, .october-bundle, .extra-game, .item-cart, 
 .desktop-menu-icons div, .complete-message{justify-content: center;}
@@ -37,7 +39,7 @@ p, a, button{font-size: 20px;}
 
 h1, h2{text-align: center;}
 
-.promo-games, .gaming-image, .october-bundle, footer, .information{margin-top: 100px;}
+.promo-games, .gaming-image, .october-bundle, footer, .information, .checkout-form{margin-top: 100px;}
 
 .display, .offer-navigation, .information, .pay-methods{justify-content: space-evenly;}
 
@@ -55,17 +57,17 @@ footer div, .chosen img{width: 250px;}
 
 .october-bundle p, .info-text, .complete-message p{width: 800px;}
 
-h2, header i, footer i, .item-cart i{font-size: 30px;}
+h2, header i, footer i, .item-cart i, .choose-pay-method i{font-size: 30px;}
 
 .october-bundle, .information, .item-cart, .complete-message{width: 1000px;}
 
-.extra-items, .short-info{width: fit-content;}
+.extra-items, .short-info, .choose-pay-method{width: fit-content;}
 
-.display, .action-button, .item-cart, .pay-methods, .complete-message{margin-top: 50px;}
+.display, .action-button, .item-cart, .pay-methods, .complete-message, .checkout-info{margin-top: 50px;}
 
 .mobile-menu, .item-cart, .buy-products{height: fit-content;}
 
-.active i, .pay-methods i:hover{color:inherit;}
+.active i, .pay-methods i:hover, .checkout-form i:hover{color: inherit;}
 
 .october-bundle, .action-button{background-color: #2b2b2b;}
 
@@ -81,7 +83,13 @@ nav, .buy-products{justify-content: space-between;}
 
 .october-bundle, .complete-message{padding: 20px;}
 
-.item-cart, .complete-message{border-radius: 20px;}
+.item-cart, .complete-message, .checkout-form, .checkout-info input{border-radius: 20px;}
+
+.checkout-form label, .choose-pay-method{margin-top: 30px;}
+
+header, .choose-pay-method{justify-content: start;}
+
+.order-button, .choose-pay-method{height: 50px;}
 
 
 
@@ -93,7 +101,7 @@ nav, .buy-products{justify-content: space-between;}
 
 body{background-color: #090909; min-height: 100vh;}
 
-header{line-height: 50px;  justify-content: start;}
+header{line-height: 50px;}
 
 nav{word-spacing: 150px;}
 
@@ -115,7 +123,7 @@ h1{font-size: 35px;}
 
 .intro{background-image: url("../images/home/space.png");}
 
-.intro h1{width: 600px;}
+.intro h1, .checkout-form{width: 600px;}
 
 .display i{font-size: 80px; opacity: 0.5; margin-bottom: 80px;}
 
@@ -129,11 +137,9 @@ h1{font-size: 35px;}
 
 .october-bundle img{margin: 30px;}
 
-.order-button{height: 50px;}
-
 .october-bundle a{margin-top: 20px;}
 
-.offer-navigation, .buy-products, .pay-methods{width: 500px;}
+.offer-navigation, .buy-products, .pay-methods, .checkout-info input{width: 500px;}
 
 .extra-items{padding: 5px;}
 
@@ -155,12 +161,23 @@ h1{font-size: 35px;}
 
 .complete-message{padding-bottom: 50px;}
 
+.checkout-form{padding: 50px;}
 
+.checkout-form h1, .checkout-form h3{margin-bottom: 0;}
 
+.checkout-form i{margin-left: 20px;}
 
+.checkout-info{align-items: start;}
 
+.checkout-info input{margin-top: 10px; border: 0.5px solid #645FFF; font-size: 18px;}
 
+.checkout-form label{font-size: 22px;}
 
+.choose-pay-method label{margin-left: 10px;}
+
+.choose-pay-method input{height: 20px; width: 20px;}
+
+.checkout-form h1, .checkout-form h3, .choose-pay-method label, .choose-pay-method input{margin-top: 0;}
 
 
 
@@ -300,9 +317,9 @@ h1{font-size: 35px;}
 
     .intro img, .chosen img{height: 150px;}
 
-    .intro h1, .buy-products{width: 400px;}
+    .intro h1, .buy-products, .checkout-form{width: 400px;}
 
-    .promo-games, .information{margin-top: 50px;}
+    .promo-games, .information, .checkout-form{margin-top: 50px;}
 
     h1, .buy-products i{font-size: 25px;}
 
@@ -339,6 +356,16 @@ h1{font-size: 35px;}
     .short-info p{width: 150px;}
 
     .pay-methods i{font-size: 30px;}
+
+    .checkout-form h3, .checkout-form i{font-size: 22px;}
+
+    .checkout-form label, .checkout-form input{font-size: 18px;}
+
+    .checkout-form input{padding: 8px; width: 300px;}
+
+    .choose-pay-method input{width: 15px; height: 15px;}
+
+    .checkout-info{margin-top: 30px;}
 }
 
 
@@ -424,7 +451,7 @@ h1{font-size: 35px;}
 
     .display i, .action-button{margin-top: 30px;}
 
-    .display h3{font-size: 14px;}
+    .display h3, .checkout-form label, .checkout-form input{font-size: 14px;}
 
     .gaming-image{height: 150px; margin-top: 50px;}
     
@@ -450,17 +477,24 @@ h1{font-size: 35px;}
 
     .short-info img, .short-info p{width: 120px;}
 
-    .buy-products, .complete-message p{width: 250px;}
+    .buy-products, .complete-message p, .checkout-form{width: 250px;}
 
-    .buy-products h3{font-size: 16px;}
+    .buy-products h3, .checkout-form i{font-size: 16px;}
 
     .buy-products img{height: 70px; width: 55px;}
 
     .buy-products p, .action-button{font-size: 12px;}
 
     .pay-methods i{font-size: 25px;}
-}
+    
+    .checkout-form{padding: 20px;}
+    
+    .checkout-form h3{font-size: 18px;}
 
+    .checkout-form input{padding: 5px; width: 200px;}
+
+    .choose-pay-method input{height: 12px; width: 12px;}
+}
 
 
 
@@ -484,7 +518,7 @@ h1{font-size: 35px;}
 
     .footer-link, .logo-and-links{margin-top: 20px;}
 
-    .intro h1, .short-info p, .pay-methods, .complete-message p{width: 200px;}
+    .intro h1, .short-info p, .pay-methods, .complete-message p, .checkout-form{width: 200px;}
 
     h1, .buy-products i{font-size: 18px;}
 
@@ -510,6 +544,12 @@ h1{font-size: 35px;}
     .item-cart, .complete-message{padding: 10px;}
 
     .buy-products, .complete-message{width: 230px;}
+
+    .checkout-form h3{font-size: 16px;}
+
+    .checkout-form input{width: 170px;}
+
+    .choose-pay-method input{width: 10px; height: 10px;}
 }
 
 
