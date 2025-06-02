@@ -6,8 +6,7 @@
     <meta name="description" content="Welcome to Gamehub. Come and see our offers!">
     <title>Gamehub.com</title>
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_io (1)/android-chrome-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_io (1)/favicon-32x32.png">
@@ -22,20 +21,29 @@
 
 
 <body>
-
-
     <header>
+        <nav class="mobile-nav">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check"><i class="fas fa-bars"></i></label>  
+            
+            <div class="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
 
-        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
-        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
-        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="empty-cart.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        
 
-        <nav>
-            <div class="navigation-text">
+
+        <nav class="desktop-nav">
+            <div>
                 <a href="index.html" class="active">Home</a>
                 <a href="market.html">Market</a>
                 <a href="about-us.html">About</a>
@@ -43,57 +51,38 @@
             </div>
 
             <div class="desktop-menu-icons">
-                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="empty-cart.html" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-regular fa-circle-user"></i></a>
+                <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
-
     </header>
 
-
-
-
     <main>
-        
-        <!--Making the intro to the website-->
-        <section id="intro">
-            <div id="logo">
-                <img src="images/logo/gamehub-logo-desktop.png" alt="Gamehub logo">
-            </div>
+        <section class="intro">
+            <img src="images/logo/gamehub-logo-desktop.png" alt="Gamehub logo">
             <h1>Go back in time within the gaming universe with old classic games</h1>
         </section>
 
-
-
-
         
-        
-        <h2>Top searched games this week </h2>
 
-        
-        <!--bringing in promotion games-->
-        <section id="promo-games">
-            <div id="display">
-                <div id="assassin-promo">
-                    <div class="not-selected">
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/home/assassin-promo.png" alt="Assassin"> 
-                    </div>
+        <section class="promo-games">
+            <h1>Top searched games this week </h1>
+
+            <div class="display">
+                <div class="not-chosen">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images/home/assassin-promo.png" alt="Assassin"> 
                     <h3>Assassin</h3>
                 </div>
 
-                <div id="space-war-promo">
-                    <div id="selected">
-                        <img src="images/home/space-war-promo.png" alt="Space war">
-                    </div>
+                <div class="chosen">
+                    <img src="images/home/space-war-promo.png" alt="Space war"> 
                     <h3>Space war</h3>
                 </div>
 
-                <div id="black-promo">
-                    <div class="not-selected">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                        <img src="images/home/black-promo.png" alt="Black">
-                    </div>
+                <div class="not-chosen">
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                    <img src="images/home/black-promo.png" alt="Black">
                     <h3>Black</h3>
                 </div>
             </div>
@@ -104,58 +93,65 @@
 
 
 
-        <img src="images/home/gaming.png" alt="Gaming" id="gaming">
+        <img src="images/home/gaming.png" alt="Gaming" class="gaming-image">
 
 
 
 
 
 
-        <section id="october-bundle">
+        <section class="october-bundle">
             <h2>October games bundle</h2>
-            <div class="october-game">
-                <img src="images/home/space-war-ob.png" id="space-war-ob" alt="Space war" id="first-game">
-                <img src="images/home/black-ob.png" id="black-ob" alt="Black">
-                <img src="images/home/boxer-ob.png" id="boxer-ob" alt="Boxer">
-                <img src="images/home/forge-legends-ob.png" id="forge-legends-ob" alt="Forge of Legends">
-                <img src="images/home/furious-ob.png" id="furious-ob" alt="Furious">
+            <div class="october-games">
+                <img src="images/home/space-war-ob.png" alt="Space war" id="first-game">
+                <img src="images/home/black-ob.png" alt="Black" class="extra-game">
+                <img src="images/home/boxer-ob.png"  alt="Boxer" class="extra-game">
+                <img src="images/home/forge-legends-ob.png" alt="Forge of Legends" class="extra-game">
+                <img src="images/home/furious-ob.png" alt="Furious" class="extra-game">
             </div>
-            <div id="extra-item">+4</div>
-            <p id="desktop-text">Get a boundle containg the five most popular games from Septemberfor only 50$</p>
-            <div id="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></div>
-            <p id="phone-ob-price">Price: 50 $</p>
-            <button class="order-button">Order now</button>
-            <a>Read more</a>
+            <div class="extra-items">+4</div>
+            <p class="bundle-info">Get a boundle containg the five most popular games from Septemberfor only 50$</p>
+            <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <p>Price: 50 $</p>
+            <div class="offer-navigation">
+                <button class="order-button">Order now</button>
+                <a href="#">Read more</a>
+            </div>  
         </section>
     </main>
 
 
+
+
+
+
+
+
+
     <footer>
-        <table>
-            <tr>
-                <th>Get help</th>
-                <th>Legal and Privacy</th>
-                <th>Information</th>
-            </tr>
-            <tr>
-                <td><a href="">Frequently questions</a></td>
-                <td><a href="">Privacy Policy</a></td>
-                <td><a href="">About us</a></td>
-            </tr>
-            <tr>
-                <td><a href="">My orders</a></td>
-                <td><a href="">Terms of Service</a></td>
-                <td><a href="">Career</a></td>
-            </tr>
-            <tr>
-                <td><a href="">Feedback</a></td>
-                <td><a href="">Store refund policy</a></td>
-                <td><a href="">Investors</a></td>
-            </tr>
-        </table>
+        <div class="footer-link">
+            <h3>Get help</h3>
+            <a href="#">Frequently questions</a>
+            <a href="#">My orders</a>
+            <a href="#">Feedback</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Legal and Privacy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Stor refund policy</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">Investors</a>
+        </div>
 
         <section class="logo-and-links">
-            <div class="footer-logo"><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
+            <div><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>

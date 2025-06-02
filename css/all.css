@@ -1,0 +1,798 @@
+html, body{margin: 0; padding: 0;}
+
+html, body, .games{height: 100%;}
+
+body, header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
+.promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info, .item-cart, 
+.buy-products, .pay-methods, .desktop-menu-icons div, .complete-message, .checkout-form, .checkout-info, 
+.choose-pay-method, .back-button, .main-info, .main-info div, .action-section, .seller-info, .seller-info div, 
+.game-actions, .game-actions div, .specs, .specs-description, .contact-info, .chat-buble, .chat-bot, 
+.chat-bot-icon, .contact-form, .logo-and-search, .searchbar, .market-filter, .market-filter div, .market-filter div div, 
+.game-section, .games, .game{display: flex;}
+
+header, nav, footer, .social-media-icons, .display, .offer-navigation, .information, .buy-products, 
+.pay-methods, .choose-pay-method, .back-button, .main-info, .action-section, .seller-info div, .game-actions, 
+.specs-description, .contact-info, .logo-and-search, .searchbar, .market-filter div div, .game-section, .games{flex-direction: row;}
+
+body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info, 
+.item-cart, .complete-message, .checkout-form, .checkout-info, .main-info div, .seller-info, .game-actions div, 
+.specs, .chat-buble, .chat-bot, .contact-form, .market-filter, .market-filter div, .game{flex-direction: column;}
+
+a:hover, i:hover, .active, .action-button:hover, .back-button:hover i, .seller-info div i:hover{color: #645FFF;}
+
+body, a, i, .order-button, .action-button, .checkout-info input, .contact-form input, .contact-form textarea, 
+.contact-form select, .logo-and-search select, .searchbar input{color: #fff;}
+
+header, .mobile-menu, footer, .order-button:hover, .action-button:hover, .item-cart, .complete-message, .checkout-form, 
+.checkout-info input, .show-game-info, .specs, .chat-bot-icon, .contact-form{background-color: #000;}
+
+nav, .mobile-menu, .mobile-menu a, footer a, button, .checkout-info input, .main-info div, .contact-form input, 
+.contact-form textarea, .logo-and-search select, .searchbar{padding: 10px;}
+
+.desktop-menu-icons, .mobile-menu, .display i, .desktop-menu-icons div, .chat-buble{position: absolute;}
+
+nav, footer, .intro, .intro-image, .checkout-info, #payment-method, .seller-info div, .game-actions, 
+.market-filter div{width: 100%;}
+
+.mobile-nav, header input, .mobile-menu, .extra-items, .add-to-cart{display: none;}
+
+header a, .mobile-nav i, h3{font-size: 25px;}
+
+header, footer, footer div, .intro, main, .display, .display div, .october-bundle, .offer-navigation, 
+.extra-items, .information, .short-info, .item-cart, .buy-products, .pay-methods, .desktop-menu-icons div, 
+.complete-message, .checkout-form, .choose-pay-method, .back-button, .main-info, .main-info div, .action-section, 
+.game-actions, .game-actions div, .specs, .contact-info, .chat-bot, .chat-bot-icon, .contact-form, .logo-and-search, 
+.searchbar, .market-filter, .game{align-items: center;}
+
+footer, footer div, .intro, main, .display div, .october-bundle, .extra-game, .item-cart, .desktop-menu-icons div, 
+.complete-message, .main-info div, .chat-bot, .chat-bot-icon{justify-content: center;}
+
+p, a, button, input, textarea, select, .searchbar i, .market-filter label{font-size: 20px;}
+
+h1, h2, .game-actions div{text-align: center;}
+
+.promo-games, .gaming-image, .october-bundle, footer, .information, .checkout-form, .specs, .contact-info, 
+.contact-form{margin-top: 100px;}
+
+.display, .offer-navigation, .information, .pay-methods, .seller-info div, .game-actions, .logo-and-search, 
+.games{justify-content: space-evenly;}
+
+.promo-games, .gaming-image, .logo-and-search, .game-section{width: 1200px;}
+
+.not-chosen img, .order-button, .main-info img, .game-actions div, .chat-buble div, .chat-bot, .market-filter, .game{width: 200px;}
+
+.october-bundle, .order-button, .logo-and-search select{border-radius: 10px;}
+
+.order-button, .extra-items, .desktop-menu-icons div{background-color: #645FFF;}
+
+footer div, .chosen img{width: 250px;}
+
+.october-bundle, footer, .information, .short-info, .games{flex-wrap: wrap;}
+
+.october-bundle p, .info-text, .complete-message p, .specs-description{width: 800px;}
+
+h2, header i, footer i, .item-cart i, .choose-pay-method i, .seller-info i{font-size: 30px;}
+
+.october-bundle, .information, .item-cart, .complete-message, .show-game-info, .specs, .contact-info, 
+.contact-form{width: 1000px;}
+
+.extra-items, .short-info, .choose-pay-method{width: fit-content;}
+
+.display, .action-button, .item-cart, .pay-methods, .complete-message, .checkout-info, .action-section, 
+.show-game-info, .market-filter div, .game{margin-top: 50px;}
+
+.mobile-menu, .item-cart, .buy-products, .chat-bot, .game{height: fit-content;}
+
+.active i, .pay-methods i:hover, .checkout-form i:hover{color: inherit;}
+
+.october-bundle, .action-button, .contact-form input, .contact-form textarea, .contact-form select, .logo-and-search select, 
+.searchbar{background-color: #2b2b2b;}
+
+.october-bundle img, .item-cart img{height: 150px; width: 120px;}
+
+nav, .buy-products, .back-button, .main-info, .seller-info, .specs-description, .contact-info, .game-section{justify-content: space-between;}
+
+.extra-items, .desktop-menu-icons div, .chat-bot-icon, .searchbar{border-radius: 100px;}
+
+.order-button, .desktop-menu-icons div{border: 0.5px solid #000;}
+
+.order-button, .action-button{box-shadow:  0 5px 4px #000;}
+
+.october-bundle, .complete-message, .seller-info, .specs{padding: 20px;}
+
+.item-cart, .complete-message, .checkout-form, .checkout-info input{border-radius: 20px;}
+
+.checkout-form label, .choose-pay-method, .contact-form select, .contact-form textarea{margin-top: 30px;}
+
+header, .choose-pay-method{justify-content: start;}
+
+.order-button, .choose-pay-method{height: 50px;}
+
+.mobile-menu, .back-button, .chat-bot-icon{width: 100px;}
+
+.complete-message, .show-game-info{padding-bottom: 50px;}
+
+.not-chosen img, .main-info img{height: 250px;}
+
+.pay-methods i, .game-actions i{font-size: 40px;}
+
+.gaming-image, .costumer-service, .chat-buble{height: 350px;}
+
+.checkout-info input, .contact-form input, .contact-form textarea, .contact-form select{border: 0.5px solid #645FFF;}
+
+.back-button, .contact-form input, .contact-form select{height: 40px;}
+
+.intro h1, .checkout-form, .contact-form input, .contact-form textarea{width: 600px;}
+
+.short-info img, .costumer-service{width: 300px;}
+
+.seller-info, .chat-buble{width: 400px;}
+
+.chosen img, .contact-form textarea{height: 300px;}
+
+.searchbar input, .searchbar input:focus{border: none; outline: none;}
+
+.checkout-form input, .game p, .game h3{margin-top: 10px;}
+
+.checkout-form i, .searchbar input, .market-filter label{margin-left: 20px;}
+
+.checkout-info, .market-filter div{align-items: start;}
+
+.october-bundle a, .market-filter div div{margin-top: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{background-color: #090909; min-height: 100vh;}
+
+header{line-height: 50px;}
+
+nav{word-spacing: 150px;}
+
+a{text-decoration: none;}
+
+.desktop-menu-icons{right: 400px;}
+
+header nav div{margin-left: 150px;}
+
+.mobile-menu{top: 60px; left: -20px;}
+
+.mobile-nav nav{word-spacing: 10px;}
+
+main{flex: 1;}
+
+h1{font-size: 35px;}
+
+.intro{background-image: url("../images/home/space.png");}
+
+.display i{font-size: 80px; opacity: 0.5; margin-bottom: 80px;}
+
+.display i:hover{opacity: 1;}
+
+.october-bundle img{margin: 30px;}
+
+.offer-navigation, .buy-products, .pay-methods, .checkout-info input{width: 500px;}
+
+.extra-items{padding: 5px;}
+
+.intro-image{height: 500px;}
+
+.short-info img, .game img{height: 200px;}
+
+.short-info p{width: 275px;}
+
+.action-button:hover{border:  0.5px solid #645FFF; }
+
+.item-cart{padding: 30px;}
+
+.buy-products{border-top: 0.5px solid #fff; border-bottom: 0.5px solid #fff;}
+
+.desktop-menu-icons div{height: 25px; width: 25px; top: 0; margin-left: 210px; font-size: 16px;}
+
+.checkout-form{padding: 50px;}
+
+.checkout-form h1, .checkout-form h3, .game h3{margin-bottom: 0;}
+
+.checkout-info input{font-size: 18px;}
+
+.checkout-form label{font-size: 22px;}
+
+.choose-pay-method label{margin-left: 10px;}
+
+.choose-pay-method input, .market-filter input{height: 20px; width: 20px;}
+
+.checkout-form h1, .checkout-form h3, .choose-pay-method label, .choose-pay-method input, .main-info div p, 
+.main-info div h1{margin-top: 0;}
+
+.back-button{margin-top: 40px; margin-right: 950px; }
+
+.show-game-info{padding-right: 50px;}
+
+.main-info div p{width: 750px;}
+
+.seller-info{ height: 400px;}
+
+.seller-info i{color: #fff500;}
+
+.reccomended-specs{text-align: right;}
+
+.chat-buble{
+    margin-left: 300px;
+    margin-top: -300px;
+    background-image: url("../images/contact/chat-buble.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.chat-buble div{margin-left: 170px; margin-top: 80px;}
+
+.chat-bot-icon{height: 100px;}
+
+.chat-bot i{font-size: 50px;}
+
+.contact-form{padding-bottom: 20px;}
+
+.contact-form textarea{height: 300px;}
+
+.searchbar input{background-color: transparent;}
+
+.games{width: 900px;}
+
+.game img{width: 180px;}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1750px){
+    header nav div{margin-left: 75px;}
+
+    header nav{word-spacing: 100px;}
+
+    .desktop-menu-icons{right: 200px;}
+
+    .desktop-menu-icons div{margin-left: 165px;}
+
+    .intro-image{height: 400px;}
+}
+
+
+
+@media(max-width: 1400px){
+    .promo-games, .gaming-image{width: 800px;}
+
+    .chosen img{width: 220px;}
+
+    .not-chosen img{height: 200px; width: 170px;}
+
+    .chosen img, .gaming-image{height: 250px;}
+
+    .october-bundle{width: 600px;}
+
+    .october-bundle p{width: 400px;}
+
+    .october-bundle img{height: 100px; width: 80px; margin: 10px;}
+
+    .offer-navigation{width: 300px;}
+
+    .order-button{width: 120px; height: 40px; padding: 2px}
+}
+
+
+
+
+
+
+
+@media(max-width: 1200px){
+    header{line-height: 40px;}
+
+    header nav{word-spacing: 70px;}
+
+    header nav a, .show-game-info h3, .game h3{font-size: 20px;}
+
+    header nav i, footer i, .show-game-info i, .show-game-info h1{font-size: 25px;}
+
+    footer a{font-size: 14px;}
+
+    footer h3{font-size: 18px;}
+
+    .intro-image, .contact-info img{height: 300px;}
+
+    .information, .contact-form, .contact-info, .logo-and-search, .game-section{width: 800px;}
+
+    .short-info{height: 275px;}
+
+    .short-info img, .logo-and-search img, .game-section img{height: 150px;}
+
+    .short-info img, .contact-us-logo, .contact-info img{width: 250px;}
+
+    .short-info p, .show-game-info, .seller-info, .logo-and-search img{width: 200px;}
+
+    .desktop-menu-icons div{font-size: 10px; height: 20px; width: 20px;}
+
+    .desktop-menu-icons div, .chat-buble div{margin-left: 120px;}
+
+    .item-cart, .complete-message, .show-game-info, .specs, .games{width: 600px;}
+
+    .complete-message p{width: 500px;}
+
+    .back-button{margin-right: 550px;}
+
+    .show-game-info div p{width: 350px;}
+
+    .game-actions div .game-section img, .game{width: 150px;}
+
+    .game-actions div, .contact-us-logo{height: 200px;}
+
+    .game-actions i{font-size: 30px;}
+
+    .specs-description{flex-direction: column; width: 300px;}
+
+    .specs-description h3{text-align: center;}
+
+    .reccomended-specs{text-align: left; margin-top: 50px;}
+
+    .show-game-info img{height: 250px;}
+
+    .show-game-info h2, .specs h2{font-size: 22px;}
+
+    .show-game-info p, .specs p, .market-filter label, .logo-and-search input, .logo-and-search select{font-size: 16px;}
+
+    .main-info div p{width: 420px;}
+
+    .main-info div{width: 650px;}
+
+    .chat-buble{width: 320px; margin-left: 250px;}
+
+    .chat-buble div{margin-top: 100px;}
+
+    .market-filter label{margin-left: 15px;}
+
+    .market-filter input{height: 15px; width: 15px;}
+
+    .game-section img{width: 120px;}
+
+    .games{height: fit-content;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1050px){
+    .desktop-menu-icons{right: 100px;}
+
+    footer div{width: 140px;}
+
+    footer img{height: 75px;}
+
+    footer i{font-size: 20px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 950px){
+    .intro img{width: 200px;}
+
+    .intro img, .chosen img{height: 150px;}
+
+    .intro h1, .buy-products, .checkout-form{width: 400px;}
+
+    .promo-games, .information, .checkout-form{margin-top: 50px;}
+
+    h1, .buy-products i{font-size: 25px;}
+
+    .display{margin-top: 20px;}
+
+    .chosen img{width: 120px;}
+
+    .not-chosen img, .short-info img, .buy-products img{height: 120px;}
+
+    .not-chosen img, .buy-products img{width: 100px;}
+
+    .not-chosen i{font-size: 50px;}
+
+    .display h3, .order-button, .action-button, .show-game-info h3, .specs h3{font-size: 16px;}
+
+    .gaming-image, .intro-image, .short-info, .show-game-info img{height: 200px;}
+
+    .promo-games, .gaming-image{width: 600px;}
+
+    .october-bundle, .info-text, .show-game-info, .specs{width: 500px;}
+
+    .october-bundle img, .back-button, .chat-bot-icon{width: 70px;}
+
+    .october-bundle img{margin: 5px; height: 85px;}
+
+    .october-bundle h2{font-size: 20px;}
+
+    p, a, .contact-form input, .contact-form textarea, .contact-form select{font-size: 14px;}
+
+    .order-button{width: 90px;}
+
+    .information, .contact-form, .contact-info{width: 550px;}
+
+    .short-info img{width: 160px;}
+
+    .short-info p{width: 150px;}
+
+    .pay-methods i{font-size: 30px;}
+
+    .checkout-form h3, .checkout-form i, .show-game-info h1, .contact-form h3, .contact-info h3{font-size: 22px;}
+
+    .checkout-form label, .checkout-form input, .show-game-info h2, .specs h2{font-size: 18px;}
+
+    .checkout-form input{padding: 8px; width: 300px;}
+
+    .choose-pay-method input{width: 15px; height: 15px;}
+
+    .checkout-info, .back-button, .specs{margin-top: 30px;}
+
+    .show-game-info img, .seller-info{width: 175px;}
+
+    .back-button{margin-right: 470px;}
+
+    .show-game-info div p{width: 300px;}
+
+    .show-game-info div p, .specs p{font-size: 12px;}
+
+    .show-game-info{margin-top: 10px;}
+
+    .show-game-info img{margin-top: -10px;}
+
+    .show-game-info h2, .specs h2{margin-top: 0;}
+
+    .seller-info{height: 220px;}
+
+    .seller-info p, .game-actions div p{width: fit-content !important;}
+
+    .show-game-info i{font-size: 20px;}
+
+    .contact-form input, .contact-form textarea{padding: 5px; width: 450px;}
+
+    .contact-form input, .contact-form select{height: 30px;}
+
+    .contact-info img{height: 175px; width: 160px;}
+
+    .contact-form, .contact-info{margin-top: 80px;}
+
+    .chat-buble{width: 250px; margin-top: -200px; margin-left: 160px;}
+
+    .chat-buble div{width: 130px; margin-left: 90px; margin-top: 110px;}
+
+    .chat-bot-icon i{font-size: 40px;}
+
+    .chat-bot-icon{height: 70px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+    header{line-height: 30px;}
+
+    header nav{word-spacing: 30px;}
+
+    header nav div{margin-left: 50px;}
+
+    header nav a{font-size: 16px;}
+
+    header nav i, .game-section h3{font-size: 18px;}
+
+    .item-cart, .complete-message{width: 400px;}
+
+    .pay-methods{width: 250px; margin-top: 30px;}
+
+    .buy-products, .complete-message p{width: 350px;}
+
+    .desktop-menu-icons div{font-size: 9px; height: 15px; width: 15px; margin-left: 68px;}
+
+    .logo-and-search, .game-section{width: 600px;}
+
+    .logo-and-search img{width: 120px; height: 100px;}
+
+    .searchbar{width: 150px;}
+
+    .searchbar input{width: 100%;}
+
+    .market-filter h2{font-size: 25px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px){
+    header nav div{margin-left: 20px;}
+
+    .desktop-menu-icons{right: 50px;}
+
+    .intro img, .show-game-info, .contact-us-logo{width: 150px;}
+
+    .intro img, .october-bundle img, .contact-us-logo{height: 100px;}
+
+    .intro h1, .item-cart, .complete-message{width: 300px;}
+
+    h1, .october-bundle p, .buy-products i{font-size: 20px;}
+
+    .promo-games, .gaming-image, .october-bundle, .information, .contact-form, .contact-info, .logo-and-search, 
+    .game-section{width: 400px;}
+
+    .chosen img, .game img{height: 120px;}
+
+    .chosen img, .chat-buble div, .game, .game img, .searchbar{width: 100px;}
+
+    .not-chosen img{height: 90px; width: 70px;}
+
+    .display i{font-size: 40px;}
+
+    .display i, .action-button, .game-actions{margin-top: 30px;}
+
+    .display h3, .checkout-form label, .checkout-form input, .chat-buble h3{font-size: 14px;}
+
+    .gaming-image{height: 150px; margin-top: 50px;}
+    
+    .october-bundle{align-items: start; justify-content: start; height: 180px; margin-top: 75px;}
+
+    .october-bundle h2{text-align: center; width: 100%;}
+
+    .october-bundle img{width: 85px;}
+
+    .extra-game, .bundle-info, .offer-navigation{display: none;}
+
+    .extra-items, .add-to-cart{display: flex;}
+
+    .extra-items{margin-left: 80px; margin-top: -30px;}
+
+    .add-to-cart{margin-left: 150px; font-size: 30px; margin-top: -40px;}
+
+    .october-bundle p{margin-left: 130px; margin-top: -80px;}
+
+    .october-bundle p, .game-actions, .game-actions div{height: fit-content;}
+
+    .info-text, .show-game-info, .show-game-info div, .specs, .contact-form input, .contact-form textarea{width: 350px;}
+
+    .short-info img{height: 80px;}
+
+    .short-info img, .short-info p{width: 120px;}
+
+    .buy-products, .complete-message p, .checkout-form{width: 250px;}
+
+    .buy-products h3, .checkout-form i{font-size: 16px;}
+
+    .buy-products img{width: 55px;}
+
+    .buy-products img, .logo-and-search img{height: 70px;}
+
+    .buy-products p, .action-button, .searchbar i{font-size: 12px;}
+
+    .pay-methods i{font-size: 25px;}
+    
+    .checkout-form{padding: 20px;}
+    
+    .checkout-form h3, .contact-form h3, .contact-info h3{font-size: 18px;}
+
+    .checkout-form input{width: 200px;}
+
+    .checkout-form input, .searchbar, .logo-and-search select{padding: 5px;}
+
+    .choose-pay-method input{height: 12px; width: 12px;}
+
+    .back-button{margin-right:  300px;}
+
+    .main-info, .action-section, .contact-info{flex-direction: column;}
+
+    .show-game-info img{margin-top: 0; height: 175px;}
+
+    .show-game-info, .specs{padding: 10px;}
+
+    .game-actions, .action-section{width: 200px;}
+
+    .specs p, .show-game-info p{width: fit-content;}
+    
+    .contact-form, .contact-info{margin-top: 20px;}
+
+    .chat-buble{width: 175px; margin-top: -130px; margin-left: 220px;}
+
+    .chat-buble div{margin-left: 70px; margin-top: 130px;}
+
+    .chat-buble p{font-size: 10px;}
+
+    .logo-and-search img{width: 90px;}
+
+    .searchbar input{margin-left: 5px;}
+
+    .searchbar{height: 20px;}
+
+    .logo-and-search select{height: 30px;}
+
+    .october-bundle p{width: fit-content;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 450px){
+    .desktop-nav, .market-filter, .logo-and-search img{display: none;}
+
+    .mobile-nav{display: flex;}
+
+    header{justify-content: center; line-height: 20px; align-items: center;}
+
+    header nav{width: 80%; justify-content: space-between;}
+
+    footer, .information{flex-direction: column;}
+
+    .footer-link, .logo-and-links{margin-top: 20px;}
+
+    .intro h1, .short-info p, .pay-methods, .complete-message p, .checkout-form, .show-game-info div p, 
+    .game-actions p, .specs div, .contact-form input, .contact-form textarea{width: 200px;}
+
+    h1, .buy-products i{font-size: 18px;}
+
+    .social-media-icons{margin-bottom: 10px;}
+
+    .promo-games, .gaming-image, .october-bundle, .info-text, .information, .short-info img, 
+    .item-cart, .show-game-info, .show-game-info div, .specs, .contact-form, .contact-info, .logo-and-search, 
+    .game-section{width: 250px;}
+
+    .chosen img{height: 100px;}
+
+    .chosen img, .chat-buble div{width: 80px;}
+
+    .not-chosen img{height: 80px; width: 60px;}
+
+    .display i{font-size: 30px;}
+
+    .october-bundle{padding: 5px;}
+
+    .gaming-image, .short-info img{height: 120px;}
+
+    .intro-image, .contact-info img{height: 150px;}
+
+    .short-info{height: 200px;}
+
+    .item-cart, .complete-message{padding: 10px;}
+
+    .buy-products, .complete-message{width: 230px;}
+
+    .checkout-form h3{font-size: 16px;}
+
+    .checkout-form input{width: 170px;}
+
+    .choose-pay-method input{width: 10px; height: 10px;}
+
+    .back-button{margin-right: 180px;}
+
+    .show-game-info, .show-game-info div, .specs{padding: 0;}
+
+    .contact-form, .contact-info{padding: 2px;}
+
+    .contact-info img{width: 120px;}
+
+    .chat-buble{width: 140px; margin-left: 100px;}
+    
+    .chat-buble div{margin-left: 55px; margin-top: 135px;}
+
+    .chat-buble h3{margin-bottom: 0;}
+
+    .chat-buble h3, .logo-and-search select{font-size: 12px;}
+
+    .logo-and-search select{width: 100px;}
+}

@@ -7,8 +7,7 @@
     <title>Market</title>
 
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/market.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_io (1)/android-chrome-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_io (1)/favicon-32x32.png">
@@ -20,302 +19,174 @@
 
 
 <body>
-    
     <header>
-
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
-
-        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
-        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
-        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
-
-        <nav>
-            <div class="navigation-text">
+        <nav class="mobile-nav">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check"><i class="fas fa-bars"></i></label>  
+            
+            <div class="mobile-menu">
                 <a href="index.html">Home</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+
+        
+
+
+        <nav class="desktop-nav">
+            <div>
+                <a href="index.html" >Home</a>
                 <a href="market.html" class="active">Market</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
 
             <div class="desktop-menu-icons">
-                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
-
     </header>
 
 
+
     <main>
+        <img src="images/market/troopers.png" alt="troopers" class="intro-image">
 
-        <section id="intro-image">
-            <img src="images/market/troopers.png" alt="troopers">
-            <h1>Gamehub Market</h1>
+        <h1>Gamehub Market</h1>
+
+
+
+        <section class="logo-and-search">
+            <img src="images/logo/gamehub-logo-desktop.png" alt="gamehub logo">
+                
+            <div class="searchbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+                
+            <select>
+                <option>Any consonsole</option>
+                <option>Playstation</option>
+                <option>Nintendo</option>
+                <option>PC</option>
+                <option>X-box</option>
+                <option>Gameboy</option>
+            </select>
         </section>
 
-
-
-
-        <section id="logo-and-search">
-            <img src="images/logo/gamehub-logo-desktop.png">
-            <div id="searchbar-and-option">
-                <input type="text" placeholder="Search">
-                <div id="searchglass"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <select id="select-console">
-                    <option>Any consonsole</option>
-                    <option>Playstation</option>
-                    <option>Nintendo</option>
-                    <option>PC</option>
-                    <option>X-box</option>
-                    <option>Gameboy</option>
-                </select>
-            </div>
-            <div id="select-filter">
-                <select id="select-category">
-                    <option>Category</option>
-                    <option>Action</option>
-                    <option>Shooter</option>
-                    <option>Sports</option>
-                    <option>Exploration</option>
-                    <option>Horror</option>
-                    <option>RPG</option>
-                    <option>Racing</option>
-                    <option>Space</option>
-                    <option>Survival</option>
-                    <option>Tower defence</option>
-                </select>
-                <select id="select-feature">
-                    <option>Features</option>
-                    <option>Singleplayer</option>
-                    <option>Multiplayer</option>
-                    <option>Online multiplayer</option>
-                    <option>Competitive</option>
-                    <option>Co-op</option>
-                    <option>Cross platform</option>
-                </select>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-    <div id="game-rows">
-        <section id="filter">
-            <h2>Sort by</h2>
-            <div id="sort-by">
+        <section class="game-section">
+            <section class="market-filter">
+            <h2>Filter by</h2>
+            
+            <div>
                 <h3>Price</h3>     
-                <input type="radio" name="sort-by">Low to high
-                <br><br>
-                <input type="radio" name="sort-by">High to low
-                <br><br>
-                <input type="radio" name="sort-by">A to Z
+                <div><input type="radio" name="sort-by" id="l-h"><label for="l-h">Low to high</label></div>
+                <div><input type="radio" name="sort-by" id="h-l"><label for="h-l">High to low</label></div>
+                <div><input type="radio" name="sort-by" id="a-z"><label for="a-z">A - Z</label></div>
             </div>
-            <div id="category">
+
+            <div>
                 <h3>Category</h3>
-                <input type="checkbox" name="category">Action
-                <br><br>
-                <input type="checkbox" name="category">Shooter
-                <br><br>
-                <input type="checkbox" name="category">Sports
-                <br><br>
-                <input type="checkbox" name="category">Exploration
-                <br><br>
-                <input type="checkbox" name="category">Horror
-                <br><br>
-                <input type="checkbox" name="category">RPG
-                <br><br>
-                <input type="checkbox" name="category">Racing
-                <br><br>
-                <input type="checkbox" name="category">Space
-                <br><br>
-                <input type="checkbox" name="category">Survival
-                <br><br>
-                <input type="checkbox" name="category">Tower defence
+                <div><input type="checkbox" name="category" id="action"><label for="action">Action</label></div>
+                <div><input type="checkbox" name="category" id="shooter"><label for="shooter">Shooter</label></div>
+                <div><input type="checkbox" name="category" id="sports"><label for="sports">Sports</label></div>
+                <div><input type="checkbox" name="category" id="exploration"><label for="exploration">Exploration</label></div>
+                <div><input type="checkbox" name="category" id="horror"><label for="horror">Horror</label></div>
+                <div><input type="checkbox" name="category" id="rpg"><label for="rpg">RPG</label></div>
+                <div><input type="checkbox" name="category" id="racing"><label for="racing">Racing</label></div>
+                <div><input type="checkbox" name="category" id="space"><label for="space">Space</label></div>
+                <div><input type="checkbox" name="category" id="survival"><label for="survival">Survival</label></div>
+                <div><input type="checkbox" name="category" id="tower-defence"><label for="tower-defence">Tower defence</label></div>
             </div>
-            <div id="features">
+
+            <div>
                 <h3>Features</h3>
-                <input type="checkbox" name="features">Singleplayer
-                <br><br>
-                <input type="checkbox" name="features">Multiplayer
-                <br><br>
-                <input type="checkbox" name="features">Online multiplayer
-                <br><br>
-                <input type="checkbox" name="features">Competitive
-                <br><br>
-                <input type="checkbox" name="features">Co-op
-                <br><br>
-                <input type="checkbox" name="features">Cross platform
+                <div><input type="checkbox" name="features" id="singleplayer"><label for="singleplayer">Singleplayer</label></div>
+                <div><input type="checkbox" name="features" id="multiplayer"><label for="multiplayer">Multiplayer</label></div>
+                <div><input type="checkbox" name="features" id="online-multiplayer"><label for="online-multiplayer">Online multiplayer</label></div>
+                <div><input type="checkbox" name="features" id="competitive"><label for="competitive">Competitive</label></div>
+                <div><input type="checkbox" name="features" id="co-op"><label for="co-op">Co-op</label></div>
+                <div><input type="checkbox" name="features" id="cross-patform"><label for="cross-patform">Cross platform</label></div>
             </div>
+            </section>
+
+            <section class="games">
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/assassin-cover.png" alt="Assassin">
+                <h3 class="game-title">Assassin</h3>
+                <p class="text">price: 12$</p>
+            </a>
+            
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/super-duper-cover.png" alt="Super duper">
+                <h3>Super duper</h3>
+                <p>price: 12$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/space-war-cover.png" alt="Space war">
+                <h3>Space war</h3>
+                <p>price: 13$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="/images/market/cyberpnk-cover.png" alt="Cyberpunk">
+                <h3>Cyberpunk</h3>
+                <p>price: 15$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/assassin-cover.png" alt="Assassin">
+                <h3>Assassin</h3>
+                <p>price: 12$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/black-cover.png" alt="Black">
+                <h3>Black</h3>
+                <p>price: 12$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/super-duper-cover.png" alt="Super duper">
+                <h3>Super duper</h3>
+                <p>price: 13$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="/images/market/assassin-cover.png" alt="Assassin">
+                <h3>Assassin</h3>
+                <p>price: 15$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/space-war-cover.png" alt="Space war">
+                <h3>Space war</h3>
+                <p>price: 12$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/assassin-cover.png" alt="Assassin">
+                <h3>Assassin</h3>
+                <p>price: 13$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/assassin-cover.png" alt="Assassin">
+                <h3>Assassin</h3>
+                <p>price: 13$</p>
+            </a>
+            <a class="game" href="assassin-infopage.html">
+                <img src="images/market/boxer-cover.png" alt="Boxer">
+                <h3>Boxer</h3>
+                <p>price: 14$</p>
+            </a>
+
+            
+            </section>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-        
-            <section id="first-game-column">
-                <div class="games">
-                    <div class="game-image"><img src="images/market/assassin-cover.png" alt="Assassin"></div>
-                    <p class="game-title">Assassin</p>
-                    <p class="text">Seller: Kellerman29</p>
-                    <p class="text">price: 12$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href="assassin-infopage.html"><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="images/market/super-duper-cover.png" alt="Super duper"></div>
-                    <p class="game-title">Super duper</p>
-                    <p class="text">Seller: CrazyFrog</p>
-                    <p class="text">price: 12$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="images/market/space-war-cover.png" alt="Space war"></div>
-                    <p class="game-title">Space war</p>
-                    <p class="text">Seller: Kellerman29</p>
-                    <p class="text">price: 13$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="/images/market/cyberpnk-cover.png" alt="Cyberpunk"></div>
-                    <p class="game-title">Cyberpunk</p>
-                    <p class="text">Seller: Kellerman29</p>
-                    <p class="text">price: 15$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-            <section id="second-game-column">
-                <div class="games">
-                    <div class="game-image"><img src="images/market/assassin-cover.png" alt="Assassin"></div>
-                    <p class="game-title">Assassin</p>
-                    <p class="text">Seller: CR7_fan</p>
-                    <p class="text">price: 12$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="images/market/black-cover.png" alt="Black"></div>
-                    <p class="game-title">Black</p>
-                    <p class="text">Seller: Hitman007</p>
-                    <p class="text">price: 12$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="images/market/super-duper-cover.png" alt="Super duper"></div>
-                    <p class="game-title">Super duper</p>
-                    <p class="text">Seller: PIKMIN_2000</p>
-                    <p class="text">price: 13$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="/images/market/assassin-cover.png" alt="Assassin"></div>
-                    <p class="game-title">Assassin</p>
-                    <p class="text">Seller: Sneaker</p>
-                    <p class="text">price: 15$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-            <section id="third-game-column">
-                <div class="games">
-                    <div class="game-image"><img src="images/market/space-war-cover.png" alt="Space war"></div>
-                    <p class="game-title">Space war</p>
-                    <p class="text">Seller: Soldier1995</p>
-                    <p class="text">price: 12$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="images/market/assassin-cover.png" alt="Assassin"></div>
-                    <p class="game-title">Assassin</p>
-                    <p class="text">Seller: Ezio_Best</p>
-                    <p class="text">price: 13$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="images/market/boxer-cover.png" alt="Boxer"></div>
-                    <p class="game-title">Boxer</p>
-                    <p class="text">Seller: TysonFan12</p>
-                    <p class="text">price: 14$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div>
-                <div class="games">
-                    <div class="game-image"><img src="/images/market/cyberpnk-cover.png" alt="Cyberpunk"></div>
-                    <p class="game-title">Cyberpunk</p>
-                    <p class="text">Seller: Sneaker</p>
-                    <p class="text">price: 15$</p>
-                    <div class="action-icons">
-                        <div id="eye-icon"><a href=""><i class="fa-solid fa-eye"></i></a></div>
-                        <div id="heart-icon"><a href=""><i class="fa-solid fa-heart"></i></a></div>
-                    </div>
-                </div> 
-            </section> 
-        </div>
-        <button id="load-button">Load more</button>
+    <button class="action-button">Load more</button>
+    
     </main>
 
 
@@ -325,40 +196,54 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
-        <table>
-            <tr>
-                <th>Get help</th>
-                <th>Legal and Privacy</th>
-                <th>Information</th>
-            </tr>
-            <tr>
-                <td><a href="">Frequently questions</a></td>
-                <td><a href="">Privacy Policy</a></td>
-                <td><a href="">About us</a></td>
-            </tr>
-            <tr>
-                <td><a href="">My orders</a></td>
-                <td><a href="">Terms of Service</a></td>
-                <td><a href="">Career</a></td>
-            </tr>
-            <tr>
-                <td><a href="">Feedback</a></td>
-                <td><a href="">Store refund policy</a></td>
-                <td><a href="">Investors</a></td>
-            </tr>
-        </table>
+        <div class="footer-link">
+            <h3>Get help</h3>
+            <a href="#">Frequently questions</a>
+            <a href="#">My orders</a>
+            <a href="#">Feedback</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Legal and Privacy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Stor refund policy</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">Investors</a>
+        </div>
 
         <section class="logo-and-links">
-            <div class="footer-logo"><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
+            <div><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
                 <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
             </div>
         </section>
-        
-
     </footer>
 
 </body>
