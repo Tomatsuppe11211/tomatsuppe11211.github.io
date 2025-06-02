@@ -7,8 +7,7 @@
     <title>Contact us</title>
 
     <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon_io (1)/android-chrome-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon_io (1)/favicon-32x32.png">
@@ -21,138 +20,127 @@
 <body>
 
     <header>
-
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-icon"><i class="fas fa-bars"></i></label>
-
-        <a href="index.html" class="home-icon"><i class="fa-solid fa-house"></i></a>
-        <a href="index.html" class="phone-logo"><img src="images/navigation/mobile/gamehub-logo-mobile.png"></a>
-        <a href="" class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-        <a href="" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
-
-        <nav>
-            <div class="navigation-text">
+        <nav class="mobile-nav">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check"><i class="fas fa-bars"></i></label>  
+            
+            <div class="mobile-menu">
                 <a href="index.html">Home</a>
                 <a href="market.html">Market</a>
                 <a href="about-us.html">About</a>
                 <a href="contact.html" class="active">Contact</a>
             </div>
 
-            <div class="desktop-menu-icons">
-                <a href="" class="desktop-user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <a href="" class="desktop-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><img src="images/navigation/mobile/gamehub-logo-mobile.png" alt="logo"></a>
+            <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+            <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
 
+        
+
+
+        <nav class="desktop-nav">
+            <div>
+                <a href="index.html" >Home</a>
+                <a href="market.html">Market</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+
+            <div class="desktop-menu-icons">
+                <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="empty-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
     </header>
     
 
 
     <main>
+        <img src="images/logo/gamehub-logo-desktop.png" alt="logo" class="contact-us-logo">
+
+
+        
 
 
 
-        <img src="images/logo/gamehub-logo-desktop.png" alt="logo" id="logo">
 
 
-
-
-
-        <section id="contact">
-            
-            <div id="images">
-                <img src="images/contact/costumer-service.png" alt="Costumer Service" id="employee-image">
-                <img src="images/contact/chat-buble.png" alt="chat-buble" id="chat-buble">
+        <section class="contact-info">
+            <div>
+                <img src="images/contact/costumer-service.png" alt="Costumer Service" class="costumer-service">
+                <p>Mail: CostumService@Gamehub.com</p>
+                <p>Phone: +47 28 36 19 24</p> 
+            </div>
                 
-                <div id="buble-message">
+            <div class="chat-buble">
+                <div>
                     <h3>Need help?</h3>
                     <p>Let us know in the chat or send us a mail</p>
                 </div>
-
-                <div id="contact-info">
-                    <p>Mail: CostumService@Gamehub.com</p>
-                    <p>Phone: +47 28 36 19 24</p>
-                </div>
             </div>
 
-            
-
-
-            <div id="chat-bot">
-                <div id="chat-bot-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="chat-bot">
+                <div class="chat-bot-icon"><i class="fa-solid fa-headset"></i></div>
                 <h3>Chat with a bot</h3>
             </div>
-
         </section>
 
 
 
-        <section id="send-mail">
+        <section class="contact-form">
             <h3>Send a message to Gamehub</h3>
             
-                <input type="text" placeholder="Username or email" id="username-or-email">
+            <input type="text" placeholder="Username or email">
 
+            <select>
+                <option>Choose a category</option>
+                <option>Sale or purchase</option>
+                <option>Report issues</option>
+                <option>profile</option>
+                <option>Other</option>
+            </select>
 
-                <select id="category">
-                    <option>Choose a category</option>
-                    <option>Sale or purchase</option>
-                    <option>Report issues</option>
-                    <option>profile</option>
-                    <option>Other</option>
-                </select>
+            <textarea placeholder="Describe your issue."></textarea>
 
-                <textarea id="description" placeholder="Describe your issue."></textarea>
-
-                <input type="submit" value="Send" id="send-button">
+            <button class="action-button">Send message</button>
         </section>
-
-        <section id="phone-contact">
-            <h3>Contact us</h3>
-            <p>Mail: CostumService@Gamehub.com</p>
-            <p>Phone: +47 28 36 19 24</p>
-            <button>Send message</button>
-        </section>
-
     </main>
 
 
 
 
     <footer>
-        <table>
-            <tr>
-                <th>Get help</th>
-                <th>Legal and Privacy</th>
-                <th>Information</th>
-            </tr>
-            <tr>
-                <td><a href="">Frequently questions</a></td>
-                <td><a href="">Privacy Policy</a></td>
-                <td><a href="">About us</a></td>
-            </tr>
-            <tr>
-                <td><a href="">My orders</a></td>
-                <td><a href="">Terms of Service</a></td>
-                <td><a href="">Career</a></td>
-            </tr>
-            <tr>
-                <td><a href="">Feedback</a></td>
-                <td><a href="">Store refund policy</a></td>
-                <td><a href="">Investors</a></td>
-            </tr>
-        </table>
+        <div class="footer-link">
+            <h3>Get help</h3>
+            <a href="#">Frequently questions</a>
+            <a href="#">My orders</a>
+            <a href="#">Feedback</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Legal and Privacy</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Stor refund policy</a>
+        </div>
+
+        <div class="footer-link">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">Investors</a>
+        </div>
 
         <section class="logo-and-links">
-            <img src="images/footer/logo-footer.png" alt="Gamehub logo" class="footer-logo">
+            <div><img src="images/footer/logo-footer.png" alt="Gamehub logo"></div>
             <div class="social-media-icons">
                 <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
                 <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
                 <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
             </div>
         </section>
-        
-
     </footer>
-
 </body>
 </html>

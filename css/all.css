@@ -1,31 +1,38 @@
-html, body{margin: 0; padding: 0; height: 100%;}
+html, body{margin: 0; padding: 0;}
+
+html, body, .games{height: 100%;}
 
 body, header, nav, footer, footer div, .social-media-icons, #menu-check:checked ~ .mobile-menu, .intro, main, 
 .promo-games, .display, .display div, .october-bundle, .offer-navigation, .information, .short-info, .item-cart, 
 .buy-products, .pay-methods, .desktop-menu-icons div, .complete-message, .checkout-form, .checkout-info, 
 .choose-pay-method, .back-button, .main-info, .main-info div, .action-section, .seller-info, .seller-info div, 
-.game-actions, .game-actions div, .specs, .specs-description{display: flex;}
+.game-actions, .game-actions div, .specs, .specs-description, .contact-info, .chat-buble, .chat-bot, 
+.chat-bot-icon, .contact-form, .logo-and-search, .searchbar, .market-filter, .market-filter div, .market-filter div div, 
+.game-section, .games, .game{display: flex;}
 
 header, nav, footer, .social-media-icons, .display, .offer-navigation, .information, .buy-products, 
 .pay-methods, .choose-pay-method, .back-button, .main-info, .action-section, .seller-info div, .game-actions, 
-.specs-description{flex-direction: row;}
+.specs-description, .contact-info, .logo-and-search, .searchbar, .market-filter div div, .game-section, .games{flex-direction: row;}
 
 body, .mobile-menu, footer div, .intro, main, .promo-games, .display div, .october-bundle, .short-info, 
 .item-cart, .complete-message, .checkout-form, .checkout-info, .main-info div, .seller-info, .game-actions div, 
-.specs{flex-direction: column;}
+.specs, .chat-buble, .chat-bot, .contact-form, .market-filter, .market-filter div, .game{flex-direction: column;}
 
 a:hover, i:hover, .active, .action-button:hover, .back-button:hover i, .seller-info div i:hover{color: #645FFF;}
 
-body, a, i, .order-button, .action-button, .checkout-info input{color: #fff;}
+body, a, i, .order-button, .action-button, .checkout-info input, .contact-form input, .contact-form textarea, 
+.contact-form select, .logo-and-search select, .searchbar input{color: #fff;}
 
 header, .mobile-menu, footer, .order-button:hover, .action-button:hover, .item-cart, .complete-message, .checkout-form, 
-.checkout-info input, .show-game-info, .specs{background-color: #000;}
+.checkout-info input, .show-game-info, .specs, .chat-bot-icon, .contact-form{background-color: #000;}
 
-nav, .mobile-menu, .mobile-menu a, footer a, button, .checkout-info input, .main-info div{padding: 10px;}
+nav, .mobile-menu, .mobile-menu a, footer a, button, .checkout-info input, .main-info div, .contact-form input, 
+.contact-form textarea, .logo-and-search select, .searchbar{padding: 10px;}
 
-.desktop-menu-icons, .mobile-menu, .display i, .desktop-menu-icons div{position: absolute;}
+.desktop-menu-icons, .mobile-menu, .display i, .desktop-menu-icons div, .chat-buble{position: absolute;}
 
-nav, footer, .intro, .intro-image, .checkout-info, #payment-method, .seller-info div, .game-actions{width: 100%;}
+nav, footer, .intro, .intro-image, .checkout-info, #payment-method, .seller-info div, .game-actions, 
+.market-filter div{width: 100%;}
 
 .mobile-nav, header input, .mobile-menu, .extra-items, .add-to-cart{display: none;}
 
@@ -34,53 +41,58 @@ header a, .mobile-nav i, h3{font-size: 25px;}
 header, footer, footer div, .intro, main, .display, .display div, .october-bundle, .offer-navigation, 
 .extra-items, .information, .short-info, .item-cart, .buy-products, .pay-methods, .desktop-menu-icons div, 
 .complete-message, .checkout-form, .choose-pay-method, .back-button, .main-info, .main-info div, .action-section, 
-.game-actions, .game-actions div, .specs{align-items: center;}
+.game-actions, .game-actions div, .specs, .contact-info, .chat-bot, .chat-bot-icon, .contact-form, .logo-and-search, 
+.searchbar, .market-filter, .game{align-items: center;}
 
-footer, footer div, .intro, main, .display div, .october-bundle, .extra-game, .item-cart, 
-.desktop-menu-icons div, .complete-message, .main-info div{justify-content: center;}
+footer, footer div, .intro, main, .display div, .october-bundle, .extra-game, .item-cart, .desktop-menu-icons div, 
+.complete-message, .main-info div, .chat-bot, .chat-bot-icon{justify-content: center;}
 
-p, a, button{font-size: 20px;}
+p, a, button, input, textarea, select, .searchbar i, .market-filter label{font-size: 20px;}
 
 h1, h2, .game-actions div{text-align: center;}
 
-.promo-games, .gaming-image, .october-bundle, footer, .information, .checkout-form, .specs{margin-top: 100px;}
+.promo-games, .gaming-image, .october-bundle, footer, .information, .checkout-form, .specs, .contact-info, 
+.contact-form{margin-top: 100px;}
 
-.display, .offer-navigation, .information, .pay-methods, .seller-info div, .game-actions{justify-content: space-evenly;}
+.display, .offer-navigation, .information, .pay-methods, .seller-info div, .game-actions, .logo-and-search, 
+.games{justify-content: space-evenly;}
 
-.promo-games, .gaming-image{width: 1200px;}
+.promo-games, .gaming-image, .logo-and-search, .game-section{width: 1200px;}
 
-.not-chosen img, .order-button, .main-info img, .game-actions div{width: 200px;}
+.not-chosen img, .order-button, .main-info img, .game-actions div, .chat-buble div, .chat-bot, .market-filter, .game{width: 200px;}
 
-.october-bundle, .order-button{border-radius: 10px;}
+.october-bundle, .order-button, .logo-and-search select{border-radius: 10px;}
 
 .order-button, .extra-items, .desktop-menu-icons div{background-color: #645FFF;}
 
 footer div, .chosen img{width: 250px;}
 
-.october-bundle, footer, .information, .short-info{flex-wrap: wrap;}
+.october-bundle, footer, .information, .short-info, .games{flex-wrap: wrap;}
 
 .october-bundle p, .info-text, .complete-message p, .specs-description{width: 800px;}
 
 h2, header i, footer i, .item-cart i, .choose-pay-method i, .seller-info i{font-size: 30px;}
 
-.october-bundle, .information, .item-cart, .complete-message, .show-game-info, .specs{width: 1000px;}
+.october-bundle, .information, .item-cart, .complete-message, .show-game-info, .specs, .contact-info, 
+.contact-form{width: 1000px;}
 
 .extra-items, .short-info, .choose-pay-method{width: fit-content;}
 
 .display, .action-button, .item-cart, .pay-methods, .complete-message, .checkout-info, .action-section, 
-.show-game-info{margin-top: 50px;}
+.show-game-info, .market-filter div, .game{margin-top: 50px;}
 
-.mobile-menu, .item-cart, .buy-products{height: fit-content;}
+.mobile-menu, .item-cart, .buy-products, .chat-bot, .game{height: fit-content;}
 
 .active i, .pay-methods i:hover, .checkout-form i:hover{color: inherit;}
 
-.october-bundle, .action-button{background-color: #2b2b2b;}
+.october-bundle, .action-button, .contact-form input, .contact-form textarea, .contact-form select, .logo-and-search select, 
+.searchbar{background-color: #2b2b2b;}
 
 .october-bundle img, .item-cart img{height: 150px; width: 120px;}
 
-nav, .buy-products, .back-button, .main-info, .seller-info, .specs-description{justify-content: space-between;}
+nav, .buy-products, .back-button, .main-info, .seller-info, .specs-description, .contact-info, .game-section{justify-content: space-between;}
 
-.extra-items, .desktop-menu-icons div{border-radius: 100px;}
+.extra-items, .desktop-menu-icons div, .chat-bot-icon, .searchbar{border-radius: 100px;}
 
 .order-button, .desktop-menu-icons div{border: 0.5px solid #000;}
 
@@ -90,19 +102,45 @@ nav, .buy-products, .back-button, .main-info, .seller-info, .specs-description{j
 
 .item-cart, .complete-message, .checkout-form, .checkout-info input{border-radius: 20px;}
 
-.checkout-form label, .choose-pay-method{margin-top: 30px;}
+.checkout-form label, .choose-pay-method, .contact-form select, .contact-form textarea{margin-top: 30px;}
 
 header, .choose-pay-method{justify-content: start;}
 
 .order-button, .choose-pay-method{height: 50px;}
 
-.mobile-menu, .back-button{width: 100px;}
+.mobile-menu, .back-button, .chat-bot-icon{width: 100px;}
 
 .complete-message, .show-game-info{padding-bottom: 50px;}
 
 .not-chosen img, .main-info img{height: 250px;}
 
 .pay-methods i, .game-actions i{font-size: 40px;}
+
+.gaming-image, .costumer-service, .chat-buble{height: 350px;}
+
+.checkout-info input, .contact-form input, .contact-form textarea, .contact-form select{border: 0.5px solid #645FFF;}
+
+.back-button, .contact-form input, .contact-form select{height: 40px;}
+
+.intro h1, .checkout-form, .contact-form input, .contact-form textarea{width: 600px;}
+
+.short-info img, .costumer-service{width: 300px;}
+
+.seller-info, .chat-buble{width: 400px;}
+
+.chosen img, .contact-form textarea{height: 300px;}
+
+.searchbar input, .searchbar input:focus{border: none; outline: none;}
+
+.checkout-form input, .game p, .game h3{margin-top: 10px;}
+
+.checkout-form i, .searchbar input, .market-filter label{margin-left: 20px;}
+
+.checkout-info, .market-filter div{align-items: start;}
+
+.october-bundle a, .market-filter div div{margin-top: 20px;}
+
+
 
 
 
@@ -132,27 +170,17 @@ header nav div{margin-left: 150px;}
 
 .mobile-nav nav{word-spacing: 10px;}
 
-footer a{font-size: 20px;}
-
 main{flex: 1;}
 
 h1{font-size: 35px;}
 
 .intro{background-image: url("../images/home/space.png");}
 
-.intro h1, .checkout-form{width: 600px;}
-
 .display i{font-size: 80px; opacity: 0.5; margin-bottom: 80px;}
 
 .display i:hover{opacity: 1;}
 
-.gaming-image{height: 350px;}
-
-.chosen img{height: 300px;}
-
 .october-bundle img{margin: 30px;}
-
-.october-bundle a{margin-top: 20px;}
 
 .offer-navigation, .buy-products, .pay-methods, .checkout-info input{width: 500px;}
 
@@ -160,7 +188,7 @@ h1{font-size: 35px;}
 
 .intro-image{height: 500px;}
 
-.short-info img{height: 200px; width: 300px;}
+.short-info img, .game img{height: 200px;}
 
 .short-info p{width: 275px;}
 
@@ -174,67 +202,55 @@ h1{font-size: 35px;}
 
 .checkout-form{padding: 50px;}
 
-.checkout-form h1, .checkout-form h3{margin-bottom: 0;}
+.checkout-form h1, .checkout-form h3, .game h3{margin-bottom: 0;}
 
-.checkout-form i{margin-left: 20px;}
-
-.checkout-info{align-items: start;}
-
-.checkout-info input{margin-top: 10px; border: 0.5px solid #645FFF; font-size: 18px;}
+.checkout-info input{font-size: 18px;}
 
 .checkout-form label{font-size: 22px;}
 
 .choose-pay-method label{margin-left: 10px;}
 
-.choose-pay-method input{height: 20px; width: 20px;}
+.choose-pay-method input, .market-filter input{height: 20px; width: 20px;}
 
 .checkout-form h1, .checkout-form h3, .choose-pay-method label, .choose-pay-method input, .main-info div p, 
 .main-info div h1{margin-top: 0;}
 
-.back-button{margin-top: 40px; height: 40px; margin-right: 950px; }
+.back-button{margin-top: 40px; margin-right: 950px; }
 
 .show-game-info{padding-right: 50px;}
 
 .main-info div p{width: 750px;}
 
-.seller-info{width: 400px; height: 400px;}
+.seller-info{ height: 400px;}
 
 .seller-info i{color: #fff500;}
 
 .reccomended-specs{text-align: right;}
 
+.chat-buble{
+    margin-left: 300px;
+    margin-top: -300px;
+    background-image: url("../images/contact/chat-buble.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
+.chat-buble div{margin-left: 170px; margin-top: 80px;}
 
+.chat-bot-icon{height: 100px;}
 
+.chat-bot i{font-size: 50px;}
 
+.contact-form{padding-bottom: 20px;}
 
+.contact-form textarea{height: 300px;}
 
+.searchbar input{background-color: transparent;}
 
+.games{width: 900px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.game img{width: 180px;}
 
 
 
@@ -292,7 +308,7 @@ h1{font-size: 35px;}
 
     header nav{word-spacing: 70px;}
 
-    header nav a, .show-game-info h3{font-size: 20px;}
+    header nav a, .show-game-info h3, .game h3{font-size: 20px;}
 
     header nav i, footer i, .show-game-info i, .show-game-info h1{font-size: 25px;}
 
@@ -300,19 +316,23 @@ h1{font-size: 35px;}
 
     footer h3{font-size: 18px;}
 
-    .intro-image{height: 300px;}
+    .intro-image, .contact-info img{height: 300px;}
 
-    .information{width: 800px;}
+    .information, .contact-form, .contact-info, .logo-and-search, .game-section{width: 800px;}
 
     .short-info{height: 275px;}
 
-    .short-info img{height: 150px; width: 250px;}
+    .short-info img, .logo-and-search img, .game-section img{height: 150px;}
 
-    .short-info p, .show-game-info, .seller-info{width: 200px;}
+    .short-info img, .contact-us-logo, .contact-info img{width: 250px;}
 
-    .desktop-menu-icons div{margin-left: 120px; font-size: 10px; height: 20px; width: 20px;}
+    .short-info p, .show-game-info, .seller-info, .logo-and-search img{width: 200px;}
 
-    .item-cart, .complete-message, .show-game-info, .specs{width: 600px;}
+    .desktop-menu-icons div{font-size: 10px; height: 20px; width: 20px;}
+
+    .desktop-menu-icons div, .chat-buble div{margin-left: 120px;}
+
+    .item-cart, .complete-message, .show-game-info, .specs, .games{width: 600px;}
 
     .complete-message p{width: 500px;}
 
@@ -320,7 +340,9 @@ h1{font-size: 35px;}
 
     .show-game-info div p{width: 350px;}
 
-    .game-actions div{width: 150px; height: 200px;}
+    .game-actions div .game-section img, .game{width: 150px;}
+
+    .game-actions div, .contact-us-logo{height: 200px;}
 
     .game-actions i{font-size: 30px;}
 
@@ -334,11 +356,23 @@ h1{font-size: 35px;}
 
     .show-game-info h2, .specs h2{font-size: 22px;}
 
-    .show-game-info p, .specs p{font-size: 16px;}
+    .show-game-info p, .specs p, .market-filter label, .logo-and-search input, .logo-and-search select{font-size: 16px;}
 
     .main-info div p{width: 420px;}
 
     .main-info div{width: 650px;}
+
+    .chat-buble{width: 320px; margin-left: 250px;}
+
+    .chat-buble div{margin-top: 100px;}
+
+    .market-filter label{margin-left: 15px;}
+
+    .market-filter input{height: 15px; width: 15px;}
+
+    .game-section img{width: 120px;}
+
+    .games{height: fit-content;}
 }
 
 
@@ -416,17 +450,17 @@ h1{font-size: 35px;}
 
     .october-bundle, .info-text, .show-game-info, .specs{width: 500px;}
 
-    .october-bundle img, .back-button{width: 70px;}
+    .october-bundle img, .back-button, .chat-bot-icon{width: 70px;}
 
     .october-bundle img{margin: 5px; height: 85px;}
 
     .october-bundle h2{font-size: 20px;}
 
-    p, a{font-size: 14px;}
+    p, a, .contact-form input, .contact-form textarea, .contact-form select{font-size: 14px;}
 
     .order-button{width: 90px;}
 
-    .information{width: 550px;}
+    .information, .contact-form, .contact-info{width: 550px;}
 
     .short-info img{width: 160px;}
 
@@ -434,7 +468,7 @@ h1{font-size: 35px;}
 
     .pay-methods i{font-size: 30px;}
 
-    .checkout-form h3, .checkout-form i, .show-game-info h1{font-size: 22px;}
+    .checkout-form h3, .checkout-form i, .show-game-info h1, .contact-form h3, .contact-info h3{font-size: 22px;}
 
     .checkout-form label, .checkout-form input, .show-game-info h2, .specs h2{font-size: 18px;}
 
@@ -463,6 +497,22 @@ h1{font-size: 35px;}
     .seller-info p, .game-actions div p{width: fit-content !important;}
 
     .show-game-info i{font-size: 20px;}
+
+    .contact-form input, .contact-form textarea{padding: 5px; width: 450px;}
+
+    .contact-form input, .contact-form select{height: 30px;}
+
+    .contact-info img{height: 175px; width: 160px;}
+
+    .contact-form, .contact-info{margin-top: 80px;}
+
+    .chat-buble{width: 250px; margin-top: -200px; margin-left: 160px;}
+
+    .chat-buble div{width: 130px; margin-left: 90px; margin-top: 110px;}
+
+    .chat-bot-icon i{font-size: 40px;}
+
+    .chat-bot-icon{height: 70px;}
 }
 
 
@@ -504,7 +554,7 @@ h1{font-size: 35px;}
 
     header nav a{font-size: 16px;}
 
-    header nav i{font-size: 18px;}
+    header nav i, .game-section h3{font-size: 18px;}
 
     .item-cart, .complete-message{width: 400px;}
 
@@ -513,7 +563,32 @@ h1{font-size: 35px;}
     .buy-products, .complete-message p{width: 350px;}
 
     .desktop-menu-icons div{font-size: 9px; height: 15px; width: 15px; margin-left: 68px;}
+
+    .logo-and-search, .game-section{width: 600px;}
+
+    .logo-and-search img{width: 120px; height: 100px;}
+
+    .searchbar{width: 150px;}
+
+    .searchbar input{width: 100%;}
+
+    .market-filter h2{font-size: 25px;}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -529,17 +604,20 @@ h1{font-size: 35px;}
 
     .desktop-menu-icons{right: 50px;}
 
-    .intro img{width: 150px;}
+    .intro img, .show-game-info, .contact-us-logo{width: 150px;}
 
-    .intro img, .october-bundle img{height: 100px;}
+    .intro img, .october-bundle img, .contact-us-logo{height: 100px;}
 
     .intro h1, .item-cart, .complete-message{width: 300px;}
 
     h1, .october-bundle p, .buy-products i{font-size: 20px;}
 
-    .promo-games, .gaming-image, .october-bundle, .information{width: 400px;}
+    .promo-games, .gaming-image, .october-bundle, .information, .contact-form, .contact-info, .logo-and-search, 
+    .game-section{width: 400px;}
 
-    .chosen img{height: 120px; width: 100px;}
+    .chosen img, .game img{height: 120px;}
+
+    .chosen img, .chat-buble div, .game, .game img, .searchbar{width: 100px;}
 
     .not-chosen img{height: 90px; width: 70px;}
 
@@ -547,7 +625,7 @@ h1{font-size: 35px;}
 
     .display i, .action-button, .game-actions{margin-top: 30px;}
 
-    .display h3, .checkout-form label, .checkout-form input{font-size: 14px;}
+    .display h3, .checkout-form label, .checkout-form input, .chat-buble h3{font-size: 14px;}
 
     .gaming-image{height: 150px; margin-top: 50px;}
     
@@ -569,7 +647,7 @@ h1{font-size: 35px;}
 
     .october-bundle p, .game-actions, .game-actions div{height: fit-content;}
 
-    .info-text, .show-game-info, .show-game-info div, .specs{width: 350px;}
+    .info-text, .show-game-info, .show-game-info div, .specs, .contact-form input, .contact-form textarea{width: 350px;}
 
     .short-info img{height: 80px;}
 
@@ -579,31 +657,53 @@ h1{font-size: 35px;}
 
     .buy-products h3, .checkout-form i{font-size: 16px;}
 
-    .buy-products img{height: 70px; width: 55px;}
+    .buy-products img{width: 55px;}
 
-    .buy-products p, .action-button{font-size: 12px;}
+    .buy-products img, .logo-and-search img{height: 70px;}
+
+    .buy-products p, .action-button, .searchbar i{font-size: 12px;}
 
     .pay-methods i{font-size: 25px;}
     
     .checkout-form{padding: 20px;}
     
-    .checkout-form h3{font-size: 18px;}
+    .checkout-form h3, .contact-form h3, .contact-info h3{font-size: 18px;}
 
-    .checkout-form input{padding: 5px; width: 200px;}
+    .checkout-form input{width: 200px;}
+
+    .checkout-form input, .searchbar, .logo-and-search select{padding: 5px;}
 
     .choose-pay-method input{height: 12px; width: 12px;}
 
     .back-button{margin-right:  300px;}
 
-    .main-info, .action-section{flex-direction: column;}
+    .main-info, .action-section, .contact-info{flex-direction: column;}
 
-    .show-game-info img{margin-top: 0; height: 175px; width: 150px;}
+    .show-game-info img{margin-top: 0; height: 175px;}
 
     .show-game-info, .specs{padding: 10px;}
 
     .game-actions, .action-section{width: 200px;}
 
     .specs p, .show-game-info p{width: fit-content;}
+    
+    .contact-form, .contact-info{margin-top: 20px;}
+
+    .chat-buble{width: 175px; margin-top: -130px; margin-left: 220px;}
+
+    .chat-buble div{margin-left: 70px; margin-top: 130px;}
+
+    .chat-buble p{font-size: 10px;}
+
+    .logo-and-search img{width: 90px;}
+
+    .searchbar input{margin-left: 5px;}
+
+    .searchbar{height: 20px;}
+
+    .logo-and-search select{height: 30px;}
+
+    .october-bundle p{width: fit-content;}
 }
 
 
@@ -612,8 +712,24 @@ h1{font-size: 35px;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 450px){
-    .desktop-nav{display: none;}
+    .desktop-nav, .market-filter, .logo-and-search img{display: none;}
 
     .mobile-nav{display: flex;}
 
@@ -626,16 +742,19 @@ h1{font-size: 35px;}
     .footer-link, .logo-and-links{margin-top: 20px;}
 
     .intro h1, .short-info p, .pay-methods, .complete-message p, .checkout-form, .show-game-info div p, 
-    .game-actions p, .specs div{width: 200px;}
+    .game-actions p, .specs div, .contact-form input, .contact-form textarea{width: 200px;}
 
     h1, .buy-products i{font-size: 18px;}
 
     .social-media-icons{margin-bottom: 10px;}
 
     .promo-games, .gaming-image, .october-bundle, .info-text, .information, .short-info img, 
-    .item-cart{width: 250px;}
+    .item-cart, .show-game-info, .show-game-info div, .specs, .contact-form, .contact-info, .logo-and-search, 
+    .game-section{width: 250px;}
 
-    .chosen img{height: 100px; width: 80px;}
+    .chosen img{height: 100px;}
+
+    .chosen img, .chat-buble div{width: 80px;}
 
     .not-chosen img{height: 80px; width: 60px;}
 
@@ -645,7 +764,7 @@ h1{font-size: 35px;}
 
     .gaming-image, .short-info img{height: 120px;}
 
-    .intro-image{height: 150px;}
+    .intro-image, .contact-info img{height: 150px;}
 
     .short-info{height: 200px;}
 
@@ -659,47 +778,21 @@ h1{font-size: 35px;}
 
     .choose-pay-method input{width: 10px; height: 10px;}
 
-
-
-
     .back-button{margin-right: 180px;}
 
-    .show-game-info, .show-game-info div, .specs{width: 250px; padding: 0;}
+    .show-game-info, .show-game-info div, .specs{padding: 0;}
+
+    .contact-form, .contact-info{padding: 2px;}
+
+    .contact-info img{width: 120px;}
+
+    .chat-buble{width: 140px; margin-left: 100px;}
+    
+    .chat-buble div{margin-left: 55px; margin-top: 135px;}
+
+    .chat-buble h3{margin-bottom: 0;}
+
+    .chat-buble h3, .logo-and-search select{font-size: 12px;}
+
+    .logo-and-search select{width: 100px;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
